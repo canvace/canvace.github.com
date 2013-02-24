@@ -8,7 +8,7 @@ This chapter describes how you can use Canvace to move entities efficiently arou
 Keep in mind entities can move only on non-solid tiles: if your destination lies on a solid tile, no path will be found by Canvace.
 
 Moving an entity requires two phases:
-- the path, if one is present, is computed by Canvace using the A* algorithm, and returned as a list of edges in the map graph;
+- the path, if one is present, is computed by Canvace using the A\* algorithm, and returned as a list of edges in the map graph;
 - the single steps of the path are carried out in sequence.
 
 Let's see how this is implemented:
@@ -20,13 +20,9 @@ Let's see how this is implemented:
     var astarNode = map.getGraphNode(Math.round(currentPos.i), Math.round(currentPos.j), layer, destination.i, destination.j);
     this.pathEdges = this.canvace["astar"].findPath(astarNode);
 
-An entity is an abstract description of a dynamic game component: in order to actually operate on it inside the game (e.g. moving it around) you need to
-create an instance of that entity. The first instance is always created by default, and can be retrieved from the Canvace.Stage object with the getInstance()
-method (line 1). Instances in the stage are filtered by their properties: for this reason, in the development environment we added a custom property "name" to
-the entities, which we assigned a unique value to.
-Other instances can be created and placed on the map with the createInstance() method of Stage.Entity.
+Line 1 gets the default instance of the interested entity: see the chapter about entities to see why this is necessary.
 
-In order for the A* to find a path, we need a representation of the tile map as a graph where each tile is a node, and an edge is present between two tiles
+In order for the A\* to find a path, we need a representation of the tile map as a graph where each tile is a node, and an edge is present between two tiles
 when they are adjacent in the map. The findPath method of Canvace.Astar requires a Canvace.Astar.Node object which contains all the needed graph information. The
 getGraphNode() method takes the current position and the desired destination, and returns such object.
 The layer needs to be passed only once, as the graph stored inside Canvace allows no connections between tiles on different layers.
@@ -66,6 +62,6 @@ provided by Canvace, or defining your own.
 Refer to the Canvace API for a complete list of interpolations and animation options.
 
 Although this code snippet doesn't show it, additional code prevents an interpolation step from being started before the previous one has finished: overlapping more
-animations on the same entity instance easily causes errors, and the resulting path may be different from the one computed by A*.
+animations on the same entity instance easily causes errors, and the resulting path may be different from the one computed by A\*.
 
 ----------------------------
