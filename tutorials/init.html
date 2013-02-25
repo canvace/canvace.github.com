@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Canvace</title>
+	<link rel="stylesheet" type="text/css" href="Style.css"/>
+	<link rel="stylesheet" type="text/css" href="pygments.css" />
+</head>
+<body>
+	<a href="https://github.com/canvace"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
+<h1 id='displaying_a_stage_in_the_canvas'>Displaying a stage in the canvas</h1>
+
+<p>In this chapter, we will see how Canvace displays a game stage into a canvas.</p>
+
+<h2 id='organization_of_a_canvace_game'>Organization of a Canvace game</h2>
+
+<p>Generally speaking, you may organize a Canvace game like this:</p>
+
+<ul>
+<li>stages directory, for the JSON files representing the stages;</li>
+
+<li>media directory, containing all the pictures and sound files used in the game;</li>
+
+<li>index.html: definition of the canvas, plus other HTML elements external to the game if needed;</li>
+
+<li>one or more Javascript files for the game logic.</li>
+</ul>
+
+<h2 id='stage_loading_and_rendering'>Stage loading and rendering</h2>
+
+<p>Initially, the stage information exported by the development environment needs to be loaded into Canvace. This is done asynchronously in two separate steps.</p>
+
+<p>First, the JSON file is loaded using Ajax (line 1). The anonymous function, called when the loading has completed, gets the whole data as an object. Then, the &#8220;media&#8221; directory - containing all the pictures used for the game - is loaded by instantiating a Canvace.Loader object and calling the loadAssets method. This process may require some time; hence, a progress callback &#8220;progress&#8221; is passed: it updates the status of a progress bar.</p>
+<div class='highlight'><pre><code class='javascript'>    <span class='nx'>Canvace</span><span class='p'>.</span><span class='nx'>Ajax</span><span class='p'>.</span><span class='nx'>getJSON</span><span class='p'>(</span><span class='s2'>&quot;Stage1.json&quot;</span><span class='p'>,</span> <span class='kd'>function</span><span class='p'>(</span><span class='nx'>data</span><span class='p'>)</span> <span class='p'>{</span>
+        <span class='kd'>var</span> <span class='nx'>loader</span> <span class='o'>=</span> <span class='k'>new</span> <span class='nx'>Canvace</span><span class='p'>.</span><span class='nx'>Loader</span><span class='p'>(</span><span class='s2'>&quot;media&quot;</span><span class='p'>,</span> <span class='nx'>progress</span><span class='p'>,</span> <span class='kd'>function</span><span class='p'>()</span> <span class='p'>{</span>
+        <span class='kd'>var</span> <span class='nx'>canvas</span> <span class='o'>=</span> <span class='nb'>document</span><span class='p'>.</span><span class='nx'>getElementById</span><span class='p'>(</span><span class='s2'>&quot;tutorial&quot;</span><span class='p'>);</span>
+        <span class='kd'>var</span> <span class='nx'>stage</span> <span class='o'>=</span> <span class='k'>new</span> <span class='nx'>Canvace</span><span class='p'>.</span><span class='nx'>Stage</span><span class='p'>(</span><span class='nx'>data</span><span class='p'>,</span> <span class='nx'>canvas</span><span class='p'>);</span>
+        <span class='kd'>var</span> <span class='nx'>renderLoop</span> <span class='o'>=</span> <span class='k'>new</span> <span class='nx'>Canvace</span><span class='p'>.</span><span class='nx'>RenderLoop</span><span class='p'>(</span><span class='nx'>stage</span><span class='p'>,</span> <span class='kc'>null</span><span class='p'>,</span> <span class='nx'>loader</span><span class='p'>,</span> <span class='nx'>animator</span><span class='p'>,</span> <span class='nx'>eventLoop</span><span class='p'>.</span><span class='nx'>loop</span><span class='p'>);</span>
+			
+        <span class='nx'>renderLoop</span><span class='p'>.</span><span class='nx'>run</span><span class='p'>();</span>
+        <span class='p'>},</span> <span class='nx'>error</span><span class='p'>);</span>
+        
+        <span class='nx'>loader</span><span class='p'>.</span><span class='nx'>loadAssets</span><span class='p'>(</span><span class='nx'>data</span><span class='p'>);</span>
+    <span class='p'>});</span>
+</code></pre></div>
+<p>Now that all the game information have been stored inside Canvace, it&#8217;s time to render them into the canvas. Line 3 retrieves the canvas object from the DOM. Line 4 associates a Canvace.Stage object with the canvas and the game data. This class is useful to retrieve all the game components for this stage. At last, the render loop is initialized: here we can control the periodical rendering of the stage inside the canvas. The functions animator and eventLoop.loop will be described later: for now, it&#8217;s sufficient to know they define what happens to the scene in-between two renderings.</p>
+
+<p>At line 7, the run() method starts the rendering, and the stage is finally displayed.</p>
+
+<p>SCREEN</p>
+
+<p>The render loop can be later stopped calling stop(), and nothing will be displayed anymore: in the demonstrative game, you can see stop() is called at the end, when the game has been either won or lost.</p>
+
+<pre><code>function lost() {
+    renderLoop.stop();
+    var losingScreen = document.getElementById(&quot;losing-screen&quot;);
+    losingScreen.style.display = &quot;block&quot;;
+}</code></pre>
+
+<p>Line 3 and 4 overwrite the canvas, now empty, with a &#8220;You lost!&#8221; message. At winning, a similar function is invoked. Once the render loop has being stopped, it cannot be restarted anymore: if you wish to do so, call suspend() instead, and then run() to resume it.</p>
+<hr />
+</body>
+</html>

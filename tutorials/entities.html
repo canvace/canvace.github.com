@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Canvace</title>
+	<link rel="stylesheet" type="text/css" href="Style.css"/>
+	<link rel="stylesheet" type="text/css" href="pygments.css" />
+</head>
+<body>
+	<a href="https://github.com/canvace"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
+<h1 id='entities'>Entities</h1>
+
+<p>Entities are the dynamic components of your game. Typically all the characters in the game are represented as entities. After creating an entity in the development environment, we can retrieve it from the stage it was created into with the getEntity() function, which returns an object of type Canvace.Stage.Entity.</p>
+
+<h2 id='entities_vs_instances'>Entities vs. instances</h2>
+
+<p>Entities are just an abstract description of the component. You may see that the Entity class only stores a quite generic set of information: for example, you may get the coordinates and span of the bounding box assigned to the entity. Bounding boxes are used by Canvace to easily detect collisions among entities with a great variety of different shapes and sizes. As you can see, entities are filtered in the stage by their properties: for this reason, in the development environment we added a custom property &#8220;name&#8221; to all the entities, with a unique value assigned to.</p>
+
+<p>In order to operate on the entity inside the game (e.g moving it around) you need to create tangible instances of that entity. A first instance always exists by default: it can be obtained from the Canvace.Stage object, calling the getInstance() method. Other instances can be created and placed on the map with the createInstance() method of Stage.Entity.</p>
+
+<p>All instances (even when the physics isn&#8217;t enabled for the correspondent entity) may evolve, during the progress of the game, according to the physics rules implemented by Canvace. More specifically, each entity stores the following physics-related properties:</p>
+
+<ul>
+<li>position</li>
+
+<li>velocity</li>
+
+<li>uniform velocity</li>
+
+<li>acceleration These properties are vectors in a 3-dimension space. By modifying these vectors it is possible to move the instance around the map: at each rendering loop, the entity&#8217;s physics state is changed according to the vectors, and then the actual position of the instance is updated. You don&#8217;t need to control this process manually: the Pathfinding chapter of this tutorial explains how you can use interpolated animations to let Canvace do the job for you.</li>
+</ul>
+
+<h2 id='collisions'>Collisions</h2>
+
+<p>Canvace is equipped with features for testing and reacting to collisions. An entity may collide with other entities or with tiles.</p>
+
+<pre><code>var protInst = protagonist.character;
+for (var i = 0; i &lt; enemies.length; ++i) {
+    var enemy1 = enemies[i].character;
+    ...
+
+    if (protInst.collidesWithInstance(enemy1)) {
+        protagonist.loseLife();
+    }
+}</code></pre>
+
+<p>Here, for example, we decrement the &#8220;life count&#8221; of the main character of the game when it collides with one of the enemies. The collidesWithInstance() method, after testing if a collision is taking place, performs additional operations aimed at restoring a configuration without collisions. If you wish to perform collision testing and recovery separately, first call testCollision(), and then collision(). Collisions with tiles work in a similar way: collidesWithTiles() only needs the Canvace.TileMap.Tile object retrieved from the stage&#8217;s tilemap.</p>
+
+<p>(Explain rectangleCollision too?) (replacing/removing entities?).</p>
+<hr />
+</body>
+</html>
