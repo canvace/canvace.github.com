@@ -1,6 +1,5 @@
 ---
 layout: default
-permalink: init.html
 ---
 
 # Displaying a stage in the canvas

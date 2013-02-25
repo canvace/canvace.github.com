@@ -1,6 +1,5 @@
 ---
 layout: default
-permalink: input-view.html
 ---
 
 # Input events

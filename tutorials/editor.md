@@ -1,6 +1,5 @@
 ---
 layout: default
-permalink: editor.html
 ---
 
 # The development environment
