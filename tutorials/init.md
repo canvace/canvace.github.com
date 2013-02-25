@@ -31,7 +31,7 @@ This process may require some time; hence, a progress callback "progress" is pas
         
         loader.loadAssets(data);
     });
-{% endhighlight %}
+{% highlight javascript %}
 
 Now that all the game information have been stored inside Canvace, it's time to render them into the canvas. Line 3 retrieves the canvas object from the DOM.
 Line 4 associates a Canvace.Stage object with the canvas and the game data. This class is useful to retrieve all the game components for this stage.
@@ -45,11 +45,13 @@ SCREEN
 The render loop can be later stopped calling stop(), and nothing will be displayed anymore: in the demonstrative game, you can see stop() is called at the end,
 when the game has been either won or lost.
 
+{% highlight javascript %}
     function lost() {
         renderLoop.stop();
         var losingScreen = document.getElementById("losing-screen");
         losingScreen.style.display = "block";
     }
+{% endhighlight %}
     
 Line 3 and 4 overwrite the canvas, now empty, with a "You lost!" message. At winning, a similar function is invoked.
 Once the render loop has being stopped, it cannot be restarted anymore: if you wish to do so, call suspend() instead, and then run() to resume it.

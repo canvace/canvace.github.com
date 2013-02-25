@@ -31,6 +31,7 @@ the Pathfinding chapter of this tutorial explains how you can use interpolated a
 ## Collisions
 Canvace is equipped with features for testing and reacting to collisions. An entity may collide with other entities or with tiles.
 
+{% highlight javascript %}
     var protInst = protagonist.character;
     for (var i = 0; i < enemies.length; ++i) {
         var enemy1 = enemies[i].character;
@@ -40,6 +41,7 @@ Canvace is equipped with features for testing and reacting to collisions. An ent
             protagonist.loseLife();
         }
     }
+{% endhighlight %}
     
 Here, for example, we decrement the "life count" of the main character of the game when it collides with one of the enemies. The collidesWithInstance()
 method, after testing if a collision is taking place, performs additional operations aimed at restoring a configuration without collisions. If you wish to perform

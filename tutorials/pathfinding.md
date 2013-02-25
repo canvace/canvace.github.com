@@ -12,12 +12,14 @@ Moving an entity requires two phases:
 
 Let's see how this is implemented:
 
+{% highlight javascript %}
     var character = stage.getInstance( { name: n } );
     ...
     var currentPos = this.character.getPosition();
     var map = stage.getTileMap();
     var astarNode = map.getGraphNode(Math.round(currentPos.i), Math.round(currentPos.j), layer, destination.i, destination.j);
     this.pathEdges = this.canvace["astar"].findPath(astarNode);
+{% endhighlight %}
 
 Line 1 gets the default instance of the interested entity: see the chapter about entities to see why this is necessary.
 
@@ -29,6 +31,7 @@ The layer needs to be passed only once, as the graph stored inside Canvace allow
 When no path exists, findPath returns NULL. Otherwise, it returns a list of edges. Taking for example the initial node, the item 0 of the list is a string identifying
 an edge among those coming out of the node. From this edge, the entity is able to reach the next node (or tile) of the path.
 
+{% highlight javascript %}
     this.interpolationStep = function(duration) {
         var edge = this.pathEdges[this.stage];
         var i,j = getNextPosition(this.character.getPosition(), edge); PLACEHOLDER
@@ -47,6 +50,7 @@ an edge among those coming out of the node. From this edge, the entity is able t
             // no more edges, we reached the destination node.
         }
     };
+{% endhighlight %}
 
 The actual movement from one tile to the next is performed as an interpolated animation. Such animations may influence the entity's position, velocity and acceleration
 vectors. After changing the vectors, the entity position must be updated: this is done automatically by Canvace only if the entity's physics is enabled. Otherwise,
