@@ -61,9 +61,10 @@ drawing tool. It is now possible to "stamp" tiles around the game map. You may n
 will simply overwrite it. It is also possible to erase tiles from the map (restoring a blank square) with the eraser tools.
 
 Now that the generic environment has been designed, we add our game characters as **Entities**. Entities (unlike tiles) aren't bounded in specific map
-squares, but they can appear in any point of the map, and can be moved around as the game progresses. Apart from this, the creation process is quite similar to the one
-we followed for tiles: a new entity is created and a picture is associated to it. Additionally, in the setting panel, the physics has been enabled for every entity.
+squares, but they can appear in any point of the map, and can be moved around as the game progresses. Apart from this, the creation process is quite similar to the one we followed for tiles: a new entity is created and a picture is associated to it. Additionally, in the setting panel, the physics has been enabled for every entity.
 This is useful when developing the game logic, as it gives quick and easy access to a set of features that control the movements of the entities.
+Entities and tiles may have custom properties associated to it, depending on your game's needs: however, remember that string properties must always be enclosed
+in double quotes.
 
 SCREEN WITH PHYSICS
 
