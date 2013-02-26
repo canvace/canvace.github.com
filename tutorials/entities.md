@@ -32,23 +32,37 @@ the Pathfinding chapter of this tutorial explains how you can use interpolated a
 Canvace is equipped with features for testing and reacting to collisions. An entity may collide with other entities or with tiles.
 
 {% highlight javascript %}
-    var protInst = protagonist.character;
-    for (var i = 0; i < enemies.length; ++i) {
-        var enemy1 = enemies[i].character;
-        ...
-
-        if (protInst.collidesWithInstance(enemy1)) {
-            protagonist.loseLife();
-        }
+    if (enemy1.collidesWithInstance(enemy2)) {
+        enemy1.collision(enemy2);
+        enemy2.collision(enemy1);
     }
 {% endhighlight %}
     
-Here, for example, we decrement the "life count" of the main character of the game when it collides with one of the enemies. The collidesWithInstance()
-method, after testing if a collision is taking place, performs additional operations aimed at restoring a configuration without collisions. If you wish to perform
-collision testing and recovery separately, first call testCollision(), and then collision().
-Collisions with tiles work in a similar way: collidesWithTiles() only needs the Canvace.TileMap.Tile object retrieved from the stage's tilemap.
+Here, for example, after we moved all the characters by one step in their current paths, we check whether two instances of enemies, enemy1 and enemy2, are  colliding. The collidesWithInstance() method performs this test, while collision() tries to restore non-colliding configurations for both. Usually this means the instances briefly move away from each other until a safety condition is met.
+Collisions with tiles work in a similar way: collidesWithTiles() needs the Canvace.TileMap.Tile object retrieved from the stage's tilemap.
 
-(Explain rectangleCollision too?)
-(replacing/removing entities?).
+## Replacing and removing entities
+Once an entity instance has been instantiated, it is possible to change its external appearance by replacing it with an instance of another entity which has a different frame. This second entity, of course, must have been created and exported in the development environment as usual.
+
+In the game, for example, we replace the instance of the main character when it collides with a donut. First, we retrieve the second entity from the stage using the custom property "name" as filter:
+
+{% highlight javascript %}
+    var immortalMan = stage.getEntity({ name: "Stealth" });
+{% endhighlight %}
+
+As soon as we detect the collision, this following line performs the replacement:
+
+{% highlight javascript %}
+    protagonist.instance = protagonist.instance.replaceWith(immortalMan);
+{% endhighlight %}
+
+Note that once the replacement took place, the new instance is immediately created and returned, while the old instance isn't valid anymore, and should be discarded (here, we simply overwrite it with the new one). The new instance also shares all the physics-related information of the old one, i.e. the position, velocity and acceleration vectors.
+It's also possible to completely remove an entity's instance from the stage. After the character has been replaced as above, the donut is removed from the map:
+
+{% highlight javascript %}
+    donut.remove();
+{% endhighlight %}
+
+After that call, the instance won't be rendered anymore.
 
 ----------------------------
