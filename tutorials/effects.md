@@ -21,7 +21,7 @@ This effects shakes the viewport, simulating rumbling. In the Canvace.RumbleEffe
 This effect is useful for debugging the game during the development. It may be configured to superimpose a variety of information to the game stage. Among those:
 - entities' bounding boxes (only valid for entities with physics enabled);
 - entities' velocity, uniform velocity, and acceleration vectors, again only when the physics is enabled;
-- solid map.
+- solid map: highlights the solid tiles with the specified colour.
 
 This is how, for example, the debug effect is instantiated in the tutorial game:
 
