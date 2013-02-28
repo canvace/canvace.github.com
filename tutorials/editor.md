@@ -13,7 +13,7 @@ When creating a new stage, the projection matrix needs to be defined. You can ei
 
 When using the default projection matrix in isometric games, an issue may arise. Consider two adjacent tiles and an entity placed as in the following figure (seen from above):
 
-![Tiles](isometric.png)
+![Tiles](images/isometric.png)
 
 The point identifies the location of the entity, but the entity frame is bigger and actually spawns across the two tiles (circle around the point). The predefined projection matrix computes the canvas z coordinate as the sum of the i, j and k coordinates. You can see that Tile1 and Tile2 have the same j and k coordinate, but Tile1 has an higher i coordinate. Therefore, when the canvas content is rendered, Tile1 is regarded as being placed behind Tile2. If an entity frame occupies both Tile1 and Tile2, the section on Tile1 will be hidden, resulting in a ugly effect, typically when the entity is moving from one tile to the next.
 

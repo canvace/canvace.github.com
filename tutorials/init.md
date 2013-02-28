@@ -41,7 +41,7 @@ will be described later: for now, it's sufficient to know they define what happe
 
 At line 7, the run() method starts the rendering, and the stage is finally displayed.
 
-![Game stage](game-stage.png)
+![Game stage](images/game-stage.png)
 
 The render loop can be later stopped calling stop(), and nothing will be displayed anymore: in the demonstrative game, you can see stop() is called at the end,
 when the game has been either won or lost:
