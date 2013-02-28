@@ -9,7 +9,7 @@ In this chapter, we will see how Canvace displays a game stage into a canvas.
 Generally speaking, you may organize a Canvace game like this:
 - stages directory, for the JSON files representing the stages;
 - media directory, containing all the pictures and sound files used in the game;
-- index.html: definition of the canvas, plus other HTML elements external to the game if needed;
+- index.html: definition of the canvas (and other HTML elements external to the game if needed);
 - one or more Javascript files for the game logic.
 
 ## Stage loading and rendering
@@ -17,33 +17,34 @@ Initially, the stage information exported by the development environment needs t
 
 First, the JSON file is loaded using Ajax (line 1). The anonymous function, called when the loading has completed, gets the whole data as an object. Then,
 the "media" directory - containing all the pictures used for the game - is loaded by instantiating a Canvace.Loader object and calling the loadAssets method.
-This process may require some time; hence, a progress callback "progress" is passed: it updates the status of a progress bar.
+This process may require some time; hence, a progress callback "progress" is passed: it updates the status of a progress bar. We also pass a function to be called
+at completion, and another that reports errors. The completion callback is the one that initializes all the Canvace objects and starts the actual game logic.
 
 {% highlight javascript %}
     Canvace.Ajax.getJSON("Stage1.json", function(data) {
         var loader = new Canvace.Loader("media", progress, function() {
-        var canvas = document.getElementById("tutorial");
-        var stage = new Canvace.Stage(data, canvas);
-        var renderLoop = new Canvace.RenderLoop(stage, null, loader, animator, eventLoop.loop);
+            var canvas = document.getElementById("tutorial");
+            var stage = new Canvace.Stage(data, canvas);
+            var renderLoop = new Canvace.RenderLoop(stage, null, loader, animator, eventLoop.loop);
 			
-        renderLoop.run();
+            renderLoop.run();
         }, error);
         
         loader.loadAssets(data);
     });
-{% highlight javascript %}
+{% endhighlight %}
 
-Now that all the game information have been stored inside Canvace, it's time to render them into the canvas. Line 3 retrieves the canvas object from the DOM.
+As soon as the game information has been stored inside Canvace, it's time to render the stage into the canvas. Line 3 retrieves the canvas object from the DOM.
 Line 4 associates a Canvace.Stage object with the canvas and the game data. This class is useful to retrieve all the game components for this stage.
 At last, the render loop is initialized: here we can control the periodical rendering of the stage inside the canvas. The functions animator and eventLoop.loop
-will be described later: for now, it's sufficient to know they define what happens to the scene in-between two renderings.
+will be described later: for now, it's sufficient to know they define what happens to the scene between two consecutive renderings.
 
 At line 7, the run() method starts the rendering, and the stage is finally displayed.
 
-SCREEN
+![Game stage](game-stage.png)
 
 The render loop can be later stopped calling stop(), and nothing will be displayed anymore: in the demonstrative game, you can see stop() is called at the end,
-when the game has been either won or lost.
+when the game has been either won or lost:
 
 {% highlight javascript %}
     function lost() {

@@ -23,13 +23,14 @@ In the game, a simple state machine is used to control the reactions to collisio
     }, "mortal");
 {% endhighlight %}
 
-Therefore, this state machine has two states, "mortal" and "immortal", with "mortal" passed as the initial state in the second parameter. Each state is an object: its properties are the functions defining the available transitions while being in that state. To perform a transition, simply invoke the correspondent function:
+Therefore, this state machine has two states, "mortal" and "immortal", with "mortal" passed as the initial state in the second parameter. Each state is an object: its properties are the functions defining the available transitions while being in that state. To perform a transition, simply invoke the correspondent function on
+the DFA.
 
 {% highlight javascript %}
     entity.collisions.enemyCollides(enemyInstance);
 {% endhighlight %}
 
-Notice that the same transition name can be used for multiple states: it is possible to execute different instructions for the same "event", depending on the current state, as Canvace automatically invokes the right transition. For instance the reaction to a collision with an enemy, performed by enemyCollides(), changes accordingly to whether our character is mortal or immortal.
+Notice that the same transition name can be used for multiple states: it is thus possible to execute different instructions for the same "event", depending on the current state, as Canvace automatically invokes the right transition. For instance the reaction to a collision with an enemy, performed by enemyCollides(), changes accordingly to whether our character is mortal or immortal.
 
 Normally transitions change the current state: this is done by returning the name of the new state as a string. For example, when becomeImmortal() ends, the state changes from "mortal" to "immortal". It is also possible to define transitions that don't modify the current state: this happens with enemyCollides(), which doesn't return anything.
 
