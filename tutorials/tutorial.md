@@ -12,8 +12,7 @@ The intended workflow when developing with Canvace is outlined here:
 - An HTML5 file, containing a canvas which is going to house the game, is created;
 - The Javascript API is now employed to assist in the development of the game logic.
 
-For the purposes of this tutorial, a demonstrative isometric game has been developed with Canvace.
-The chapters you're going to read will replay all the steps necessary to complete this game, guiding you through the whole process.
+This tutorial aims at providing a straightforward but complete introduction to the most important features introduced by Canvace. For better fulfilling this task, a demonstrative isometric game has been developed with Canvace: the chapters you're going to read will replay all the steps necessary for its creation, guiding you through the whole development process.
 
 The complete source code for the game can be downloaded HERE.
 
