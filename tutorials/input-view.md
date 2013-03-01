@@ -55,7 +55,7 @@ unused here.
 
 There are three main keyboard events you can react to:
 - `onKeyDown`: a key has being pressed.
-- `onKeyPress`: a key has being pressed. The only difference with onKeyDown is found when a key is being held down for a longer time: the `onKeyDown` event is fired only once, whereas `onKeyPress` will be fired repeatedly.
+- `onKeyPress`: a key has being pressed. The only difference with `onKeyDown` is found when a key is being held down for a longer time: the `onKeyDown` event is fired only once, whereas `onKeyPress` will be fired repeatedly.
 - `onKeyUp`: a key has been released.
 
 # Stage view

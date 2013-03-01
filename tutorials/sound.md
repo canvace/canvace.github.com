@@ -7,7 +7,7 @@ In this chapter we explain how to load and play audio resources in Canvace.
 All audio resources you use in the game must be first loaded from the "media" directory.
 
 {% highlight javascript %}
-    var loader = new Canvace.Loader("media", progress, function () { ... });
+    var loader = new Canvace.Loader(...);
     loader.loadAssets(data, soundResources);
 {% endhighlight %}
 

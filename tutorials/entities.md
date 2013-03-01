@@ -7,7 +7,7 @@ Entities are the dynamic components of your game. Typically all the characters i
 After creating an entity in the development environment, we can retrieve it from the stage it was created into with the `getEntity()` function, which returns an object of type `Canvace.Stage.Entity`.
 
 ## Entities vs. instances
-Entities are just an abstract description of the component. You may see that the `Canvace.Stage.Entity` class only stores a quite generic set of information: for example, you may get the coordinates and span of the bounding box assigned to the entity. Bounding boxes are used by Canvace to easily detect collisions among entities with a great variety of different shapes and sizes.
+Entities are just an abstract description of the component. You may see that the `Canvace.Stage.Entity` class only stores a quite generic set of properties: for example, you may get the coordinates and span of the bounding box assigned to the entity. Bounding boxes are used by Canvace to easily detect collisions among entities with a great variety of different shapes and sizes.
 As you can see, entities are filtered in the stage by their properties: for this reason, in the development environment we added a custom property "name"
 to all the entities, with a unique value assigned to.
 
