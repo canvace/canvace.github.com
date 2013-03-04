@@ -8,12 +8,10 @@ After creating an entity in the development environment, we can retrieve it from
 
 ## Entities vs. instances
 Entities are just an abstract description of the component. You may see that the `Canvace.Stage.Entity` class only stores a quite generic set of properties: for example, you may get the coordinates and span of the bounding box assigned to the entity. Bounding boxes are used by Canvace to easily detect collisions among entities with a great variety of different shapes and sizes.
-As you can see, entities are filtered in the stage by their properties: for this reason, in the development environment we added a custom property "name"
-to all the entities, with a unique value assigned to.
 
-In order to work on the entity inside the game (e.g moving it around) you need to create tangible instances of that entity. A first instance always exists by
-default: it can be obtained from the `Canvace.Stage` object, calling the `getInstance()` method. Other instances can be created and placed on the map with the
-`createInstance()` method of `Stage.Entity`.
+In order to actually work on the entity inside the game (e.g moving it around) you need to create tangible instances of that entity. A first instance always exists by default: it can be obtained from the `Canvace.Stage` object, calling the `getInstance()` method. Other instances can be created and placed on the map with the `createInstance()` method of `Stage.Entity`.
+
+Note that entities are filtered in the stage by their custom properties: for this reason, in the development environment we added a custom property "name" to all the entities, with a unique value assigned to it.
 
 All instances (even when the physics isn't enabled for the correspondent entity) may evolve, during the progress of the game, according to the physics rules
 implemented by Canvace. More specifically, each entity stores the following physics-related properties:

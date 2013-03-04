@@ -54,7 +54,7 @@ will simply overwrite it. It is also possible to erase tiles from the map (resto
 Now that the generic environment has been designed, we add our game characters as **Entities**. Entities (unlike tiles) aren't bounded in specific map
 squares, but they can appear in any point of the map, and can be moved around as the game advances. Apart from this, the creation process is quite similar to the one we followed for tiles: a new entity is created and a picture is associated to it. Additionally, in the setting panel, the physics has been enabled for every entity. This is useful when developing the game logic, as it gives quick and easy access to a set of features that control the movements of the entities.
 Entities and tiles may have custom properties associated to it, depending on your game's needs: however, remember that string properties must always be enclosed
-in double quotes. Here we assigned a "name" string property to all the entities, needed to identify our entities later.
+in double quotes. Here we assigned a "name" string property to all the entities, needed to identify them later.
 
 SCREEN WITH PHYSICS
 
@@ -64,10 +64,10 @@ As above, entities can be stamped in the desired initial positions with **Stamp 
 FINAL SCREEN
 
 Looking at the right panel, you may notice there are actually two layers here: "layer 0", the default ones, contains the tiles, while "layer 1" contains the
-entities. This is a trick employed in order to avoid the issues with isometric games described in the introduction of this page.
+entities. This is a trick employed in order to avoid the issue with isometric games described in the introduction of this page.
 Layers of course can be created also to make a game extend on the third dimension.
 
-The changes made to the stage are saved using the "Save" button.
+The changes made to the stage are saved using the **Save** button.
 As soon as the level environment is completed and saved, it needs to be exported in a format recognizable by Canvace. This is done in the **Stage** bar: specifically, "Download images" exports all the pictures used in an archive, while "Download JSON" exports a JSON file containing the stage information, found HERE.
 
 ----------------------------
