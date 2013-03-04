@@ -16,4 +16,13 @@ This tutorial aims at providing a straightforward but complete introduction to t
 
 The complete source code for the game can be downloaded HERE.
 
+## Installing Canvace
+Canvace requires Node.js: you can download it [here](http://nodejs.org/download/). Then, Canvace is easily installed running
+
+    $ npm install -g canvace
+    
+from the command line. Canvace is now ready to use: the development environment is started by executing `canvace`. On Windows, if `canvace` cannot be found it may be necessary to run `canvace.cmd` instead.
+
+The most recent version of the client library is available at [this link](http://www.canvace.com/download). Download it in the path you're going to develop the game into, and then import canvace.js in your game files as an external Javascript script.
+
 ----------------------------
