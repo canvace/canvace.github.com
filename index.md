@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Canvace
 ---
 Canvace
 =======
@@ -10,7 +11,7 @@ The ultimate HTML5 game development platform
 Current Canvace features:
 
 *	Generic 3x3 projection matrix  
-	->	That includes both orthogonal and isometric games
+	&rarr;	That includes both orthogonal and isometric games
 *	2D and 2.5D support
 *	Visual development
 *	Team development
@@ -18,7 +19,7 @@ Current Canvace features:
 *	Scene graph management
 *	Animations with configurable transition functions
 *	Fully functional, fast, simple default AABB physics  
-	->	Otherwise it works fine with box2d.js
+	&rarr;	Otherwise it works fine with box2d.js
 *	Sound support
 *	Vector graphics support
 *	Mobile detection
