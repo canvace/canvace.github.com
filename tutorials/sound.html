@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Canvace</title>
+	<link href="http://fonts.googleapis.com/css?family=Titillium+Web:300" rel="stylesheet" type="text/css">
+	<link href="/css/screen.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="/pygments.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<header class="header">
+    Header here
+</header>
+
+<a href="https://github.com/canvace"><img style="position: fixed; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
+
+<div class="contents">
+<h1 id='sounds'>Sounds</h1>
+
+<p>In this chapter we explain how to load and play audio resources in Canvace. All audio resources you use in the game must be first loaded from the &#8220;media&#8221; directory.</p>
+<div class='highlight'><pre><code class='javascript'>    <span class='kd'>var</span> <span class='nx'>loader</span> <span class='o'>=</span> <span class='k'>new</span> <span class='nx'>Canvace</span><span class='p'>.</span><span class='nx'>Loader</span><span class='p'>(...);</span>
+    <span class='nx'>loader</span><span class='p'>.</span><span class='nx'>loadAssets</span><span class='p'>(</span><span class='nx'>data</span><span class='p'>,</span> <span class='nx'>soundResources</span><span class='p'>);</span>
+</code></pre></div>
+<p>The <code>soundResources</code> variable is a map from sound names to one or more source descriptors. This is an optional parameter: if you don&#8217;t need any sound in your game, simply ignore it.</p>
+<div class='highlight'><pre><code class='javascript'>    <span class='kd'>var</span> <span class='nx'>soundResources</span> <span class='o'>=</span> <span class='p'>{</span>
+        <span class='s2'>&quot;start-sound&quot;</span> <span class='o'>:</span> <span class='p'>[</span> <span class='s2'>&quot;init.mp3&quot;</span><span class='p'>,</span> <span class='s2'>&quot;init.ogg&quot;</span> <span class='p'>]</span>
+    <span class='p'>}</span>
+</code></pre></div>
+<p>As you can see, it is possible to associate more audio files to the same sound name: this is because not all browsers support the same audio formats. Here, for example, we load a MP3 and a OGG file for the same sound, and we associate them both to the same name, <code>start-sound</code>. Internally, Canvace will try to discover which formats your browser is able to reproduce, and selects the first supported resource, if one is present.</p>
+
+<p>Once the loading process is complete, you can play a sound using the loader itself:</p>
+<div class='highlight'><pre><code class='javascript'>    <span class='nx'>loader</span><span class='p'>.</span><span class='nx'>playSound</span><span class='p'>(</span><span class='s2'>&quot;start-sound&quot;</span><span class='p'>);</span>
+</code></pre></div>
+<p>This immediately reproduces the specified sound once (in the game, <code>start-sound</code> is played when the game starts): if you pass <code>true</code> as the second parameter, the sound will be reproduced in loop.</p>
+
+<p>For more complex sound effects, you can obtain the <code>Canvace.Audio.SourceNode</code> object associated with each of your audio resources:</p>
+<div class='highlight'><pre><code class='javascript'>    <span class='kd'>var</span> <span class='nx'>sound</span> <span class='o'>=</span> <span class='nx'>loader</span><span class='p'>.</span><span class='nx'>getSound</span><span class='p'>(</span><span class='s2'>&quot;start-sound&quot;</span><span class='p'>);</span>
+</code></pre></div>
+<p>You can now start, pause, resume, and play the sound in a loop.</p>
+<hr />
+</div>
+
+<footer class="footer">
+    Footer here
+</footer>
+
+</body>
+</html>

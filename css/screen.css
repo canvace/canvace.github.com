@@ -1,0 +1,29 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: "Titillium Web", sans-serif;
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.header,
+.footer {
+    background-color: black;
+    color: white;
+}
+
+div.contents {
+    margin: auto;
+    padding: 1em 0;
+    width: 960px;
+}

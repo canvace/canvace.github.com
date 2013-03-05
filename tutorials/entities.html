@@ -2,20 +2,30 @@
 <html>
 <head>
 	<title>Canvace</title>
-	<link rel="stylesheet" type="text/css" href="Style.css"/>
-	<link rel="stylesheet" type="text/css" href="pygments.css" />
+	<link href="http://fonts.googleapis.com/css?family=Titillium+Web:300" rel="stylesheet" type="text/css">
+	<link href="/css/screen.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="/pygments.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-	<a href="https://github.com/canvace"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
+
+<header class="header">
+    Header here
+</header>
+
+<a href="https://github.com/canvace"><img style="position: fixed; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
+
+<div class="contents">
 <h1 id='entities'>Entities</h1>
 
-<p>Entities are the dynamic components of your game. Typically all the characters in the game are represented as entities. After creating an entity in the development environment, we can retrieve it from the stage it was created into with the getEntity() function, which returns an object of type Canvace.Stage.Entity.</p>
+<p>Entities are the dynamic components of your game. Typically all the characters in the game are represented as entities. After creating an entity in the development environment, we can retrieve it from the stage it was created into with the <code>getEntity()</code> function, which returns an object of type <code>Canvace.Stage.Entity</code>.</p>
 
 <h2 id='entities_vs_instances'>Entities vs. instances</h2>
 
-<p>Entities are just an abstract description of the component. You may see that the Entity class only stores a quite generic set of information: for example, you may get the coordinates and span of the bounding box assigned to the entity. Bounding boxes are used by Canvace to easily detect collisions among entities with a great variety of different shapes and sizes. As you can see, entities are filtered in the stage by their properties: for this reason, in the development environment we added a custom property &#8220;name&#8221; to all the entities, with a unique value assigned to.</p>
+<p>Entities are just an abstract description of the component. You may see that the <code>Canvace.Stage.Entity</code> class only stores a quite generic set of properties: for example, you may get the coordinates and span of the bounding box assigned to the entity. Bounding boxes are used by Canvace to easily detect collisions among entities with a great variety of different shapes and sizes.</p>
 
-<p>In order to operate on the entity inside the game (e.g moving it around) you need to create tangible instances of that entity. A first instance always exists by default: it can be obtained from the Canvace.Stage object, calling the getInstance() method. Other instances can be created and placed on the map with the createInstance() method of Stage.Entity.</p>
+<p>In order to actually work on the entity inside the game (e.g moving it around) you need to create tangible instances of that entity. A first instance always exists by default: it can be obtained from the <code>Canvace.Stage</code> object, calling the <code>getInstance()</code> method. Other instances can be created and placed on the map with the <code>createInstance()</code> method of <code>Stage.Entity</code>.</p>
+
+<p>Note that entities are filtered in the stage by their custom properties: for this reason, in the development environment we added a custom property &#8220;name&#8221; to all the entities, with a unique value assigned to it.</p>
 
 <p>All instances (even when the physics isn&#8217;t enabled for the correspondent entity) may evolve, during the progress of the game, according to the physics rules implemented by Canvace. More specifically, each entity stores the following physics-related properties:</p>
 
@@ -26,26 +36,38 @@
 
 <li>uniform velocity</li>
 
-<li>acceleration These properties are vectors in a 3-dimension space. By modifying these vectors it is possible to move the instance around the map: at each rendering loop, the entity&#8217;s physics state is changed according to the vectors, and then the actual position of the instance is updated. You don&#8217;t need to control this process manually: the Pathfinding chapter of this tutorial explains how you can use interpolated animations to let Canvace do the job for you.</li>
+<li>acceleration These properties are vectors in a 3-dimensional space. By modifying these vectors it is possible to move the instance around the map: at each rendering loop, the entity&#8217;s physics state is changed according to the vectors, and then the actual position of the instance is updated. You don&#8217;t need to control this process manually: the pathfinding chapter of this tutorial explains how you can use interpolated animations to let Canvace do the job for you.</li>
 </ul>
 
 <h2 id='collisions'>Collisions</h2>
 
 <p>Canvace is equipped with features for testing and reacting to collisions. An entity may collide with other entities or with tiles.</p>
+<div class='highlight'><pre><code class='javascript'>    <span class='k'>if</span> <span class='p'>(</span><span class='nx'>enemy1</span><span class='p'>.</span><span class='nx'>collidesWithInstance</span><span class='p'>(</span><span class='nx'>enemy2</span><span class='p'>))</span> <span class='p'>{</span>
+        <span class='nx'>enemy1</span><span class='p'>.</span><span class='nx'>collision</span><span class='p'>(</span><span class='nx'>enemy2</span><span class='p'>);</span>
+    <span class='p'>}</span>
+</code></pre></div>
+<p>Here, for example, after we moved all the characters by one step in their current paths, we check whether two instances of enemies, enemy1 and enemy2, are colliding. The <code>collidesWithInstance()</code> method performs this test, while <code>collision()</code> tries to restore non-colliding configurations for both. Usually this means the instances briefly move away from each other until a safety condition is met. Collisions with tiles work in a similar way: <code>collidesWithTiles()</code> needs the <code>Canvace.TileMap.Tile</code> object retrieved from the stage&#8217;s tilemap.</p>
 
-<pre><code>var protInst = protagonist.character;
-for (var i = 0; i &lt; enemies.length; ++i) {
-    var enemy1 = enemies[i].character;
-    ...
+<h2 id='replacing_and_removing_entities'>Replacing and removing entities</h2>
 
-    if (protInst.collidesWithInstance(enemy1)) {
-        protagonist.loseLife();
-    }
-}</code></pre>
+<p>Once an entity instance has been instantiated, it is possible to change its external appearance by replacing it with an instance of another entity who had a different frame associated to it. This second entity, of course, must have been created and exported from the editor as usual.</p>
 
-<p>Here, for example, we decrement the &#8220;life count&#8221; of the main character of the game when it collides with one of the enemies. The collidesWithInstance() method, after testing if a collision is taking place, performs additional operations aimed at restoring a configuration without collisions. If you wish to perform collision testing and recovery separately, first call testCollision(), and then collision(). Collisions with tiles work in a similar way: collidesWithTiles() only needs the Canvace.TileMap.Tile object retrieved from the stage&#8217;s tilemap.</p>
-
-<p>(Explain rectangleCollision too?) (replacing/removing entities?).</p>
+<p>In the game, for example, we replace the instance of the main character when it collides with a donut (represented by another instance). First, we retrieve the second entity from the stage using the custom property &#8220;name&#8221; as filter:</p>
+<div class='highlight'><pre><code class='javascript'>    <span class='kd'>var</span> <span class='nx'>immortalMan</span> <span class='o'>=</span> <span class='nx'>stage</span><span class='p'>.</span><span class='nx'>getEntity</span><span class='p'>({</span> <span class='nx'>name</span><span class='o'>:</span> <span class='s2'>&quot;Stealth&quot;</span> <span class='p'>});</span>
+</code></pre></div>
+<p>As soon as we detect the collision, the following line performs the replacement:</p>
+<div class='highlight'><pre><code class='javascript'>    <span class='nx'>protagonist</span><span class='p'>.</span><span class='nx'>instance</span> <span class='o'>=</span> <span class='nx'>protagonist</span><span class='p'>.</span><span class='nx'>instance</span><span class='p'>.</span><span class='nx'>replaceWith</span><span class='p'>(</span><span class='nx'>immortalMan</span><span class='p'>);</span>
+</code></pre></div>
+<p>Note that once the replacement took place, the new instance is immediately created and returned, while the old instance isn&#8217;t valid anymore, and should be discarded (here, we simply overwrite it with the new one). The new instance also shares all the physics-related information of the old one, i.e. the position, velocity and acceleration vectors. Thus, if the old instance was following a path, the new one will continue to do so. It&#8217;s also possible to completely remove an entity&#8217;s instance from the stage. After the character has been replaced as above, the donut is removed from the map:</p>
+<div class='highlight'><pre><code class='javascript'>    <span class='nx'>donut</span><span class='p'>.</span><span class='nx'>remove</span><span class='p'>();</span>
+</code></pre></div>
+<p>After that call, the instance won&#8217;t be rendered anymore.</p>
 <hr />
+</div>
+
+<footer class="footer">
+    Footer here
+</footer>
+
 </body>
 </html>
