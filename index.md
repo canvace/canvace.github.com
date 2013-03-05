@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Canvace
+no_disqus: true
 ---
 Canvace
 =======
@@ -27,4 +28,4 @@ Current Canvace features:
 *	Debug facilities
 *	Free and Open Source
 
-Don't settle for less than this. [Get started now](tutorials/tutorial.html).
+Don't settle for less than this. [Get started now](tutorials/index.html).
