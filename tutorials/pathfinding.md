@@ -50,8 +50,7 @@ When no path exists, `findPath()` returns NULL. Otherwise, it returns an array o
 The actual movement from one tile to the next is performed as an interpolated animation. Such animations may influence the entity's position, velocity and acceleration vectors. After changing the vectors, the entity position must be updated: this is done automatically by Canvace only if the entity's physics is enabled. Otherwise, you must manually call the `update()` method for the affected instance.
 
 In the above snippet, each invokation to `interpolationStep()` starts an animation which moves the entity instance from the current position to the next tile of the path. You can specify the duration in milliseconds of the animation with the third parameter, controlling the speed of your entity.
-The `interpolatePosition()` method performs a linear interpolation between the two consecutive positions: the effect is that the entity will move from the current
-position to the destination at constant speed. It is however possible to specify a more complex pattern of movement: this is done by setting the `easing` property of the last parameter. The `Canvace.Animator.Easing` class provides a set of pre-defined easing methods; alternatively, you can define and pass your own function.
+The motion performed by `interpolatePosition()` to the specified destination takes place, by default, at constant speed. It is however possible to specify a more complex pattern of movement: this is done by setting the `easing` property of the last parameter. The `Canvace.Animator.Easing` class provides a set of pre-defined easing methods; alternatively, you can define and pass your own function.
 
 Although this code snippet doesn't show it, additional code prevents an interpolation step from being started before the previous one has finished: overlapping more
 animations on the same entity instance easily causes errors, and the resulting path may be different from the one computed by A\*.
