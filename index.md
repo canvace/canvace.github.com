@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Canvace
+no_disqus: true
 ---
 Canvace
 =======
