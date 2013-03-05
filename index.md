@@ -18,10 +18,9 @@ Current Canvace features:
 *	Asynchronous asset loading with progress feedback
 *	Scene graph management
 *	Animations with configurable transition functions
-*	Fully functional, fast, simple default AABB physics  
+*	Fast, fully functional motion physics with simple AABB collisions  
 	&rarr;	Otherwise it works fine with box2d.js
 *	Sound support
-*	Vector graphics support
 *	Mobile detection
 *	Input APIs, including touch devices
 *	`requestAnimationFrame`-based render loop implementation
