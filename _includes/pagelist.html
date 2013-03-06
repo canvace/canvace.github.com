@@ -1,0 +1,18 @@
+{% comment %}
+	This Liquid script must be included in all the tutorial pages.
+	It displays an ordered list of all the tutorial pages.
+{% endcomment %}
+
+<ol>
+	{% sorted_for canvace_page in site.pages sort_by:index %}
+		{% if canvace_page.category == "tutorial" %}
+			<li>
+				{% if canvace_page.url == page.url %}
+					{{ canvace_page.title }}
+				{% else %}
+					<a href="{{ canvace_page.url }}">{{ canvace_page.title }}</a>
+				{% endif %}
+			</li>
+		{% endif %}
+	{% endsorted_for %}
+</ol>
