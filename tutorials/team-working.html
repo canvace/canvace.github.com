@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Canvace &bull; Teamworking</title>
+
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+	<link href="http://fonts.googleapis.com/css?family=Titillium+Web:300" rel="stylesheet" type="text/css">
+	<link href="/css/screen.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="/css/mobile.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="/css/pygments.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/favicon.ico" rel="icon" type="image/vnd.microsoft.icon" />
+</head>
+<body>
+
+<div class="header">
+	<div class="inner">
+		<a class="logo" href="/"><img src="/media/logo.png" alt="Canvace" /></a>
+		<ul class="menu">
+			<li><a href="/games/index.html">Games</a></li>
+			<li><a href="/tutorials/index.html">Docs</a></li>
+			<li><a href="http://api.canvace.com/">API</a></li>
+		</ul>
+	</div>
+</div>
+
+<a href="https://github.com/canvace"><img style="position: fixed; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
+
+<div class="contents">
+<h1 id='teamworking_with_darblast'>Teamworking with Darblast</h1>
+
+<h2 id='giving_access_to_external_clients'>Giving access to external clients</h2>
+
+<p>The Canvace game editor runs on a Node.js server which is able to work across a network. As such, it enables you to work cooperatively, as a team, on the same game project.</p>
+
+<p>By default, nobody can access the game editor and data on your server. Each developer must be authorized by creating a username in Canvace. Users are managed from the Canvace&#8217;s command line.</p>
+
+<pre><code>$ canvace setuser &lt;username&gt; &lt;password&gt;</code></pre>
+
+<p>This creates a new user with the associated name and password, or changes the password if the username already exists.</p>
+
+<pre><code>$ canvace removeuser &lt;username&gt;
+$ canvace clearusers</code></pre>
+
+<p>The former command removes an user, while the latter deletes all existing users.</p>
+
+<p>You are also given the ability to configure the port number on which the Canvace HTTP server will listen:</p>
+
+<pre><code>$ canvace config port &lt;port&gt;</code></pre>
+
+<p>The default port number is 80. Remember that if you are running Canvace on Windows, you may need to replace <code>canvace</code> with <code>canvace.cmd</code> in all the above commands.</p>
+
+<h2 id='editing_the_game'>Editing the game</h2>
+
+<p>Each game project contains:</p>
+
+<ul>
+<li>images</li>
+
+<li>tiles</li>
+
+<li>entities</li>
+
+<li>stages</li>
+</ul>
+
+<p>All the stages in a project share images, tiles and entities; they also share the projection matrix. We refer to these as &#8220;project resources&#8221;. In addition to this, a game stage contains some &#8220;stage resources&#8221; which aren&#8217;t shared with the other stages in the project: namely, the map and the instances of both tiles and entities.</p>
+
+<p>There is a substantial difference between project and stage resources. If you work on project resources, all changes are immediately visible to all the clients working on the project. This includes, but is not limited to, adding an image, changing the frame associated to a tile, adding labels, etc&#8230;. This happens right after the component blur has taken place: an AJAX request causes the broadcast of the changes to all the clients involved in the development session.</p>
+
+<p>On the other hand, changes on stage resources must be explicitly saved in the editor before they become visible by other clients. Until saving, the new changes are simply cached locally. This avoids having to broadcast a huge number of requests during all the development process, since game maps are usually updated at a quick rate.</p>
+
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'canvace';
+
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div>
+
+<div class="footer">
+	<div class="inner">
+		<div>
+			Canvace Srl - Via Luigi Casale, 7 - 05100 Terni (Italia) - VAT/P. IVA 01485160558
+			&nbsp;
+			<a href="https://www.iubenda.com/privacy-policy/863492" class="iubenda-black iubenda-embed" title="Privacy Policy">Privacy Policy</a>
+		</div>
+		<script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+		<div>
+			<a href="http://enlabs.it/" target="_blank"><img src="/media/enlabs.png" alt="Powered by EnLabs" /></a>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

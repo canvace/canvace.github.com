@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Canvace &bull; Sound effects</title>
+
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+	<link href="http://fonts.googleapis.com/css?family=Titillium+Web:300" rel="stylesheet" type="text/css">
+	<link href="/css/screen.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="/css/mobile.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="/css/pygments.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/favicon.ico" rel="icon" type="image/vnd.microsoft.icon" />
+</head>
+<body>
+
+<div class="header">
+	<div class="inner">
+		<a class="logo" href="/"><img src="/media/logo.png" alt="Canvace" /></a>
+		<ul class="menu">
+			<li><a href="/games/index.html">Games</a></li>
+			<li><a href="/tutorials/index.html">Docs</a></li>
+			<li><a href="http://api.canvace.com/">API</a></li>
+		</ul>
+	</div>
+</div>
+
+<a href="https://github.com/canvace"><img style="position: fixed; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
+
+<div class="contents">
+<ol>
+	
+		
+	
+		
+	
+		
+			<li>
+				
+					<a href='/tutorials/index.html'>Introduction and installation</a>
+				
+			</li>
+		
+	
+		
+			<li>
+				
+					<a href='/tutorials/editor.html'>Development environment</a>
+				
+			</li>
+		
+	
+		
+			<li>
+				
+					<a href='/tutorials/init.html'>Rendering a stage in the canvas</a>
+				
+			</li>
+		
+	
+		
+			<li>
+				
+					<a href='/tutorials/entities.html'>Entities and collisions</a>
+				
+			</li>
+		
+	
+		
+			<li>
+				
+					<a href='/tutorials/pathfinding.html'>Pathfinding and animations</a>
+				
+			</li>
+		
+	
+		
+			<li>
+				
+					<a href='/tutorials/input-view.html'>Input events and stage's view</a>
+				
+			</li>
+		
+	
+		
+			<li>
+				
+					<a href='/tutorials/effects.html'>Special effects</a>
+				
+			</li>
+		
+	
+		
+			<li>
+				
+					<a href='/tutorials/state-machine.html'>State machines</a>
+				
+			</li>
+		
+	
+		
+			<li>
+				
+					Sound effects
+				
+			</li>
+		
+	
+		
+			<li>
+				
+					<a href='/tutorials/http-compression.html'>Enabling HTTP compression</a>
+				
+			</li>
+		
+	
+		
+			<li>
+				
+					<a href='/tutorials/team-working.html'>Teamworking</a>
+				
+			</li>
+		
+	
+</ol>
+<h1 id='sounds'>Sounds</h1>
+
+<p>In this chapter we explain how to load and play audio resources in Canvace. All audio resources you use in the game must be first loaded from the &#8220;media&#8221; directory.</p>
+<div class='highlight'><pre><code class='javascript'>    <span class='kd'>var</span> <span class='nx'>loader</span> <span class='o'>=</span> <span class='k'>new</span> <span class='nx'>Canvace</span><span class='p'>.</span><span class='nx'>Loader</span><span class='p'>(...);</span>
+    <span class='nx'>loader</span><span class='p'>.</span><span class='nx'>loadAssets</span><span class='p'>(</span><span class='nx'>data</span><span class='p'>,</span> <span class='nx'>soundResources</span><span class='p'>);</span>
+</code></pre></div>
+<p>The <code>soundResources</code> variable is a map from sound names to one or more source descriptors. This is an optional parameter: if you don&#8217;t need any sound in your game, simply ignore it.</p>
+<div class='highlight'><pre><code class='javascript'>    <span class='kd'>var</span> <span class='nx'>soundResources</span> <span class='o'>=</span> <span class='p'>{</span>
+        <span class='s2'>&quot;start-sound&quot;</span> <span class='o'>:</span> <span class='p'>[</span> <span class='s2'>&quot;init.mp3&quot;</span><span class='p'>,</span> <span class='s2'>&quot;init.ogg&quot;</span> <span class='p'>]</span>
+    <span class='p'>}</span>
+</code></pre></div>
+<p>As you can see, it is possible to associate more audio files to the same sound name: this is because not all browsers support the same audio formats. Here, for example, we load a MP3 and a OGG file for the same sound, and we associate them both to the same name, <code>start-sound</code>. Internally, Canvace will try to discover which formats your browser is able to reproduce, and selects the first supported resource, if one is present.</p>
+
+<p>Once the loading process is complete, you can play a sound using the loader itself:</p>
+<div class='highlight'><pre><code class='javascript'>    <span class='nx'>loader</span><span class='p'>.</span><span class='nx'>playSound</span><span class='p'>(</span><span class='s2'>&quot;start-sound&quot;</span><span class='p'>);</span>
+</code></pre></div>
+<p>This immediately reproduces the specified sound once (in the game, <code>start-sound</code> is played when the game starts): if you pass <code>true</code> as the second parameter, the sound will be reproduced in loop.</p>
+
+<p>For more complex sound effects, you can obtain the <code>Canvace.Audio.SourceNode</code> object associated with each of your audio resources:</p>
+<div class='highlight'><pre><code class='javascript'>    <span class='kd'>var</span> <span class='nx'>sound</span> <span class='o'>=</span> <span class='nx'>loader</span><span class='p'>.</span><span class='nx'>getSound</span><span class='p'>(</span><span class='s2'>&quot;start-sound&quot;</span><span class='p'>);</span>
+</code></pre></div>
+<p>You can now start, pause, resume, and play the sound in a loop.</p>
+<hr />
+
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'canvace';
+
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div>
+
+<div class="footer">
+	<div class="inner">
+		<div>
+			Canvace Srl - Via Luigi Casale, 7 - 05100 Terni (Italia) - VAT/P. IVA 01485160558
+			&nbsp;
+			<a href="https://www.iubenda.com/privacy-policy/863492" class="iubenda-black iubenda-embed" title="Privacy Policy">Privacy Policy</a>
+		</div>
+		<script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+		<div>
+			<a href="http://enlabs.it/" target="_blank"><img src="/media/enlabs.png" alt="Powered by EnLabs" /></a>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

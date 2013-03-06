@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Canvace &bull; Input events and stage's view</title>
+
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+	<link href="http://fonts.googleapis.com/css?family=Titillium+Web:300" rel="stylesheet" type="text/css">
+	<link href="/css/screen.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="/css/mobile.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="/css/pygments.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/favicon.ico" rel="icon" type="image/vnd.microsoft.icon" />
+</head>
+<body>
+
+<div class="header">
+	<div class="inner">
+		<a class="logo" href="/"><img src="/media/logo.png" alt="Canvace" /></a>
+		<ul class="menu">
+			<li><a href="/games/index.html">Games</a></li>
+			<li><a href="/tutorials/index.html">Docs</a></li>
+			<li><a href="http://api.canvace.com/">API</a></li>
+		</ul>
+	</div>
+</div>
+
+<a href="https://github.com/canvace"><img style="position: fixed; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
+
+<div class="contents">
+<ol>
+	
+		
+	
+		
+	
+		
+			<li>
+				
+					<a href='/tutorials/index.html'>Introduction and installation</a>
+				
+			</li>
+		
+	
+		
+			<li>
+				
+					<a href='/tutorials/editor.html'>Development environment</a>
+				
+			</li>
+		
+	
+		
+			<li>
+				
+					<a href='/tutorials/init.html'>Rendering a stage in the canvas</a>
+				
+			</li>
+		
+	
+		
+			<li>
+				
+					<a href='/tutorials/entities.html'>Entities and collisions</a>
+				
+			</li>
+		
+	
+		
+			<li>
+				
+					<a href='/tutorials/pathfinding.html'>Pathfinding and animations</a>
+				
+			</li>
+		
+	
+		
+			<li>
+				
+					Input events and stage's view
+				
+			</li>
+		
+	
+		
+			<li>
+				
+					<a href='/tutorials/effects.html'>Special effects</a>
+				
+			</li>
+		
+	
+		
+			<li>
+				
+					<a href='/tutorials/state-machine.html'>State machines</a>
+				
+			</li>
+		
+	
+		
+			<li>
+				
+					<a href='/tutorials/sound.html'>Sound effects</a>
+				
+			</li>
+		
+	
+		
+			<li>
+				
+					<a href='/tutorials/http-compression.html'>Enabling HTTP compression</a>
+				
+			</li>
+		
+	
+		
+			<li>
+				
+					<a href='/tutorials/team-working.html'>Teamworking</a>
+				
+			</li>
+		
+	
+</ol>
+<h1 id='input_events'>Input events</h1>
+
+<p>A crucial component of any game is user interaction. In this chapter, we will present the classes provided by Canvace for reacting to mouse and keyboard events.</p>
+
+<h2 id='mouse_events'>Mouse events</h2>
+
+<p>In order to register handlers for mouse events, first a <code>Canvace.Mouse</code> object must be created:</p>
+<div class='highlight'><pre><code class='javascript'>    <span class='kd'>var</span> <span class='nx'>mouse</span> <span class='o'>=</span> <span class='k'>new</span> <span class='nx'>Canvace</span><span class='p'>.</span><span class='nx'>Mouse</span><span class='p'>(</span><span class='nx'>canvas</span><span class='p'>);</span>
+</code></pre></div>
+<p>the first and only parameter specifies the canvas object for which the object will capture the mouse events. You can now implement and set some callback functions, and react to a variety of mouse events. An example is shown below:</p>
+<div class='highlight'><pre><code class='javascript'>    <span class='nx'>mouse</span><span class='p'>.</span><span class='nx'>onDown</span><span class='p'>(</span> <span class='kd'>function</span><span class='p'>(</span><span class='nx'>x</span><span class='p'>,</span> <span class='nx'>y</span><span class='p'>,</span> <span class='nx'>button</span><span class='p'>)</span> <span class='p'>{</span>
+        <span class='kd'>var</span> <span class='nx'>destination</span> <span class='o'>=</span> <span class='nx'>stage</span><span class='p'>.</span><span class='nx'>getView</span><span class='p'>().</span><span class='nx'>getCell</span><span class='p'>(</span><span class='nx'>x</span><span class='p'>,</span> <span class='nx'>y</span><span class='p'>,</span> <span class='nx'>layer</span><span class='p'>);</span>
+        <span class='kd'>var</span> <span class='nx'>tileID</span> <span class='o'>=</span> <span class='nx'>map</span><span class='p'>.</span><span class='nx'>getAt</span><span class='p'>(</span><span class='nx'>destination</span><span class='p'>.</span><span class='nx'>i</span><span class='p'>,</span> <span class='nx'>destination</span><span class='p'>.</span><span class='nx'>j</span><span class='p'>,</span> <span class='nx'>destination</span><span class='p'>.</span><span class='nx'>k</span><span class='p'>);</span>
+        <span class='kd'>var</span> <span class='nx'>tile</span> <span class='o'>=</span> <span class='nx'>map</span><span class='p'>.</span><span class='nx'>getTile</span><span class='p'>(</span><span class='nx'>tileID</span><span class='p'>);</span>
+        <span class='p'>[...]</span>
+    <span class='p'>});</span>
+</code></pre></div>
+<p>The function is called whenever the user left-clicks inside the canvas. The x and y parameters identify the point clicked by the user, in canvas coordinates, while button is an identifier for the particular mouse button being pressed (0 = left button, 1 = middle, if present, 2 = right button). The function body shows how we can retrieve which tile has been clicked. The canvas coordinates are translated into (i, j, k) coordinates of the tile map with the <code>getCell()</code> method of the <code>Stage.View</code> class. It is then easy to retrieve the tile object itself from the map. Continue on the last chapter of this page for a more detailed explanation of <code>Stage.View</code>&#8217;s features.</p>
+
+<p>Next, the tile map tells us which tile corresponds to the i, j and k coordinates. Although not showed in the snippet, the <code>TileMap</code> associated to a stage is obtained by the <code>Canvace.Stage</code> class itself, calling <code>getTileMap()</code>.</p>
+
+<p>The API documentation for the <code>Canvace.Mouse</code> class lists all the mouse events you can receive. If you wish to disconnect an event handler, save the return value of the method you used to register it (e.g. <code>onDown</code> on the example above): it contains a function which unregisters the handler.</p>
+
+<h2 id='keyboard_events'>Keyboard events</h2>
+
+<p>Likewise, the <code>Canvace.Keyboard</code> class provides you access to keyboard events. Key codes in Canvace can be specified using the DOM_VK_XXX codes, listed <a href='https://developer.mozilla.org/en-US/docs/DOM/KeyboardEvent' title='KeyBoardEvent'>here</a>: they are automatically normalized across browsers by Canvace.</p>
+
+<p>In the game, we react to the pressing of the space bar by toggling on and off the debug effect.</p>
+<div class='highlight'><pre><code class='javascript'>    <span class='kd'>var</span> <span class='nx'>keyboard</span> <span class='o'>=</span> <span class='k'>new</span> <span class='nx'>Canvace</span><span class='p'>.</span><span class='nx'>Keyboard</span><span class='p'>(</span><span class='nb'>window</span><span class='p'>);</span>
+    <span class='kd'>var</span> <span class='nx'>debugStatus</span> <span class='o'>=</span> <span class='kc'>false</span><span class='p'>;</span>
+
+    <span class='nx'>keyboard</span><span class='p'>.</span><span class='nx'>onKeyDown</span><span class='p'>(</span><span class='nx'>KeyEvent</span><span class='p'>.</span><span class='nx'>DOM_VK_SPACE</span><span class='p'>,</span> <span class='kd'>function</span><span class='p'>(</span><span class='nx'>code</span><span class='p'>)</span> <span class='p'>{</span>
+        <span class='nx'>debugStatus</span> <span class='o'>=</span> <span class='o'>!</span><span class='nx'>debugStatus</span><span class='p'>;</span>
+        <span class='nx'>debug</span><span class='p'>.</span><span class='nx'>toggle</span><span class='p'>(</span><span class='nx'>debugStatus</span><span class='p'>);</span>
+    <span class='p'>});</span>
+</code></pre></div>
+<p>Note that, at line 1, <code>Canvace.Keyboard</code> is initialized with the global window object, and not just for the canvas. The <code>debug</code> variable contains the <code>DebugEffect</code>, already added to the stage renderer, but disabled. Pressing the space key alternatively turns it on and off. The handler also receives the key code, which is unused here.</p>
+
+<p>There are three main keyboard events you can react to:</p>
+
+<ul>
+<li><code>onKeyDown</code>: a key has being pressed.</li>
+
+<li><code>onKeyPress</code>: a key has being pressed. The only difference with <code>onKeyDown</code> is found when a key is being held down for a longer time: the <code>onKeyDown</code> event is fired only once, whereas <code>onKeyPress</code> will be fired repeatedly.</li>
+
+<li><code>onKeyUp</code>: a key has been released.</li>
+</ul>
+
+<h1 id='stage_view'>Stage view</h1>
+
+<p>The <code>Stage.View</code> class helps in managing the rendering viewport and the projection of the stage on the canvas. This class is seldom instantiated directly: the view associated to your current stage is retrieved with <code>stage.getView()</code>.</p>
+
+<h2 id='dragging_the_view'>Dragging the view</h2>
+
+<p>If your stage is bigger than the canvas it is rendered in, it is possible to drag around the view, and show different portions of the level.</p>
+<div class='highlight'><pre><code class='javascript'>    <span class='nx'>mouse</span><span class='p'>.</span><span class='nx'>onDrag</span><span class='p'>(</span><span class='kd'>function</span> <span class='p'>(</span><span class='nx'>x0</span><span class='p'>,</span> <span class='nx'>y0</span><span class='p'>,</span> <span class='nx'>x</span><span class='p'>,</span> <span class='nx'>y</span><span class='p'>,</span> <span class='nx'>button</span><span class='p'>)</span> <span class='p'>{</span>
+        <span class='k'>if</span> <span class='p'>(</span><span class='nx'>button</span> <span class='o'>===</span> <span class='mi'>2</span><span class='p'>)</span> <span class='p'>{</span>
+            <span class='nx'>stage</span><span class='p'>.</span><span class='nx'>getView</span><span class='p'>().</span><span class='nx'>drag</span><span class='p'>(</span><span class='nx'>x</span> <span class='o'>-</span> <span class='nx'>x0</span><span class='p'>,</span> <span class='nx'>y</span> <span class='o'>-</span> <span class='nx'>y0</span><span class='p'>);</span>
+        <span class='p'>}</span>
+    <span class='p'>});</span>
+</code></pre></div>
+<p>Here we make the view follow the mouse pointer as it is being dragged around. The callback for <code>onDrag</code> takes five parameters: the position where the drag started and the one where the drag ends, both in canvas coordinates, and an identifier of the mouse button. The <code>drag()</code> method of <code>Stage.View</code> displaces the origin of the view, initially placed at the top-left corner of the canvas, by the given x and y offsets. In order to move the view to an absolute position (again in canvas coordinates) use <code>dragTo()</code>.</p>
+
+<h2 id='projecting_and_unprojecting'>Projecting and unprojecting</h2>
+
+<p><code>Stage.View</code> also provides methods for transforming from canvas coordinates (x, y, z) into map coordinates (i, j, k), and vice versa.</p>
+
+<ul>
+<li><code>project</code>: goes from map coordinates to canvas ones, using the defined projection matrix.</li>
+
+<li><code>projectElement</code>: quite similar to <code>project()</code>, it makes this conversion for a given game element (tile or entity), thus adding its offsets to the computed coordinates. It doesn&#8217;t take into account the changes on the view&#8217;s origin position due to dragging;</li>
+
+<li><code>unproject</code>: performs the inverse transformation at the specified layer: takes x, y and k, and returns i, j and k. Unlike the <code>getCell()</code> method mentioned above, which works only for tiles, it works for any point of the canvas.</li>
+</ul>
+<hr />
+
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'canvace';
+
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div>
+
+<div class="footer">
+	<div class="inner">
+		<div>
+			Canvace Srl - Via Luigi Casale, 7 - 05100 Terni (Italia) - VAT/P. IVA 01485160558
+			&nbsp;
+			<a href="https://www.iubenda.com/privacy-policy/863492" class="iubenda-black iubenda-embed" title="Privacy Policy">Privacy Policy</a>
+		</div>
+		<script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+		<div>
+			<a href="http://enlabs.it/" target="_blank"><img src="/media/enlabs.png" alt="Powered by EnLabs" /></a>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
