@@ -46,7 +46,7 @@ With this object we can compress a file:
 
     inp.pipe(gzip).pipe(out);
 ```
-    
+
 Here gzip is used, but also `createDeflate()` and `createDeflateRaw()` are available. Decompression objects can be created with similar methods, for instance `createGunzip()`. For compression and decompression of generic data, the `zlib` object provides methods like `deflate()`, `inflate()`, `gzip()`, etc... all requiring the input buffer as parameter.
 
 ## nginx
