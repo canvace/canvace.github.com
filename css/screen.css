@@ -98,6 +98,26 @@ a:hover {
 	padding: 56px 0;
 }
 
+.showcase {
+	padding: 0;
+}
+
+.showcase li {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	list-style: none;
+}
+
+.showcase li a {
+	font-size: large;
+	text-decoration: none;
+}
+
+.showcase li a img:hover {
+	box-shadow: 0 0 6px black;
+}
+
 .iubenda-ibadge {
 	vertical-align: middle;
 }
