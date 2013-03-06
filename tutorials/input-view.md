@@ -6,6 +6,8 @@ title: Input events and stage's view
 index: 6
 ---
 
+{% include pagelist.html %}
+
 # Input events
 A crucial component of any game is user interaction. In this chapter, we will present the classes provided by Canvace for reacting to mouse and keyboard events.
 
