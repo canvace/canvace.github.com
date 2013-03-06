@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+{% if page.title %}
+	<title>Canvace &bull; {{ page.title }}</title>
+{% else %}
 	<title>Canvace</title>
+{% endif %}
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
 	<link href="http://fonts.googleapis.com/css?family=Titillium+Web:300" rel="stylesheet" type="text/css">
 	<link href="/css/screen.css" rel="stylesheet" type="text/css" media="screen" />
