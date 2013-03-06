@@ -5,25 +5,23 @@ layout: default
 # HTTP compression
 HTTP compression is a feature typically built into web servers and clients in order to provide better transmission performances. The HTTP data content is compressed before being sent in a format supported by the client. Nowadays, most web servers support HTTP compression, either natively or with some external module. Compression can be quite useful for Canvace, since complex stages may require the transfer of a great amount of data.
 
-In this chapter, we summarize how compression facilities may be configured in the most common webservers: complete guides can be found in the official documentation of each server.
+In this chapter, we summarize how compression facilities can be configured in the most common webservers: complete guides can be found in the official documentation of each product.
 
 ## Apache
-Apache provides the HTTP compression via the `mod_deflate` module; this module works by installing a DEFLATE filter which compresses the output content before sending it to the client.
+Apache provides the HTTP compression via the `mod_deflate` module; this module will install a DEFLATE filter which compresses the output content before sending it to the client.
 
 First, you need to load the module. Open your httpd.conf and decomment (or add) the line:
 
-    LoadModule deflate_module modules/mod_deflate.so
+        LoadModule deflate_module modules/mod_deflate.so
 
-For a simple compression support, just two more lines are needed (in no particular section):
+For simple compression support, just two more lines are needed (in no particular section):
 
-    SetOutputFilter DEFLATE
-    DeflateCompressionLevel 3
+        SetOutputFilter DEFLATE
+        DeflateCompressionLevel 3
 
 The compression level goes from 3 to 9: a higher level results in better compression, but more CPU usage. Setting levels higher than 6 almost never results in an significative performance improvement. The output filter is automatically applied to all kinds of data handled by the server: to restrict its application to a selection of file types, use, for example:
 
-    AddOutputFilterByType DEFLATE text/html text/css
-
-Some browsers don't support the compression of all file types: in addition to the directive above, you can also control the behavior of the filter according to the browser who sent the request. This is achieved with the `BrowserMatch` directive.
+        AddOutputFilterByType DEFLATE text/html text/css
 
 ## Node.js
 Compression in Node.js is handled through the `zlib` module, included by default in the latest releases. The module can be accessed with
@@ -54,8 +52,8 @@ basic ones:
     gzip_types       text/plain application/xml;
     gzip_comp_level  3
     
-The first one enables the module. Next we set the minimum length (in bytes) for data to be compressed, and the mimetypes we want to compress, other than text/html, which is by default taken into account. The compression level can go from 1 to 9: a higher level yields a better compression, but worst performances.
-  
+The first one enables the module. Next we set the minimum length (in bytes) for data to be compressed and the mimetypes we want to compress. HTML files are compressed by default, so you don't need to add text/html to the list. The compression level can go from 1 to 9: a higher level yields a better compression, but worst performances.
+
 Nginx, since version 0.6.24, also provides the `HttpGzipStaticModule` for static compression: it will manage pre-compressed versions of files, so that the same files don't get compressed over and over.
 
 ## IIS

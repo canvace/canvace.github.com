@@ -26,7 +26,7 @@ You can now implement and set some callback functions, and react to a variety of
 
 The function is called whenever the user left-clicks inside the canvas. The x and y parameters identify the point clicked by the user, in canvas coordinates, while
 button is an identifier for the particular mouse button being pressed (0 = left button, 1 = middle, if present, 2 = right button).
-The function body shows how we can retrieve which tile has been clicked. First, the canvas coordinates are translated into (i, j, k) coordinates of the tile map with the `getCell()` method of the `Stage.View` class. Read below for a more detailed explanation of `Stage.View`'s features.
+The function body shows how we can retrieve which tile has been clicked. The canvas coordinates are translated into (i, j, k) coordinates of the tile map with the `getCell()` method of the `Stage.View` class. It is then easy to retrieve the tile object itself from the map. Continue on the last chapter of this page for a more detailed explanation of `Stage.View`'s features.
 
 Next, the tile map tells us which tile corresponds to the i, j and k coordinates. Although not showed in the snippet, the `TileMap` associated to a stage is obtained by the `Canvace.Stage` class itself, calling `getTileMap()`.
 

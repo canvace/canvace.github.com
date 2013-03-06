@@ -21,7 +21,7 @@ Canvace requires Node.js: you can download it [here](http://nodejs.org/download/
 
     $ npm install -g canvace
     
-from the command line. Canvace is now ready to use: the development environment is started by executing `canvace`. On Windows, if `canvace` cannot be found it may be necessary to run `canvace.cmd` instead.
+from the command line. Canvace is now ready to use: the development environment is started by executing `canvace`. On Windows, if `canvace` cannot be found or gives errors it may be necessary to run `canvace.cmd` instead. This is because the system automatically treats `canvace` as a JScript executable.
 
 The most recent version of the client library is available at [this link](http://www.canvace.com/download). Download it in the path you're going to develop the game into, and then import canvace.js in your game files as an external Javascript script.
 
