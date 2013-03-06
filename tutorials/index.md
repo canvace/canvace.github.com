@@ -1,6 +1,12 @@
 ---
 layout: default
+
+category: tutorial
+title: Introduction and installation
+index: 1
 ---
+
+{% include pagelist.html %}
 
 # Introduction
 Canvace is a platform designed to help developers creating HTML5-based browser games.

@@ -1,6 +1,12 @@
 ---
 layout: default
+
+category: tutorial
+title: State machines
+index: 7
 ---
+
+{% include pagelist.html %}
 
 # State machines
 The `Canvace.StateMachine` class provides an easy-to-use definition of a deterministic finite automata, or DFA.

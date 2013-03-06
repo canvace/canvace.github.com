@@ -1,6 +1,12 @@
 ---
 layout: default
+
+category: tutorial
+title: Development environment
+index: 2
 ---
+
+{% include pagelist.html %}
 
 # The development environment
 In this chapter, I will explain how to use the game editor provided by Canvace to set up a single level for an isometric game. First, you need to

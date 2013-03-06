@@ -1,6 +1,12 @@
 ---
 layout: default
+
+category: tutorial
+title: Sound effects
+index: 8
 ---
+
+{% include pagelist.html %}
 
 # Sounds
 In this chapter we explain how to load and play audio resources in Canvace.

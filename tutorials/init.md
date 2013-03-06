@@ -1,6 +1,12 @@
 ---
 layout: default
+
+category: tutorial
+title: Rendering a stage in the canvas
+index: 3
 ---
+
+{% include pagelist.html %}
 
 # Displaying a stage in the canvas
 In this chapter, we will see how Canvace displays a game stage into a canvas.

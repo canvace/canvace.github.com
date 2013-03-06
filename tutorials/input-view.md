@@ -1,5 +1,9 @@
 ---
 layout: default
+
+category: tutorial
+title: Input events and stage's view
+index: 6
 ---
 
 # Input events

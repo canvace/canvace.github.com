@@ -1,6 +1,12 @@
 ---
 layout: default
+
+category: tutorial
+title: Pathfinding and animations
+index: 5
 ---
+
+{% include pagelist.html %}
 
 # Pathfinding with Canvace
 This chapter describes how you can use Canvace to move entities efficiently around your map. 

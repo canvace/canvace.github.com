@@ -1,6 +1,12 @@
 ---
 layout: default
+
+category: tutorial
+title: Special effects
+index: 7
 ---
+
+{% include pagelist.html %}
 
 # Canvace effects
 It is possible to "animate" the stage by enabling some special effects. Effects must be first instantiated and configured, and then added to the stage renderer.

@@ -1,6 +1,12 @@
 ---
 layout: default
+
+category: tutorial
+title: Entities and collisions
+index: 4
 ---
+
+{% include pagelist.html %}
 
 # Entities
 Entities are the dynamic components of your game. Typically all the characters in the game are represented as entities.

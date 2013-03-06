@@ -1,6 +1,12 @@
 ---
 layout: default
+
+category: tutorial
+title: Enabling HTTP compression
+index: 9
 ---
+
+{% include pagelist.html %}
 
 # HTTP compression
 HTTP compression is a feature typically built into web servers and clients in order to provide better transmission performances. The HTTP data content is compressed before being sent in a format supported by the client. Nowadays, most web servers support HTTP compression, either natively or with some external module. Compression can be quite useful for Canvace, since complex stages may require the transfer of a great amount of data.
