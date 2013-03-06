@@ -4,7 +4,7 @@
 {% endcomment %}
 
 <ol>
-	{% for canvace_page in site.pages sort_by:index %}
+	{% for canvace_page in site.pages | sort:canvace_page.index %}
 		{% if canvace_page.category == "tutorial" %}
 			<li>
 				{% if canvace_page.url == page.url %}
