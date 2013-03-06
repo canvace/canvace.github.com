@@ -9,6 +9,10 @@ body {
     font-family: "Titillium Web", sans-serif;
 }
 
+img {
+    border: 0;
+}
+
 .header,
 .footer {
     background-color: black;
