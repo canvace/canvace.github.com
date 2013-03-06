@@ -13,18 +13,24 @@ The Canvace game editor runs on a Node.js server which is able to work across a 
 
 By default, nobody can access the game editor and data on your server. Each developer must be authorized by creating a username in Canvace. Users are managed from the Canvace's command line.
 
+{% highlight bash %}
     $ canvace setuser <username> <password>
+{% endhighlight %}
 
 This creates a new user with the associated name and password, or changes the password if the username already exists.
 
+{% highlight bash %}
     $ canvace removeuser <username>
     $ canvace clearusers
+{% endhighlight %}
     
 The former command removes an user, while the latter deletes all existing users.
 
 You are also given the ability to configure the port number on which the Canvace HTTP server will listen:
 
+{% highlight bash %}
     $ canvace config port <port>
+{% endhighlight %}
     
 The default port number is 80. Remember that if you are running Canvace on Windows, you may need to replace `canvace` with `canvace.cmd` in all the above commands.
 

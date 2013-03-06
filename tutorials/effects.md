@@ -11,9 +11,11 @@ index: 7
 # Canvace effects
 It is possible to "animate" the stage by enabling some special effects. Effects must be first instantiated and configured, and then added to the stage renderer.
 
+{% highlight javascript %}
     var renderer = renderLoop.getRenderer();
     var effect = new Canvace.RumbleEffect(100);
     renderer.addEffect(effect);
+{% endhighlight %}
     
 This is an example usage. The `Canvace.StageRenderer` object is obtained from the RenderLoop, initialized and started at the beginning of the game. Note that as soon as the effect is added to the renderer, it is immediately visible at the next rendering iteration. Furthermore, the same effect can be added more than once to the renderer.
 Canvace provides two effects.
@@ -29,10 +31,12 @@ This effect is useful for debugging the game during the development. It may be c
 
 This is how, for example, the debug effect is instantiated in the tutorial game:
 
+{% highlight javascript %}
     var debug = new Canvace.DebugEffect(stage, {
         drawBoundingBoxes: true,
         drawVelocity: true
     });
+{% endhighlight %}
 
 The debug effect doesn't have a fixed duration: once added to the renderer, if not explicitly stopped it is displayed for the entire duration of the stage.
 However, it can be enabled and disabled using the `toggle()` method. In the game, the debug effect is alternatively toggled on and off by pressing the space bar.
