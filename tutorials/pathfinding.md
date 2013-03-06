@@ -37,7 +37,7 @@ When no path exists, `findPath()` returns NULL. Otherwise, it returns an array o
 ```javascript
     this.interpolationStep = function(duration) {
         var nextTile = this.pathTiles.shift();
-        
+
         animator.interpolatePosition(this.instance, {
             i: nextTile.i,
             j: nextTile.j

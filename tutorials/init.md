@@ -38,7 +38,7 @@ Note: the code below is just a snippet from the complete source, which tries to 
             }( document.getElementById("progress")) ),
 
             error: errorReport,
-			
+
             complete: function () {
                 var stage = new Canvace.Stage(data, "#tutorial");
                 [...]
