@@ -32,20 +32,16 @@ The compression level goes from 3 to 9: a higher level results in better compres
 ## Node.js
 Compression in Node.js is handled through the `zlib` module, included by default in the latest releases. The module can be accessed with
 
-```javascript
     var zlib = require('zlib');
-```
 
 With this object we can compress a file:
 
-```javascript
     var gzip = zlib.createGzip();
     var fs = require('fs');
     var inp = fs.createReadStream('input.txt');
     var out = fs.createWriteStream('input.txt.gz');
 
     inp.pipe(gzip).pipe(out);
-```
 
 Here gzip is used, but also `createDeflate()` and `createDeflateRaw()` are available. Decompression objects can be created with similar methods, for instance `createGunzip()`. For compression and decompression of generic data, the `zlib` object provides methods like `deflate()`, `inflate()`, `gzip()`, etc... all requiring the input buffer as parameter.
 

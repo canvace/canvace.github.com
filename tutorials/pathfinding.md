@@ -18,14 +18,12 @@ Moving an entity requires two phases:
 
 Let's first explain how the path computation is implemented:
 
-```javascript
     var instance = stage.getInstance( { name: n } );
     ...
     var currentPos = this.instance.getPosition();
     var map = stage.getTileMap();
     var astarNode = map.getGraphNode(Math.round(currentPos.i), Math.round(currentPos.j), LAYER, destination.i, destination.j);
     this.pathTiles = map.findPath(astarNode);
-```
 
 Line 1 gets the default instance of the interested entity: read the chapter about entities to see why this is necessary.
 
@@ -34,7 +32,6 @@ when they are adjacent in the map. The `findPath()` method of `Canvace.Astar` re
 
 When no path exists, `findPath()` returns NULL. Otherwise, it returns an array of (i, j) pairs, each containing the map coordinates of a non-solid tile. Concatenating all these tiles together in the same order as they appear in the array, we get the computed path (starting tile excluded).
 
-```javascript
     this.interpolationStep = function(duration) {
         var nextTile = this.pathTiles.shift();
 
@@ -51,7 +48,6 @@ When no path exists, `findPath()` returns NULL. Otherwise, it returns an array o
             // we reached the destination node.
         }
     };
-```
 
 The actual movement from one tile to the next is performed as an interpolated animation. Such animations may influence the entity's position, velocity and acceleration vectors. After changing the vectors, the entity position must be updated: this is done automatically by Canvace only if the entity's physics is enabled. Otherwise, you must manually call the `update()` method for the affected instance.
 
