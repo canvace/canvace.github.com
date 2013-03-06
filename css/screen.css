@@ -41,6 +41,12 @@ a:hover {
 	font-size: large;
 }
 
+.footer {
+	padding: 1em 0;
+	color: gray;
+	text-shadow: 0 0 1px black;
+}
+
 .header .logo,
 .header .menu {
 	display: inline-block;
@@ -89,4 +95,8 @@ a:hover {
 
 .contents {
 	padding: 56px 0;
+}
+
+.iubenda-ibadge {
+	vertical-align: middle;
 }
