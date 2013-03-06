@@ -18,7 +18,8 @@ Current Canvace features:
 *	Team development
 *	Asynchronous asset loading with progress feedback
 *	Scene graph management
-*	Animations with configurable transition functions
+*	Frame-by-frame animations
+*	Interpolated animations with configurable transition functions
 *	Fast, fully functional motion physics with simple AABB collisions  
 	&rarr;	Otherwise it works fine with box2d.js
 *	Sound support
