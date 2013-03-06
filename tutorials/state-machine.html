@@ -2,19 +2,21 @@
 <html>
 <head>
 	<title>Canvace</title>
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
 	<link href="http://fonts.googleapis.com/css?family=Titillium+Web:300" rel="stylesheet" type="text/css">
 	<link href="/css/screen.css" rel="stylesheet" type="text/css" media="screen" />
-	<link href="/pygments.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/css/mobile.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="/css/pygments.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="/favicon.ico" rel="icon" type="image/vnd.microsoft.icon" />
 </head>
 <body>
 
 <header class="header">
 	<div class="inner">
-		<a class="logo" href="#"><img src="/media/logo.png" alt="Canvace" /></a>
+		<a class="logo" href="/"><img src="/media/logo.png" alt="Canvace" /></a>
 		<ul class="menu">
-			<li><a href="/">Home</a></li>
-			<li><a href="/tutorials/tutorial.html">Docs</a></li>
+			<li><a href="/games/index.html">Games</a></li>
+			<li><a href="/tutorials/index.html">Docs</a></li>
 			<li><a href="http://api.canvace.com/">API</a></li>
 		</ul>
 	</div>
@@ -23,9 +25,96 @@
 <a href="https://github.com/canvace"><img style="position: fixed; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
 
 <div class="contents">
+<ol>
+	
+		
+	
+		
+	
+		
+			<li>
+				
+					<a href='/tutorials/index.html'>Introduction and installation</a>
+				
+			</li>
+		
+	
+		
+			<li>
+				
+					<a href='/tutorials/editor.html'>Development environment</a>
+				
+			</li>
+		
+	
+		
+			<li>
+				
+					<a href='/tutorials/init.html'>Rendering a stage in the canvas</a>
+				
+			</li>
+		
+	
+		
+			<li>
+				
+					<a href='/tutorials/entities.html'>Entities and collisions</a>
+				
+			</li>
+		
+	
+		
+			<li>
+				
+					<a href='/tutorials/pathfinding.html'>Pathfinding and animations</a>
+				
+			</li>
+		
+	
+		
+			<li>
+				
+					<a href='/tutorials/input-view.html'>Input events and stage's view</a>
+				
+			</li>
+		
+	
+		
+			<li>
+				
+					<a href='/tutorials/effects.html'>Special effects</a>
+				
+			</li>
+		
+	
+		
+			<li>
+				
+					State machines
+				
+			</li>
+		
+	
+		
+			<li>
+				
+					<a href='/tutorials/sound.html'>Sound effects</a>
+				
+			</li>
+		
+	
+		
+			<li>
+				
+					<a href='/tutorials/http-compression.html'>Enabling HTTP compression</a>
+				
+			</li>
+		
+	
+</ol>
 <h1 id='state_machines'>State machines</h1>
 
-<p>The <code>Canvace.StateMachine</code> class provides an easy-to-use definition of a deterministic finite automata, or DFA. In the game, a simple state machine is used to control the reactions to collisions of the main character. We start with a mortal character: whenever it collides with an enemy, a life is lost. The game is stopped when it runs out of lives. The character can become immortal by stepping on the tile which contains a donut: in this new state, it changes appearance, and it cannot be hurt by enemies anymore.</p>
+<p>The <code>Canvace.StateMachine</code> class provides an easy-to-use definition of a deterministic finite automata, or DFA. In the game, a simple state machine is used to control the reactions to collisions of the main character. We start with a mortal character: whenever it collides with an enemy, a life is lost. The game is lost when you run out of lives. However, during the game, the character can become immortal by stepping on the tile which contains the donut: in this new state, it changes appearance, and it cannot be hurt by enemies anymore.</p>
 <div class='highlight'><pre><code class='javascript'>    <span class='nx'>entity</span><span class='p'>.</span><span class='nx'>collisions</span> <span class='o'>=</span> <span class='k'>new</span> <span class='nx'>Canvace</span><span class='p'>.</span><span class='nx'>StateMachine</span><span class='p'>({</span>
         <span class='nx'>mortal</span><span class='o'>:</span> <span class='p'>{</span>
             <span class='nx'>enemyCollides</span><span class='o'>:</span> <span class='kd'>function</span><span class='p'>(</span><span class='nx'>enemy</span><span class='p'>)</span> <span class='p'>{</span> <span class='p'>...</span> <span class='p'>},</span>
@@ -41,18 +130,41 @@
         <span class='p'>}</span>
     <span class='p'>},</span> <span class='s2'>&quot;mortal&quot;</span><span class='p'>);</span>
 </code></pre></div>
-<p>Therefore, this state machine has two states, <code>mortal</code> and <code>immortal</code>, with <code>mortal</code> passed as the initial state in the second parameter. Each state is an object: its properties are the functions defining the available transitions while being in that state. To perform a transition, simply invoke the correspondent function on the DFA.</p>
+<p>The <code>collisions</code> state machine has two states, <code>mortal</code> and <code>immortal</code>, with <code>mortal</code> set as the initial state in the second parameter. Each state is an object: its properties are functions which specify the available transitions while being in that state. To perform a transition, simply invoke the correspondent function on the DFA.</p>
 <div class='highlight'><pre><code class='javascript'>    <span class='nx'>entity</span><span class='p'>.</span><span class='nx'>collisions</span><span class='p'>.</span><span class='nx'>enemyCollides</span><span class='p'>(</span><span class='nx'>enemyInstance</span><span class='p'>);</span>
 </code></pre></div>
-<p>Notice that the same transition name can be used for multiple states: it is thus possible to execute different instructions for the same &#8220;event&#8221;, depending on the current state, as Canvace automatically invokes the right transition. For instance the reaction to a collision with an enemy, performed by <code>enemyCollides()</code>, changes accordingly to whether our character is mortal or immortal.</p>
+<p>Notice that the same transition name can be defined in multiple states: it is thus possible to execute different instructions for the same &#8220;event&#8221;, depending on the current state, as Canvace automatically invokes the correct transition. For instance the reaction to a collision with an enemy, performed by <code>enemyCollides()</code>, changes accordingly to whether our character is mortal or immortal.</p>
 
 <p>Normally transitions change the current state: this is done by returning the name of the new state as a string. For example, when <code>becomeImmortal()</code> ends, the state changes from <code>mortal</code> to <code>immortal</code>. It is also possible to define transitions that don&#8217;t modify the current state: this happens with <code>enemyCollides()</code>, which doesn&#8217;t return anything.</p>
 <hr />
+
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'canvace';
+
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
 </div>
 
 <footer class="footer">
 	<div class="inner">
-		Footer here
+		<div>
+			Canvace Srl - Via Luigi Casale, 7 - 05100 Terni (Italia) - VAT/P. IVA 01485160558
+			&nbsp;
+			<a href="https://www.iubenda.com/privacy-policy/863492" class="iubenda-black iubenda-embed" title="Privacy Policy">Privacy Policy</a>
+		</div>
+		<script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+		<div>
+			<a href="http://enlabs.it/" target="_blank"><img src="/media/enlabs.png" alt="Powered by EnLabs" /></a>
+		</div>
 	</div>
 </footer>
 

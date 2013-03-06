@@ -2,19 +2,21 @@
 <html>
 <head>
 	<title>Canvace</title>
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
 	<link href="http://fonts.googleapis.com/css?family=Titillium+Web:300" rel="stylesheet" type="text/css">
 	<link href="/css/screen.css" rel="stylesheet" type="text/css" media="screen" />
-	<link href="/pygments.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/css/mobile.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="/css/pygments.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="/favicon.ico" rel="icon" type="image/vnd.microsoft.icon" />
 </head>
 <body>
 
 <header class="header">
 	<div class="inner">
-		<a class="logo" href="#"><img src="/media/logo.png" alt="Canvace" /></a>
+		<a class="logo" href="/"><img src="/media/logo.png" alt="Canvace" /></a>
 		<ul class="menu">
-			<li><a href="/">Home</a></li>
-			<li><a href="/tutorials/tutorial.html">Docs</a></li>
+			<li><a href="/games/index.html">Games</a></li>
+			<li><a href="/tutorials/index.html">Docs</a></li>
 			<li><a href="http://api.canvace.com/">API</a></li>
 		</ul>
 	</div>
@@ -23,30 +25,115 @@
 <a href="https://github.com/canvace"><img style="position: fixed; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
 
 <div class="contents">
+<ol>
+	
+		
+	
+		
+	
+		
+			<li>
+				
+					<a href='/tutorials/index.html'>Introduction and installation</a>
+				
+			</li>
+		
+	
+		
+			<li>
+				
+					<a href='/tutorials/editor.html'>Development environment</a>
+				
+			</li>
+		
+	
+		
+			<li>
+				
+					<a href='/tutorials/init.html'>Rendering a stage in the canvas</a>
+				
+			</li>
+		
+	
+		
+			<li>
+				
+					<a href='/tutorials/entities.html'>Entities and collisions</a>
+				
+			</li>
+		
+	
+		
+			<li>
+				
+					<a href='/tutorials/pathfinding.html'>Pathfinding and animations</a>
+				
+			</li>
+		
+	
+		
+			<li>
+				
+					<a href='/tutorials/input-view.html'>Input events and stage's view</a>
+				
+			</li>
+		
+	
+		
+			<li>
+				
+					<a href='/tutorials/effects.html'>Special effects</a>
+				
+			</li>
+		
+	
+		
+			<li>
+				
+					<a href='/tutorials/state-machine.html'>State machines</a>
+				
+			</li>
+		
+	
+		
+			<li>
+				
+					<a href='/tutorials/sound.html'>Sound effects</a>
+				
+			</li>
+		
+	
+		
+			<li>
+				
+					Enabling HTTP compression
+				
+			</li>
+		
+	
+</ol>
 <h1 id='http_compression'>HTTP compression</h1>
 
 <p>HTTP compression is a feature typically built into web servers and clients in order to provide better transmission performances. The HTTP data content is compressed before being sent in a format supported by the client. Nowadays, most web servers support HTTP compression, either natively or with some external module. Compression can be quite useful for Canvace, since complex stages may require the transfer of a great amount of data.</p>
 
-<p>In this chapter, we summarize how compression facilities may be configured in the most common webservers: complete guides can be found in the official documentation of each server.</p>
+<p>In this chapter, we summarize how compression facilities can be configured in the most common webservers: complete guides can be found in the official documentation of each product.</p>
 
 <h2 id='apache'>Apache</h2>
 
-<p>Apache provides the HTTP compression via the <code>mod_deflate</code> module; this module works by installing a DEFLATE filter which compresses the output content before sending it to the client.</p>
+<p>Apache provides the HTTP compression via the <code>mod_deflate</code> module; this module will install a DEFLATE filter which compresses the output content before sending it to the client.</p>
 
 <p>First, you need to load the module. Open your httpd.conf and decomment (or add) the line:</p>
 
-<pre><code>LoadModule deflate_module modules/mod_deflate.so</code></pre>
+<pre><code>    LoadModule deflate_module modules/mod_deflate.so</code></pre>
 
-<p>For a simple compression support, just two more lines are needed (in no particular section):</p>
+<p>For simple compression support, just two more lines are needed (in no particular section):</p>
 
-<pre><code>SetOutputFilter DEFLATE
-DeflateCompressionLevel 3</code></pre>
+<pre><code>    SetOutputFilter DEFLATE
+    DeflateCompressionLevel 3</code></pre>
 
 <p>The compression level goes from 3 to 9: a higher level results in better compression, but more CPU usage. Setting levels higher than 6 almost never results in an significative performance improvement. The output filter is automatically applied to all kinds of data handled by the server: to restrict its application to a selection of file types, use, for example:</p>
 
-<pre><code>AddOutputFilterByType DEFLATE text/html text/css</code></pre>
-
-<p>Some browsers don&#8217;t support the compression of all file types: in addition to the directive above, you can also control the behavior of the filter according to the browser who sent the request. This is achieved with the <code>BrowserMatch</code> directive.</p>
+<pre><code>    AddOutputFilterByType DEFLATE text/html text/css</code></pre>
 
 <h2 id='nodejs'>Node.js</h2>
 
@@ -72,7 +159,7 @@ gzip_min_length  1024;
 gzip_types       text/plain application/xml;
 gzip_comp_level  3</code></pre>
 
-<p>The first one enables the module. Next we set the minimum length (in bytes) for data to be compressed, and the mimetypes we want to compress, other than text/html, which is by default taken into account. The compression level can go from 1 to 9: a higher level yields a better compression, but worst performances.</p>
+<p>The first one enables the module. Next we set the minimum length (in bytes) for data to be compressed and the mimetypes we want to compress. HTML files are compressed by default, so you don&#8217;t need to add text/html to the list. The compression level can go from 1 to 9: a higher level yields a better compression, but worst performances.</p>
 
 <p>Nginx, since version 0.6.24, also provides the <code>HttpGzipStaticModule</code> for static compression: it will manage pre-compressed versions of files, so that the same files don&#8217;t get compressed over and over.</p>
 
@@ -82,11 +169,34 @@ gzip_comp_level  3</code></pre>
 
 <p>The <a href='http://www.iis.net/configreference/system.webserver/httpcompression'>official Microsoft documentation</a> provides all the information for installing compression support through the GUI, and configuring it.</p>
 <hr />
+
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'canvace';
+
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
 </div>
 
 <footer class="footer">
 	<div class="inner">
-		Footer here
+		<div>
+			Canvace Srl - Via Luigi Casale, 7 - 05100 Terni (Italia) - VAT/P. IVA 01485160558
+			&nbsp;
+			<a href="https://www.iubenda.com/privacy-policy/863492" class="iubenda-black iubenda-embed" title="Privacy Policy">Privacy Policy</a>
+		</div>
+		<script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+		<div>
+			<a href="http://enlabs.it/" target="_blank"><img src="/media/enlabs.png" alt="Powered by EnLabs" /></a>
+		</div>
 	</div>
 </footer>
 
