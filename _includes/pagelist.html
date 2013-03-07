@@ -4,7 +4,7 @@
 {% endcomment %}
 
 <ol>
-	{% for index in (1..11) %}
+	{% for index in (1..site.tutorial_page_count) %}
 		{% for canvace_page in site.pages %}
 			{% if canvace_page.index == index %}
 				{% if canvace_page.category == "tutorial" %}
