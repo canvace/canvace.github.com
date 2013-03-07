@@ -25,6 +25,7 @@ implemented by Canvace. More specifically, each entity stores the following phys
 - velocity
 - uniform velocity
 - acceleration
+
 These properties are vectors in a 3-dimensional space. By modifying these vectors it is possible to move the instance around the map: at each rendering loop, the
 entity's physics state is changed according to the vectors, and then the actual position of the instance is updated. You don't need to control this process manually: the pathfinding chapter of this tutorial explains how you can use interpolated animations to let Canvace do the job for you.
 
