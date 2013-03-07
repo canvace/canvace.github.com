@@ -4,15 +4,19 @@
 {% endcomment %}
 
 <ol>
-	{% for canvace_page in site.pages | sort:canvace_page.index %}
-		{% if canvace_page.category == "tutorial" %}
-			<li>
-				{% if canvace_page.url == page.url %}
-					{{ canvace_page.title }}
-				{% else %}
-					<a href="{{ canvace_page.url }}">{{ canvace_page.title }}</a>
+	{% for index in (1..11) %}
+		{% for canvace_page in site.pages %}
+			{% if canvace_page.index == index %}
+				{% if canvace_page.category == "tutorial" %}
+					<li>
+						{% if canvace_page.url == page.url %}
+							{{ canvace_page.title }}
+						{% else %}
+							<a href="{{ canvace_page.url }}">{{ canvace_page.title }}</a>
+						{% endif %}
+					</li>
 				{% endif %}
-			</li>
-		{% endif %}
+			{% endif %}
+		{% endfor %}
 	{% endfor %}
 </ol>

@@ -6,6 +6,8 @@ title: Teamworking
 index: 10
 ---
 
+{% include pagelist.html %}
+
 # Teamworking with Darblast
 
 ## Giving access to external clients
