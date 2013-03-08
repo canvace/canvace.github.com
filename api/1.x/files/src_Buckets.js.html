@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Canvace &bull; src\Buckets.js - API reference</title>
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+	<link href="http://fonts.googleapis.com/css?family=Titillium+Web:300" rel="stylesheet" type="text/css">    
+    <link rel="stylesheet" href="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;3.8.0pr2&#x2F;build&#x2F;cssgrids&#x2F;cssgrids-min.css">
+    <link rel="stylesheet" href="..&#x2F;assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="..&#x2F;assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="..&#x2F;assets/favicon.png">
+    <script src="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;combo?3.8.0pr2&#x2F;build&#x2F;yui&#x2F;yui-min.js"></script>
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29915000-1']);
+  _gaq.push(['_setDomainName', 'canvace.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+<div id="doc">
+    <div id="hd" class="header">
+        <div class="inner">
+			<a href="/" class="logo"><img src="..&#x2F;assets/media/logo.png" alt="API reference" /></a>
+			<div class="version">
+				API reference for v<b>0.2.7</b>
+				&bull;
+				For inquiries, contact <a href="mailto:support@canvace.com">support@canvace.com</a>.
+			</div>
+        </div>
+    </div>
+
+    <div id="bd" class="yui3-g contents">
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+    <h2 class="off-left">APIs</h2>
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-classes" class="apis classes">
+            
+                <li><a href="..&#x2F;classes/Canvace.html">Canvace</a></li>
+            
+                <li><a href="..&#x2F;classes/Canvace.Ajax.html">Canvace.Ajax</a></li>
+            
+                <li><a href="..&#x2F;classes/Canvace.Ajax.Request.html">Canvace.Ajax.Request</a></li>
+            
+                <li><a href="..&#x2F;classes/Canvace.Animator.html">Canvace.Animator</a></li>
+            
+                <li><a href="..&#x2F;classes/Canvace.Animator.Easing.html">Canvace.Animator.Easing</a></li>
+            
+                <li><a href="..&#x2F;classes/Canvace.Astar.html">Canvace.Astar</a></li>
+            
+                <li><a href="..&#x2F;classes/Canvace.Astar.Node.html">Canvace.Astar.Node</a></li>
+            
+                <li><a href="..&#x2F;classes/Canvace.Audio.html">Canvace.Audio</a></li>
+            
+                <li><a href="..&#x2F;classes/Canvace.Audio.SourceNode.html">Canvace.Audio.SourceNode</a></li>
+            
+                <li><a href="..&#x2F;classes/Canvace.Buckets.html">Canvace.Buckets</a></li>
+            
+                <li><a href="..&#x2F;classes/Canvace.Buckets.Entity.html">Canvace.Buckets.Entity</a></li>
+            
+                <li><a href="..&#x2F;classes/Canvace.DebugEffect.html">Canvace.DebugEffect</a></li>
+            
+                <li><a href="..&#x2F;classes/Canvace.Heap.html">Canvace.Heap</a></li>
+            
+                <li><a href="..&#x2F;classes/Canvace.Keyboard.html">Canvace.Keyboard</a></li>
+            
+                <li><a href="..&#x2F;classes/Canvace.List.html">Canvace.List</a></li>
+            
+                <li><a href="..&#x2F;classes/Canvace.List.Accessor.html">Canvace.List.Accessor</a></li>
+            
+                <li><a href="..&#x2F;classes/Canvace.Loader.html">Canvace.Loader</a></li>
+            
+                <li><a href="..&#x2F;classes/Canvace.Mouse.html">Canvace.Mouse</a></li>
+            
+                <li><a href="..&#x2F;classes/Canvace.MultiSet.html">Canvace.MultiSet</a></li>
+            
+                <li><a href="..&#x2F;classes/Canvace.ParametricStateMachine.html">Canvace.ParametricStateMachine</a></li>
+            
+                <li><a href="..&#x2F;classes/Canvace.Polyfill.html">Canvace.Polyfill</a></li>
+            
+                <li><a href="..&#x2F;classes/Canvace.Renderer.html">Canvace.Renderer</a></li>
+            
+                <li><a href="..&#x2F;classes/Canvace.RenderLoop.html">Canvace.RenderLoop</a></li>
+            
+                <li><a href="..&#x2F;classes/Canvace.RumbleEffect.html">Canvace.RumbleEffect</a></li>
+            
+                <li><a href="..&#x2F;classes/Canvace.Stage.html">Canvace.Stage</a></li>
+            
+                <li><a href="..&#x2F;classes/Canvace.Stage.Entity.html">Canvace.Stage.Entity</a></li>
+            
+                <li><a href="..&#x2F;classes/Canvace.Stage.Instance.html">Canvace.Stage.Instance</a></li>
+            
+                <li><a href="..&#x2F;classes/Canvace.Stage.Range.html">Canvace.Stage.Range</a></li>
+            
+                <li><a href="..&#x2F;classes/Canvace.StageRenderer.html">Canvace.StageRenderer</a></li>
+            
+                <li><a href="..&#x2F;classes/Canvace.StateMachine.html">Canvace.StateMachine</a></li>
+            
+                <li><a href="..&#x2F;classes/Canvace.TileMap.html">Canvace.TileMap</a></li>
+            
+                <li><a href="..&#x2F;classes/Canvace.TileMap.Tile.html">Canvace.TileMap.Tile</a></li>
+            
+                <li><a href="..&#x2F;classes/Canvace.Timing.html">Canvace.Timing</a></li>
+            
+                <li><a href="..&#x2F;classes/Canvace.View.html">Canvace.View</a></li>
+            
+                <li><a href="..&#x2F;classes/Canvace.View.Synchronizer.html">Canvace.View.Synchronizer</a></li>
+            
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+            
+                <li><a href="..&#x2F;modules/Canvace.html">Canvace</a></li>
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+        Show:
+        <label for="api-show-inherited">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </div>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <h1 class="file-heading">File: src\Buckets.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+&#x2F;**
+ * The &#x60;Buckets&#x60; class allows for efficient rendering of graphic elements by
+ * implementing an algorithm that automatically discards the elements located
+ * out of the viewport.
+ *
+ * You can add any tiles or entities to the buckets using the provided &#x60;addXxx&#x60;
+ * methods, the &#x60;forEachElement&#x60; method will then enumerate only the elements in
+ * the current view.
+ *
+ * The &#x60;Buckets&#x60; class also supports animated elements by enumerating the
+ * correct frame for each element depending on the current timestamp as per
+ * &#x60;Canvace.Timing.now&#x60;.
+ *
+ * Before adding tiles and entities with the &#x60;addXxx&#x60; methods, tile and entity
+ * descriptors must be registered using the provided &#x60;registerXxx&#x60; methods. This
+ * is required in order to support animations.
+ *
+ * You do not usually need to use this class directly, as it is automatically
+ * used by the &#x60;Stage&#x60; and &#x60;StageRenderer&#x60; classes.
+ *
+ * @class Canvace.Buckets
+ * @constructor
+ * @param view {Canvace.View} A &#x60;View&#x60; object used to project the graphic
+ * elements.
+ * @param data {Object} The JSON data output by the Canvace Development
+ * Environment.
+ *&#x2F;
+Canvace.Buckets = (function () {
+	var widthFactor = 1;
+	var heightFactor = 1;
+
+	var thisObject = function (view, data) {
+		var actualWidth = view.getWidth();
+		var actualHeight = view.getHeight();
+		var width = Math.round(actualWidth * widthFactor);
+		var height = Math.round(actualHeight * heightFactor);
+		var frameTable = new Canvace.FrameTable(data);
+
+		(function () {
+			var id;
+			for (id in data.tiles) {
+				frameTable.registerTile(id);
+			}
+			for (id in data.entities) {
+				frameTable.registerEntity(id);
+			}
+		}());
+
+		function Bucket() {
+			var sections = {};
+			var minS = 0, maxS = 0;
+			this.add = function (p, width, height, getFrame, timeOffset) {
+				minS = Math.min(minS, p[2]);
+				maxS = Math.max(maxS, p[2]);
+				if (!sections[p[2]]) {
+					sections[p[2]] = new Canvace.MultiSet();
+				}
+				return sections[p[2]].add({
+					p: p,
+					width: width,
+					height: height,
+					getFrame: getFrame,
+					timeOffset: timeOffset
+				});
+			};
+			this.forEach = function (action) {
+				for (var s = minS; s &lt;= maxS; s++) {
+					if (sections.hasOwnProperty(s)) {
+						sections[s].fastForEach(action);
+					}
+				}
+			};
+		}
+
+		var buckets = {};
+
+		function MockElement() {
+			this.updatePosition = function () {};
+			this.remove = function () {};
+			this.replace = function () {};
+		}
+
+		&#x2F;**
+		 * Represents an entity.
+		 *
+		 * This class cannot be instantiated directly, instances are returned by
+		 * the &#x60;Buckets.addEntity&#x60; method.
+		 *
+		 * @class Canvace.Buckets.Entity
+		 *&#x2F;
+		function Element(element, getAnimation, i, j, k) {
+			if (!element.frames.length) {
+				return new MockElement();
+			}
+
+			var p = view.projectElement(element, i, j, k);
+			var bi = Math.floor(p[1] &#x2F; height);
+			var bj = Math.floor(p[0] &#x2F; width);
+
+			var animation = getAnimation();
+			var timeOffset = Canvace.Timing.now();
+
+			var removers = [];
+			var removed = false;
+
+			function addToBucket(i, j) {
+				var key = i + &#x27; &#x27; + j;
+				if (!buckets.hasOwnProperty(key)) {
+					buckets[key] = new Bucket();
+				}
+				removers.push(buckets[key].add(p, element.width, element.height, animation, timeOffset));
+			}
+
+			function addToBuckets() {
+				addToBucket(bi - 1, bj - 1);
+				addToBucket(bi - 1, bj);
+				addToBucket(bi, bj - 1);
+				addToBucket(bi, bj);
+				var bi1 = Math.floor((p[1] + element.height) &#x2F; height);
+				var bj1 = Math.floor((p[0] + element.width) &#x2F; width);
+				if (bi1 &gt; bi) {
+					addToBucket(bi + 1, bj - 1);
+					addToBucket(bi + 1, bj);
+				}
+				if (bj1 &gt; bj) {
+					addToBucket(bi - 1, bj + 1);
+					addToBucket(bi, bj + 1);
+				}
+				if ((bi1 &gt; bi) &amp;&amp; (bj1 &gt; bj)) {
+					addToBucket(bi + 1, bj + 1);
+				}
+			}
+
+			addToBuckets();
+
+			function remove() {
+				for (var index in removers) {
+					removers[index]();
+				}
+				removers = [];
+				removed = true;
+				return true;
+			}
+
+			&#x2F;**
+			 * Returns the entity&#x27;s projected position, which is its &#x60;(i, j, k)&#x60;
+			 * position left-multiplied by the projection matrix.
+			 *
+			 * The position is returned as an object containing three fields,
+			 * &#x60;x&#x60;, &#x60;y&#x60; and &#x60;z&#x60;, containing the &#x60;i&#x60;, &#x60;j&#x60; and &#x60;k&#x60; projected
+			 * coordinates, respectively.
+			 *
+			 * @method getProjectedPosition
+			 * @return {Object} The projected position as an object containing
+			 * three &#x60;x&#x60;, &#x60;y&#x60; and &#x60;z&#x60; fields.
+			 *&#x2F;
+			this.getProjectedPosition = function () {
+				return {
+					x: p[0] - element.offset.x,
+					y: p[1] - element.offset.y,
+					z: p[2]
+				};
+			};
+
+			&#x2F;**
+			 * Returns the 2D rectangular area corresponding to the entity&#x27;s
+			 * bounds.
+			 *
+			 * The rectangle is returned as an object containing four fields:
+			 * the &#x60;x&#x60; and &#x60;y&#x60; coordinates of the origin and the &#x60;width&#x60; and
+			 * &#x60;height&#x60;.
+			 *
+			 * The coordinates of the origin are calculated by left-multiplying
+			 * the &#x60;(i, j, k)&#x60; position vector of the entity by the projection
+			 * matrix and adding the entity&#x27;s offset. The width and height are
+			 * simply copied from the entity descriptor.
+			 *
+			 * @method getProjectedRectangle
+			 * @return {Object} An object that describes the projected rectangle
+			 * and contains four fields: &#x60;x&#x60;, &#x60;y&#x60;, &#x60;width&#x60; and &#x60;height&#x60;.
+			 *&#x2F;
+			this.getProjectedRectangle = function () {
+				return {
+					x: p[0],
+					y: p[1],
+					z: p[2],
+					width: element.width,
+					height: element.height
+				};
+			};
+
+			&#x2F;**
+			 * Updates the entity&#x27;s position and possibly some internal data
+			 * structures so that the entity is enumerated correctly by the
+			 * &#x60;forEachElement&#x60; method after it is repositioned.
+			 *
+			 * The specified &#x60;i&#x60;, &#x60;j&#x60; and &#x60;k&#x60; values may be real numbers.
+			 *
+			 * @method updatePosition
+			 * @param i {Number} The new I coordinate.
+			 * @param j {Number} The new J coordinate.
+			 * @param k {Number} The new K coordinate.
+			 *&#x2F;
+			this.updatePosition = function (i1, j1, k1) {
+				if (!removed) {
+					var p1 = view.projectElement(element, i = i1, j = j1, k = k1);
+					var bi1 = Math.floor(p[1] &#x2F; height);
+					var bj1 = Math.floor(p[0] &#x2F; width);
+					if ((p1[2] !== p[2]) || (bi1 !== bi) || (bj1 !== bj)) {
+						remove();
+						removed = false;
+						p[0] = p1[0];
+						p[1] = p1[1];
+						p[2] = p1[2];
+						bi = bi1;
+						bj = bj1;
+						addToBuckets();
+					} else {
+						p[0] = p1[0];
+						p[1] = p1[1];
+						p[2] = p1[2];
+					}
+				}
+			};
+
+			&#x2F;**
+			 * Removes the entity so that it is not enumerated by the
+			 * &#x60;Buckets.forEachElement&#x60; method any more.
+			 *
+			 * This method is idempotent: it does not have any effects when it is
+			 * called again after the first time.
+			 *
+			 * @method remove
+			 * @return {Boolean} &#x60;true&#x60;.
+			 *&#x2F;
+			this.remove = remove;
+
+			&#x2F;**
+			 * Indicates whether this entity has been removed from the buckets.
+			 *
+			 * @method isRemoved
+			 * @return {Boolean} &#x60;true&#x60; if this element has been removed,
+			 * &#x60;false&#x60; otherwise.
+			 *&#x2F;
+			this.isRemoved = function () {
+				return removed;
+			};
+
+			&#x2F;**
+			 * Replaces the entity with another one identified by the specified
+			 * ID. This entity is removed as if the &#x60;remove&#x60; method was called,
+			 * and this &#x60;Entity&#x60; object becomes useless and should be discarded.
+			 *
+			 * @method replace
+			 * @param id {Number} The new entity&#x27;s ID.
+			 * @return {Canvace.Buckets.Entity} A new &#x60;Entity&#x60; object
+			 * representing the new entity.
+			 *&#x2F;
+			this.replace = function (id) {
+				if (!removed) {
+					if (!(id in data.entities)) {
+						throw {
+							message: &#x27;invalid entity ID&#x27;,
+							id: id
+						};
+					}
+
+					remove();
+					var entity = data.entities[id];
+
+					return new Element(entity, function () {
+						return frameTable.getEntityAnimation(id);
+					}, i, j, k);
+				}
+			};
+		}
+
+		var eraser = {};
+
+		function addTile(id, i, j, k) {
+			if (!(id in data.tiles)) {
+				throw {
+					message: &#x27;invalid tile ID&#x27;,
+					id: id
+				};
+			}
+
+			var tile = data.tiles[id];
+
+			var remover = new Element(tile, function () {
+				return frameTable.getTileAnimation(id);
+			}, i, j, k).remove;
+
+			if (tile.mutable) {
+				if (!eraser[k]) {
+					eraser[k] = {};
+				}
+				if (!eraser[k][i]) {
+					eraser[k][i] = {};
+				}
+				var removed = false;
+				return eraser[k][i][j] = function () {
+					remover();
+					if (removed) {
+						return false;
+					} else {
+						delete eraser[k][i][j];
+						removed = true;
+						return true;
+					}
+				};
+			} else {
+				return remover;
+			}
+		}
+
+		&#x2F;**
+		 * Adds a tile to the buckets and returns a function that removes it.
+		 *
+		 * If the tile was configured as mutable in the Canvace Development
+		 * Environment it can also be removed using the &#x60;removeTile&#x60; method or
+		 * replaced using the &#x60;replaceTile&#x60; method.
+		 *
+		 * The returned function does not receive any arguments and always
+		 * returns &#x60;true&#x60;, and can remove the tile even if it was not configured
+		 * as mutable.
+		 *
+		 * @method addTile
+		 * @for Canvace.Buckets
+		 * @param id {Number} The tile&#x27;s ID.
+		 * @param i {Number} The integer I position where the tile is located.
+		 * @param j {Number} The integer J position where the tile is located.
+		 * @param k {Number} The integer K position where the tile is located.
+		 * @return {Function} A function that removes the inserted tile. The
+		 * function does not receive any arguments, always returns &#x60;true&#x60; and is
+		 * idempotent: it does not have any effets when called again after the
+		 * first time.
+		 *&#x2F;
+		this.addTile = addTile;
+
+		&#x2F;**
+		 * Adds an entity to the buckets. The specified I, J and K coordinates
+		 * can be real values.
+		 *
+		 * @method addEntity
+		 * @param id {Number} The entity&#x27;s ID.
+		 * @param i {Number} The I coordinate where the entity is located.
+		 * @param j {Number} The J coordinate where the entity is located.
+		 * @param k {Number} The K coordinate where the entity is located.
+		 * @return {Canvace.Buckets.Entity} An &#x60;Entity&#x60; object representing the
+		 * inserted entity.
+		 *&#x2F;
+		this.addEntity = function (id, i, j, k) {
+			if (!(id in data.entities)) {
+				throw {
+					message: &#x27;invalid entity ID&#x27;,
+					id: id
+				};
+			}
+
+			var entity = data.entities[id];
+
+			return new Element(entity, function () {
+				return frameTable.getEntityAnimation(id);
+			}, i, j, k);
+		};
+
+		&#x2F;**
+		 * Removes the mutable tile located at the (integer) coordinates
+		 * &#x60;(i, j, k)&#x60;.
+		 *
+		 * Note that a tile is not removed by this method if it is not mutable, even
+		 * though it is located at the specified coordinates.
+		 *
+		 * @method removeTile
+		 * @param i {Number} The tile&#x27;s I coordinate.
+		 * @param j {Number} The tile&#x27;s J coordinate.
+		 * @param k {Number} The tile&#x27;s K coordinate.
+		 * @return {Boolean} &#x60;true&#x60; on success, &#x60;false&#x60; on failure.
+		 *&#x2F;
+		this.removeTile = function (i, j, k) {
+			return eraser[k] &amp;&amp; eraser[k][i] &amp;&amp; eraser[k][i][j] &amp;&amp; eraser[k][i][j]() || false;
+		};
+
+		&#x2F;**
+		 * Replaces the mutable tile located at the specified &#x60;i&#x60;, &#x60;j&#x60; and &#x60;k&#x60;
+		 * integer coordinates with another tile.
+		 *
+		 * This method has no effect if no mutable tile is found at the
+		 * specified coordinates; this includes both the following cases: no
+		 * mutable tile found and no tile at all.
+		 *
+		 * When a mutable tile is found and successfully removed, the specified
+		 * tile is inserted at its location and a function to remove it is
+		 * returned (similarly to the &#x60;addTile&#x60; method).
+		 *
+		 * @method replaceTile
+		 * @param i {Number} The I coordinate where the tile to replace is
+		 * located.
+		 * @param j {Number} The J coordinate where the tile to replace is
+		 * located.
+		 * @param k {Number} The K coordinate where the tile to replace is
+		 * located.
+		 * @param newTileId {Number} The new tile&#x27;s ID.
+		 * @return {Function} A function that removes the inserted tile, or
+		 * &#x60;undefined&#x60; if a mutable tile could not be found at the specified
+		 * position.
+		 *
+		 * The returned function does not receive any arguments, always returns
+		 * &#x60;true&#x60; and is idempotent: it does not have any effets when called
+		 * again after the first time.
+		 *&#x2F;
+		this.replaceTile = function (i, j, k, newTileId) {
+			if (eraser[k] &amp;&amp; eraser[k][i] &amp;&amp; eraser[k][i][j] &amp;&amp; eraser[k][i][j]()) {
+				return addTile(newTileId, i, j, k);
+			}
+		};
+
+		&#x2F;**
+		 * TODO
+		 *
+		 * @method synchronize
+		 * @param period {Number} TODO
+		 *&#x2F;
+		this.synchronize = frameTable.synchronize;
+
+		&#x2F;**
+		 * Invokes the given callback function for each element within the viewport.
+		 *
+		 * The specified &#x60;action&#x60; callback function receives three arguments, &#x60;x&#x60;,
+		 * &#x60;y&#x60; and &#x60;id&#x60;, indicating the element&#x27;s projected X coordinate, projected
+		 * Y coordinate and image ID, respectively.
+		 *
+		 * @method forEachElement
+		 * @param action {Function} A callback function to invoke for each
+		 * enumerated element.
+		 *&#x2F;
+		this.forEachElement = function (action) {
+			var origin = view.getOrigin();
+			var i = Math.floor(-origin.y &#x2F; height);
+			var j = Math.floor(-origin.x &#x2F; width);
+			var key = i + &#x27; &#x27; + j;
+			if (buckets.hasOwnProperty(key)) {
+				var timestamp = Canvace.Timing.now();
+				buckets[key].forEach(function (element) {
+					if ((element.p[0] &lt; -origin.x + actualWidth) &amp;&amp;
+						(element.p[1] &lt; -origin.y + actualHeight) &amp;&amp;
+						(element.p[0] + element.width &gt;= -origin.x) &amp;&amp;
+						(element.p[1] + element.height &gt;= -origin.y))
+					{
+						action(element.p[0], element.p[1], element.getFrame(timestamp - element.timeOffset));
+					}
+				});
+			}
+		};
+	};
+
+	&#x2F;**
+	 * Tweaking the size factor parameters allows to trade between speed and
+	 * memory occupation of the game.
+	 *
+	 * The default and minimum value for both parameters is 1. Specifying higher
+	 * values causes a lower memory fingerprint and higher execution times of
+	 * the &#x60;forEachElement&#x60; method.
+	 *
+	 * @method setBucketSizeFactors
+	 * @static
+	 * @param widthFactorValue {Number} The bucket width factor parameter. The
+	 * default and minimum value is 1.
+	 * @param heightFactorValue {Number} The bucket height factor parameter. The
+	 * default and minimum value is 1.
+	 *&#x2F;
+	thisObject.setBucketSizeFactors = function (widthFactorValue, heightFactorValue) {
+		if (widthFactorValue &lt; 1) {
+			throw &#x27;illegal width factor: &#x27; + widthFactorValue;
+		}
+		if (heightFactorValue &lt; 1) {
+			throw &#x27;illegal height factor: &#x27; + heightFactorValue;
+		}
+		widthFactor = widthFactorValue;
+		heightFactor = heightFactorValue;
+	};
+
+	return thisObject;
+}());
+
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		<div id="disqus_thread"></div>
+		<script type="text/javascript">
+			var disqus_shortname = 'canvace';
+
+			(function() {
+				var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+				dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			})();
+		</script>
+		<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+		<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+
+	<div class="footer">
+		<div class="inner">
+			<div>
+				Canvace Srl - Via Luigi Casale, 7 - 05100 Terni (Italia) - VAT/P. IVA 01485160558
+				&nbsp;
+				<a href="https://www.iubenda.com/privacy-policy/863492" class="iubenda-black iubenda-embed" title="Privacy Policy">Privacy Policy</a>
+			</div>
+			<script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+			<div>
+				<a href="http://enlabs.it/" target="_blank"><img src="..&#x2F;assets/media/enlabs.png" alt="Powered by EnLabs" /></a>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="..&#x2F;assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="..&#x2F;assets/js/yui-prettify.js"></script>
+<script src="..&#x2F;assets/../api.js"></script>
+<script src="..&#x2F;assets/js/api-filter.js"></script>
+<script src="..&#x2F;assets/js/api-list.js"></script>
+<script src="..&#x2F;assets/js/api-search.js"></script>
+<script src="..&#x2F;assets/js/apidocs.js"></script>
+</body>
+</html>
