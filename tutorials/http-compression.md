@@ -49,16 +49,26 @@ With this object we can compress a file:
 
 Here gzip is used, but also `createDeflate()` and `createDeflateRaw()` are available. Decompression objects can be created with similar methods, for instance `createGunzip()`. For compression and decompression of generic data, the `zlib` object provides methods like `deflate()`, `inflate()`, `gzip()`, etc... all requiring the input buffer as parameter.
 
+### Express
+Express is a web application framework for Node.js. Basic content compression with gzip can be enabled in your Express application with the following instructions:
+
+{% highlight javascript %}
+    var express = require('express');
+    var app = express();
+
+    app.use( express.compress() );
+{% endhighlight %}
+
 ## nginx
-The `HttpGzipModule` enables on-the-fly compression with gzip. A lot of configuration directives control the behaviour of this module. Here we present the most
-basic ones:
+The `HttpGzipModule`, present by default, enables on-the-fly compression with gzip. A lot of configuration directives control the behaviour of this module. Here we present the most
+important ones:
 
     gzip             on;
     gzip_min_length  1024;
     gzip_types       text/plain application/xml;
-    gzip_comp_level  3
-    
-The first one enables the module. Next we set the minimum length (in bytes) for data to be compressed and the mimetypes we want to compress. HTML files are compressed by default, so you don't need to add text/html to the list. The compression level can go from 1 to 9: a higher level yields a better compression, but worst performances.
+    gzip_comp_level  3;
+
+They must be added in the `http` section of the `nginx.conf` configuration file. The first one enables the module, and it's the only one nginx actually requires. Next we set the minimum length (in bytes) for data to be compressed and the mimetypes we want to compress. HTML files are compressed by default, so you don't need to add text/html to the list. The compression level can go from 1 to 9: a higher level yields a better compression, but worst performances.
 
 Nginx, since version 0.6.24, also provides the `HttpGzipStaticModule` for static compression: it will manage pre-compressed versions of files, so that the same files don't get compressed over and over.
 
