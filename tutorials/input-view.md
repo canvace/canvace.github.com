@@ -89,3 +89,5 @@ Here we make the view follow the mouse pointer as it is being dragged around. Th
 - `unproject`: performs the inverse transformation at the specified layer: takes x, y and k, and returns i, j and k. Unlike the `getCell()` method mentioned above, which works only for tiles, it works for any point of the canvas.
 
 ----------------------------
+
+{% include next_prev.html %}

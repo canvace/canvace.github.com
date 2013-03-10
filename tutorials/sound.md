@@ -3,7 +3,7 @@ layout: default
 
 category: tutorial
 title: Sound effects
-index: 8
+index: 9
 ---
 
 {% include pagelist.html %}
@@ -44,3 +44,5 @@ For more complex sound effects, you can obtain the `Canvace.Audio.SourceNode` ob
 You can now start, pause, resume, and play the sound in a loop.
 
 ----------------------------
+
+{% include next_prev.html %}

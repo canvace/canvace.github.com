@@ -34,3 +34,5 @@ from the command line. Canvace is now ready to use: the development environment 
 The most recent version of the client library is available at [this link](http://www.canvace.com/download). Download it in the path you're going to develop the game into, and then import canvace.js in your game files as an external Javascript script.
 
 ----------------------------
+
+{% include next_prev.html %}

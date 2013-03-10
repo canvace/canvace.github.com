@@ -77,3 +77,5 @@ The changes made to the stage are saved using the **Save** button.
 As soon as the level environment is completed and saved, it needs to be exported in a format recognizable by Canvace. This is done in the **Stage** bar: specifically, "Download images" exports all the pictures used in an archive, while "Download JSON" exports a JSON file containing the stage information, found HERE.
 
 ----------------------------
+
+{% include next_prev.html %}

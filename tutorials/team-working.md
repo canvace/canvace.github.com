@@ -3,7 +3,7 @@ layout: default
 
 category: tutorial
 title: Teamworking
-index: 10
+index: 11
 ---
 
 {% include pagelist.html %}
@@ -49,3 +49,7 @@ All the stages in a project share images, tiles and entities; they also share th
 There is a substantial difference between project and stage resources. If you work on project resources, all changes are immediately visible to all the clients working on the project. This includes, but is not limited to, adding an image, changing the frame associated to a tile, adding labels, etc.... This happens right after the component blur has taken place: an AJAX request causes the broadcast of the changes to all the clients involved in the development session.
 
 On the other hand, changes on stage resources must be explicitly saved in the editor before they become visible by other clients. Until saving, the new changes are simply cached locally. This avoids having to broadcast a huge number of requests during all the development process, since game maps are usually updated at a quick rate.
+
+----------------------------
+
+{% include next_prev.html %}

@@ -3,7 +3,7 @@ layout: default
 
 category: tutorial
 title: Enabling HTTP compression
-index: 9
+index: 10
 ---
 
 {% include pagelist.html %}
@@ -77,5 +77,6 @@ IIS servers support both static compression (installed by default) and dynamic c
 
 The [official Microsoft documentation](http://www.iis.net/configreference/system.webserver/httpcompression) provides all the information for installing compression support through the GUI, and configuring it. 
 
-
 ----------------------------
+
+{% include next_prev.html %}

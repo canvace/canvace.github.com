@@ -62,3 +62,5 @@ Although this code snippet doesn't show it, additional code prevents an interpol
 animations on the same entity instance easily causes errors, and the resulting path may be different from the one computed by A\*.
 
 ----------------------------
+
+{% include next_prev.html %}

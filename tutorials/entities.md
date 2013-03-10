@@ -66,3 +66,5 @@ It's also possible to completely remove an entity's instance from the stage. Aft
 After that call, the instance won't be rendered anymore.
 
 ----------------------------
+
+{% include next_prev.html %}

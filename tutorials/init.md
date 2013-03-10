@@ -73,3 +73,5 @@ Line 3 and 4 overwrite the canvas, now empty, with a "You lost!" message. At win
 Once the render loop has being stopped, it cannot be restarted anymore: if you wish to do so, call `suspend()` instead, and then `run()` to resume it.
 
 ----------------------------
+
+{% include next_prev.html %}

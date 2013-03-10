@@ -42,3 +42,5 @@ The debug effect doesn't have a fixed duration: once added to the renderer, if n
 However, it can be enabled and disabled using the `toggle()` method. In the game, the debug effect is alternatively toggled on and off by pressing the space bar.
 
 ----------------------------
+
+{% include next_prev.html %}

@@ -3,7 +3,7 @@ layout: default
 
 category: tutorial
 title: State machines
-index: 7
+index: 8
 ---
 
 {% include pagelist.html %}
@@ -40,3 +40,5 @@ Notice that the same transition name can be defined in multiple states: it is th
 Normally transitions change the current state: this is done by returning the name of the new state as a string. For example, when `becomeImmortal()` ends, the state changes from `mortal` to `immortal`. It is also possible to define transitions that don't modify the current state: this happens with `enemyCollides()`, which doesn't return anything.
 
 ----------------------------
+
+{% include next_prev.html %}
