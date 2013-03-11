@@ -120,3 +120,22 @@ a:hover {
 .iubenda-ibadge {
 	vertical-align: middle;
 }
+
+#tutorial-navigation {
+	padding: 0;
+	margin: 1em 0;
+	overflow: hidden;
+}
+
+#next-page,
+#previous-page {
+	list-style: none;
+}
+
+#previous-page {
+	float: left;
+}
+
+#next-page {
+	float: right;
+}

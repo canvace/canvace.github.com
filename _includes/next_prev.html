@@ -3,11 +3,11 @@
 	It displays the correct "Next" and "Previous" links.
 {% endcomment %}
 
-<ul>
+<ul id="tutorial-navigation">
 	{% assign previous = page.index | minus: 1 %}
 	{% for canvace_page in site.pages %}
 		{% if canvace_page.category == "tutorial" and canvace_page.index == previous %}
-			<li>
+			<li id="previous-page">
 				Previous: <a href="{{ canvace_page.url }}">{{ canvace_page.title }}</a>
 			</li>
 		{% endif %}
@@ -16,7 +16,7 @@
 	{% assign next = page.index | plus: 1 %}
 	{% for canvace_page in site.pages %}
 		{% if canvace_page.category == "tutorial" and canvace_page.index == next %}
-			<li>
+			<li id="next-page">
 				Next: <a href="{{ canvace_page.url }}">{{ canvace_page.title }}</a>
 			</li>
 		{% endif %}
