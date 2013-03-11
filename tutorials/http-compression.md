@@ -36,13 +36,30 @@ Compression in Node.js is handled through the `zlib` module, included by default
     var zlib = require('zlib');
 {% endhighlight %}
 
-With this object we can compress a file:
+With this object we can dynamically compress a HTML file with gzip before sending it to the client. Line 7 adds the `Content-Encoding` line
+to the response header so that the browser knows the body has been compressed with gzip, and can perform the necessary decompression. Likewise,
+we could create a deflate compression object with `zlib.createDeflate()`.
+
+{% highlight javascript %}
+    var zlib = require('zlib');
+    var fs = require('fs');
+    var http = require('http');
+
+    http.createServer(function(request, response) {
+        var raw = fs.createReadStream('index.html');
+        response.writeHead(200, { 'content-encoding': 'gzip' });
+        raw.pipe( zlib.createGzip() ).pipe(response);
+    }).listen(4000);
+{% endhighlight %}
+
+This second code snippet shows how a file is compressed and stored on the filesystem. This is useful for static files that are requested often,
+because we avoid repeating the same compression operation for each request.
 
 {% highlight javascript %}
     var gzip = zlib.createGzip();
     var fs = require('fs');
-    var inp = fs.createReadStream('input.txt');
-    var out = fs.createWriteStream('input.txt.gz');
+    var inp = fs.createReadStream('index.html');
+    var out = fs.createWriteStream('index.html.gz');
 
     inp.pipe(gzip).pipe(out);
 {% endhighlight %}
