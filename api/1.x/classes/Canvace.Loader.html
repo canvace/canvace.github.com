@@ -5,11 +5,11 @@
     <title>Canvace &bull; Canvace.Loader - API reference</title>
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
 	<link href="http://fonts.googleapis.com/css?family=Titillium+Web:300" rel="stylesheet" type="text/css">    
-    <link rel="stylesheet" href="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;3.8.0pr2&#x2F;build&#x2F;cssgrids&#x2F;cssgrids-min.css">
+    <link rel="stylesheet" href="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;3.8.0&#x2F;build&#x2F;cssgrids&#x2F;cssgrids-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/css/main.css" id="site_styles">
     <link rel="shortcut icon" type="image/png" href="..&#x2F;assets/favicon.png">
-    <script src="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;combo?3.8.0pr2&#x2F;build&#x2F;yui&#x2F;yui-min.js"></script>
+    <script src="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;combo?3.8.0&#x2F;build&#x2F;yui&#x2F;yui-min.js"></script>
     <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -301,7 +301,8 @@ The specified path must not include any trailing slash.</p>
                                 <div class="param-description">
                                     <p>A mandatory callback function to invoke
 when the loading of the assets completes. It receives a reference to this
-loader.</p>
+loader (and, when invoked by the <code>loadStage</code> method, also a reference to a
+<a href="..\classes\Canvace.Stage.html" class="crosslink">Canvace.Stage</a> object).</p>
                                 </div>
 
                                 
@@ -416,6 +417,13 @@ whenever a loading error occurs.</p>
                             </li>
                         
                             <li class="index-item method">
+                                <a href="#method_loadStage">loadStage</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
                                 <a href="#method_playSound">playSound</a>
 
                                 
@@ -490,7 +498,7 @@ whenever a loading error occurs.</p>
             
         
         
-        <a href="..&#x2F;files&#x2F;src_Loader.js.html#l150"><code>src\Loader.js:150</code></a>
+        <a href="..&#x2F;files&#x2F;src_Loader.js.html#l151"><code>src\Loader.js:151</code></a>
         
         </p>
 
@@ -612,7 +620,7 @@ image.
             
         
         
-        <a href="..&#x2F;files&#x2F;src_Loader.js.html#l235"><code>src\Loader.js:235</code></a>
+        <a href="..&#x2F;files&#x2F;src_Loader.js.html#l236"><code>src\Loader.js:236</code></a>
         
         </p>
 
@@ -722,7 +730,7 @@ the sound back if the specified name is known, <code>null</code> otherwise.
             
         
         
-        <a href="..&#x2F;files&#x2F;src_Loader.js.html#l365"><code>src\Loader.js:365</code></a>
+        <a href="..&#x2F;files&#x2F;src_Loader.js.html#l411"><code>src\Loader.js:411</code></a>
         
         </p>
 
@@ -837,7 +845,7 @@ the sound back if the specified name is known, <code>null</code> otherwise.
             
         
         
-        <a href="..&#x2F;files&#x2F;src_Loader.js.html#l332"><code>src\Loader.js:332</code></a>
+        <a href="..&#x2F;files&#x2F;src_Loader.js.html#l378"><code>src\Loader.js:378</code></a>
         
         </p>
 
@@ -952,7 +960,7 @@ the sound back if the specified name is known, <code>null</code> otherwise.
             
         
         
-        <a href="..&#x2F;files&#x2F;src_Loader.js.html#l253"><code>src\Loader.js:253</code></a>
+        <a href="..&#x2F;files&#x2F;src_Loader.js.html#l254"><code>src\Loader.js:254</code></a>
         
         </p>
 
@@ -976,7 +984,7 @@ stage and all the given sounds.</p>
                 <li class="param">
                     
                         <code class="param-name optional">[imagesData]</code>
-                        <span class="type">Mixed</span>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
                         <span class="flag optional" title="This parameter is optional.">optional</span>
                     
 
@@ -984,9 +992,7 @@ stage and all the given sounds.</p>
 
                     <div class="param-description">
                         <p>The JSON data output by the Canvace
-Development Environment, or a string representing the URL where the
-JSON resource can be loaded from (if the latter case, the Loader will
-automatically perform a new GET request to that URL).</p>
+Development Environment.</p>
                     </div>
 
                     
@@ -1072,6 +1078,168 @@ Canvace.Ajax.getJSON('stage.json', function (stage) {
 </div>
 
                 
+                    <div id="method_loadStage" class="method item">
+    <h3 class="name"><code>loadStage</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>canvas</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>stageUrl</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>soundsData</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="..&#x2F;files&#x2F;src_Loader.js.html#l330"><code>src\Loader.js:330</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Asynchronously loads all the images associated with the given Canvace
+stage and all the given sounds. This function takes care of loading the
+JSON data from the server with an HTTP <code>GET</code> request and instantiating
+a <a href="..\classes\Canvace.Stage.html" class="crosslink">Canvace.Stage</a> for the specified canvas.</p>
+
+<p>When using this method, the registered completion handler will receive
+two parameters: this loader instance, and a
+<a href="..\classes\Canvace.Stage.html" class="crosslink">Canvace.Stage</a> object.</p>
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">canvas</code>
+                        <span class="type">Mixed</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>An HTML5 canvas element used where the stage
+will be rendered. This parameter can be either the actual
+<code>HTMLCanvasElement</code>, or a selector string. In the latter case, the
+first matching element is used, and an exception is thrown if no
+matching element is found.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">stageUrl</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>The URL where the JSON resource can be
+loaded from. The loader will automatically perform a new <code>GET</code>
+request to that URL.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">soundsData</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>See the description of the omonymous
+parameter of the <code>loadAssets</code> function.</p>
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code>var loader = new Canvace.Loader({
+    basePath: 'media',
+    complete: function (loader, stage) {
+        // ...
+    }
+});
+
+loader.loadStage('#canvas', 'stage.json', {
+    'first-sound': ['first.mp3', 'first.ogg'],
+    'second-sound': ['second.mp3', 'second.ogg']
+});
+</code></pre>
+            </div>
+        </div>
+    
+</div>
+
+                
                     <div id="method_playSound" class="method item">
     <h3 class="name"><code>playSound</code></h3>
 
@@ -1124,7 +1292,7 @@ Canvace.Ajax.getJSON('stage.json', function (stage) {
             
         
         
-        <a href="..&#x2F;files&#x2F;src_Loader.js.html#l390"><code>src\Loader.js:390</code></a>
+        <a href="..&#x2F;files&#x2F;src_Loader.js.html#l436"><code>src\Loader.js:436</code></a>
         
         </p>
 

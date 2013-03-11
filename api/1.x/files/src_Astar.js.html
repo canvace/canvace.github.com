@@ -5,11 +5,11 @@
     <title>Canvace &bull; src\Astar.js - API reference</title>
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
 	<link href="http://fonts.googleapis.com/css?family=Titillium+Web:300" rel="stylesheet" type="text/css">    
-    <link rel="stylesheet" href="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;3.8.0pr2&#x2F;build&#x2F;cssgrids&#x2F;cssgrids-min.css">
+    <link rel="stylesheet" href="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;3.8.0&#x2F;build&#x2F;cssgrids&#x2F;cssgrids-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/css/main.css" id="site_styles">
     <link rel="shortcut icon" type="image/png" href="..&#x2F;assets/favicon.png">
-    <script src="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;combo?3.8.0pr2&#x2F;build&#x2F;yui&#x2F;yui-min.js"></script>
+    <script src="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;combo?3.8.0&#x2F;build&#x2F;yui&#x2F;yui-min.js"></script>
     <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -257,21 +257,20 @@ Canvace.Astar = function (epsilon) {
 	 * constructor.
 	 *
 	 * &#x60;startNode&#x60; is an &#x60;Astar.Node&#x60;-like object representing the first node of
-	 * the path to find, respectively; &#x60;Astar.Node&#x60;-like means it has to provide
-	 * the same properties and methods described by the documentation of the
-	 * &#x60;Astar.Node&#x60; pseudo-class.
+	 * the path to find; &#x60;Astar.Node&#x60;-like means it has to provide the same
+	 * properties and methods described by the documentation of the &#x60;Astar.Node&#x60;
+	 * pseudo-class.
 	 *
 	 * The target node is identified when the estimated distance from it,
 	 * provided by each node, is zero; the algorithm stops when this happens.
 	 *
 	 * &#x60;Astar.Node&#x60; objects allow to specify a directed graph with weighted and
 	 * labeled edges. Edge weights are real numbers and are used to compute the
-	 * cost of a path. Edge labels are strings and are then used to describe the
-	 * path as an array of edges to walk.
+	 * cost of a path. Edge labels are strings and are used when describing the
+	 * computed path as an array of edges to walk.
 	 *
 	 * The computed path, if one exists, is returned as an array of strings.
-	 * &#x60;null&#x60; is returned if the target node is unreachable from the starting
-	 * node.
+	 * &#x60;null&#x60; is returned if the target node is unreachable from the start node.
 	 *
 	 * @method findPath
 	 * @for Canvace.Astar

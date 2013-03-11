@@ -5,11 +5,11 @@
     <title>Canvace &bull; src\TileMap.js - API reference</title>
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
 	<link href="http://fonts.googleapis.com/css?family=Titillium+Web:300" rel="stylesheet" type="text/css">    
-    <link rel="stylesheet" href="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;3.8.0pr2&#x2F;build&#x2F;cssgrids&#x2F;cssgrids-min.css">
+    <link rel="stylesheet" href="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;3.8.0&#x2F;build&#x2F;cssgrids&#x2F;cssgrids-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/css/main.css" id="site_styles">
     <link rel="shortcut icon" type="image/png" href="..&#x2F;assets/favicon.png">
-    <script src="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;combo?3.8.0pr2&#x2F;build&#x2F;yui&#x2F;yui-min.js"></script>
+    <script src="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;combo?3.8.0&#x2F;build&#x2F;yui&#x2F;yui-min.js"></script>
     <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -187,6 +187,7 @@
  * renderings.
  *&#x2F;
 Canvace.TileMap = function (data, buckets) {
+	var thisObject = this;
 	var map = data.map;
 
 	var tileCache = {};
@@ -509,31 +510,31 @@ Canvace.TileMap = function (data, buckets) {
 	 * computed path is returned to the caller.
 	 *
 	 * @method findPath
-	 * @param startNode {Canvace.Astar.Node} The starting node.
+	 * @param i {Number} The I coordinate of the requested node.
+	 * @param j {Number} The J coordinate of the requested node.
+	 * @param k {Number} The number of the layer containing both the requested
+	 * and the target node.
+	 * @param i1 {Number} The I coordinate of the target node.
+	 * @param j1 {Number} The J coordinate of the target node.
 	 * @return {Object[]} An array of objects containing the &#x60;i&#x60; and &#x60;j&#x60;
 	 * coordinates of the nodes in the computed path, or &#x60;null&#x60; if no path can
 	 * be found. The starting node is **not** included.
 	 *&#x2F;
 	var astar;
-	this.findPath = function (startNode) {
+	this.findPath = function (i, j, k, i1, j1) {
 		if (!astar) {
 			astar = new Canvace.Astar();
 		}
 
-		function getCoordinates(node) {
-			var tokens = node.id.split(&#x27; &#x27;);
-			return {
-				i: tokens[0],
-				j: tokens[1]
-			};
-		}
-
-		var node = startNode;
-		var path = astar.findPath(node);
+		var path = astar.findPath(thisObject.getGraphNode(i, j, k, i1, j1));
 		var result = [];
-		for (var i in path) {
-			node = node.neighbors[path[i]]();
-			result.push(getCoordinates(node));
+		for (var index = 0; index &lt; path.length; ++index) {
+			i = i + [-1, -1, -1, 0, 0, 0, 1, 1, 1][path[index]];
+			j = j + [-1, 0, 1, -1, 0, 1, -1, 0, 1][path[index]];
+			result.push({
+				i: i,
+				j: j
+			});
 		}
 		return result;
 	};

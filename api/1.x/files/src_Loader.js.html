@@ -5,11 +5,11 @@
     <title>Canvace &bull; src\Loader.js - API reference</title>
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
 	<link href="http://fonts.googleapis.com/css?family=Titillium+Web:300" rel="stylesheet" type="text/css">    
-    <link rel="stylesheet" href="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;3.8.0pr2&#x2F;build&#x2F;cssgrids&#x2F;cssgrids-min.css">
+    <link rel="stylesheet" href="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;3.8.0&#x2F;build&#x2F;cssgrids&#x2F;cssgrids-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/css/main.css" id="site_styles">
     <link rel="shortcut icon" type="image/png" href="..&#x2F;assets/favicon.png">
-    <script src="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;combo?3.8.0pr2&#x2F;build&#x2F;yui&#x2F;yui-min.js"></script>
+    <script src="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;combo?3.8.0&#x2F;build&#x2F;yui&#x2F;yui-min.js"></script>
     <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -185,7 +185,8 @@
  * The specified path must not include any trailing slash.
  * @param options.complete {Function} A mandatory callback function to invoke
  * when the loading of the assets completes. It receives a reference to this
- * loader.
+ * loader (and, when invoked by the &#x60;loadStage&#x60; method, also a reference to a
+ * {{#crossLink &quot;Canvace.Stage&quot;}}{{&#x2F;crossLink}} object).
  * @param [options.progress] {Function} An optional callback function to invoke
  * when the loading of the assets progresses. It receives the current percentage
  * expressed as a real number in a &#x60;[0, 100)&#x60; range.
@@ -430,10 +431,8 @@ Canvace.Loader = function (options) {
 	 * stage and all the given sounds.
 	 *
 	 * @method loadAssets
-	 * @param [imagesData] {Mixed} The JSON data output by the Canvace
-	 * Development Environment, or a string representing the URL where the
-	 * JSON resource can be loaded from (if the latter case, the Loader will
-	 * automatically perform a new GET request to that URL).
+	 * @param [imagesData] {Object} The JSON data output by the Canvace
+	 * Development Environment.
 	 * @param [soundsData] {Object} A map where the keys indicate the name of
 	 * the sound to load, and the values are &#x60;Array&#x60;s of source descriptors,
 	 * which are either &#x60;Object&#x60;s (each containing the string properties
@@ -501,6 +500,53 @@ Canvace.Loader = function (options) {
 		if (!soundsLoaded) {
 			loadSounds(soundsData);
 		}
+	};
+
+	&#x2F;**
+	 * Asynchronously loads all the images associated with the given Canvace
+	 * stage and all the given sounds. This function takes care of loading the
+	 * JSON data from the server with an HTTP &#x60;GET&#x60; request and instantiating
+	 * a {{#crossLink &quot;Canvace.Stage&quot;}}{{&#x2F;crossLink}} for the specified canvas.
+	 *
+	 * When using this method, the registered completion handler will receive
+	 * two parameters: this loader instance, and a
+	 * {{#crossLink &quot;Canvace.Stage&quot;}}{{&#x2F;crossLink}} object.
+	 *
+	 * @method loadStage
+	 * @param canvas {Mixed} An HTML5 canvas element used where the stage
+	 * will be rendered. This parameter can be either the actual
+	 * &#x60;HTMLCanvasElement&#x60;, or a selector string. In the latter case, the
+	 * first matching element is used, and an exception is thrown if no
+	 * matching element is found.
+	 * @param stageUrl {String} The URL where the JSON resource can be
+	 * loaded from. The loader will automatically perform a new &#x60;GET&#x60;
+	 * request to that URL.
+	 * @param soundsData {Object} See the description of the omonymous
+	 * parameter of the &#x60;loadAssets&#x60; function.
+	 * @example
+	 *	var loader = new Canvace.Loader({
+	 *		basePath: &#x27;media&#x27;,
+	 *		complete: function (loader, stage) {
+	 *			&#x2F;&#x2F; ...
+	 *		}
+	 *	});
+	 *
+	 *	loader.loadStage(&#x27;#canvas&#x27;, &#x27;stage.json&#x27;, {
+	 *		&#x27;first-sound&#x27;: [&#x27;first.mp3&#x27;, &#x27;first.ogg&#x27;],
+	 *		&#x27;second-sound&#x27;: [&#x27;second.mp3&#x27;, &#x27;second.ogg&#x27;]
+	 *	});
+	 *&#x2F;
+	this.loadStage = function (canvas, stageUrl, soundsData) {
+		Canvace.Ajax.getJSON(stageUrl, function (imagesData) {
+			var originalCallback = loadComplete;
+			loadComplete = function () {
+				loadComplete = originalCallback;
+				originalCallback(thisObject, new Canvace.Stage(imagesData, canvas));
+			};
+			thisObject.loadAssets(imagesData, soundsData);
+		}, function () {
+			loadError.apply(thisObject, arguments);
+		});
 	};
 };
 
