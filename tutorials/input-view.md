@@ -18,7 +18,7 @@ In order to register handlers for mouse events, first a `Canvace.Mouse` object m
     var mouse = new Canvace.Mouse(canvas);
 {% endhighlight %}
 
-the first and only parameter specifies the canvas object for which the object will capture the mouse events.
+the first and only parameter specifies the canvas object from which the object will capture the mouse events.
 You can now implement and set some callback functions, and react to a variety of mouse events. An example is shown below:
 
 {% highlight javascript %}
@@ -31,8 +31,8 @@ You can now implement and set some callback functions, and react to a variety of
 {% endhighlight %}
 
 The function is called whenever the user left-clicks inside the canvas. The x and y parameters identify the point clicked by the user, in canvas coordinates, while
-button is an identifier for the particular mouse button being pressed (0 = left button, 1 = middle, if present, 2 = right button).
-The function body shows how we can retrieve which tile has been clicked. The canvas coordinates are translated into (i, j, k) coordinates of the tile map with the `getCell()` method of the `Stage.View` class. It is then easy to retrieve the tile object itself from the map. Continue on the last chapter of this page for a more detailed explanation of `Stage.View`'s features.
+button identifies which mouse button that was pressed (0 = left button, 1 = middle, if it exists, 2 = right button).
+The function body shows how we can retrieve which tile has been clicked. The canvas coordinates are translated into (i, j, k) coordinates of the tile map with the `getCell()` method of the `Stage.View` class. Continue on the last chapter of this page for a more detailed explanation of `Stage.View`'s features.
 
 Next, the tile map tells us which tile corresponds to the i, j and k coordinates. Although not showed in the snippet, the `TileMap` associated to a stage is obtained by the `Canvace.Stage` class itself, calling `getTileMap()`.
 
@@ -55,7 +55,7 @@ In the game, we react to the pressing of the space bar by toggling on and off th
     });
 {% endhighlight %}
     
-Note that, at line 1, `Canvace.Keyboard` is initialized with the global window object, and not just for the canvas. The `debug` variable contains the `DebugEffect`,
+Note that, at line 1, `Canvace.Keyboard` is initialized with the global window object. The `debug` variable contains the `DebugEffect`,
 already added to the stage renderer, but disabled. Pressing the space key alternatively turns it on and off. The handler also receives the key code, which is
 unused here.
 
@@ -79,7 +79,7 @@ If your stage is bigger than the canvas it is rendered in, it is possible to dra
     });
 {% endhighlight %}
 
-Here we make the view follow the mouse pointer as it is being dragged around. The callback for `onDrag` takes five parameters: the position where the drag started and the one where the drag ends, both in canvas coordinates, and an identifier of the mouse button. The `drag()` method of `Stage.View` displaces the origin of the view, initially placed at the top-left corner of the canvas, by the given x and y offsets. In order to move the view to an absolute position (again in canvas coordinates) use `dragTo()`.
+Here we make the view follow the mouse pointer as it is being dragged around with the right button. The callback for `onDrag` takes five parameters: the position where the drag started and the one where the drag ends, both in canvas coordinates, and an identifier of the mouse button. The `drag()` method of `Stage.View` displaces the origin of the view, initially placed at the top-left corner of the canvas, by the given x and y offsets. In order to move the view to an absolute position (again in canvas coordinates) use `dragTo()`.
 
 ## Projecting and unprojecting
 `Stage.View` also provides methods for transforming from canvas coordinates (x, y, z) into map coordinates (i, j, k), and vice versa.

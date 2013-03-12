@@ -21,7 +21,7 @@ Generally speaking, you may organize a Canvace game like this:
 ## Stage loading and rendering
 Initially, the stage information exported by the development environment needs to be loaded into Canvace. This is done asynchronously, using a `Canvace.Loader`. The parameters for the constructor specify where the pictures can be found, a progress callback (which in this case simply updates a progress bar), an error callback, and finally a callback for completion. The loading process starts with the call to `loadStage()`, which takes the CSS selector for the canvas and the JSON file of the first stage.
 
-Note: the code below is just a snippet from the complete source, which tries to highlight the most important parts of this procedure.
+Note: the code below is just a snippet from the complete source, and it tries to highlight the most important parts of this procedure.
 
 {% highlight javascript %}
     var loader = new Canvace.Loader({
@@ -48,7 +48,7 @@ Note: the code below is just a snippet from the complete source, which tries to 
 
 Notice that the `complete` callback gets passed a `Canvace.Stage` instance representing the stage it just loaded. This object will be useful later for retrieving different kinds of information related to the stage, e.g. the entities or the tile map.
 
-As soon as the game information has been stored inside Canvace, it's time to render the stage into the canvas. For this purpose, line 15 initializes the render loop: here we can control the periodical rendering of the stage inside the canvas. The parameters `animator` and `eventLoop.loop` define what happens to the scene between two consecutive renderings. In particular, the `eventLoop.loop` function runs the game logic: it moves the characters, manages collisions and state transitions. The `animator` is a Canvace class for animations which is described in more details in the pathfinding chapter.
+As soon as the game information has been stored inside Canvace, it's time to render the stage into the canvas. For this purpose, line 15 initializes the render loop: here we can control the periodical rendering of the stage inside the canvas. The parameters `animator` and `eventLoop.loop` define what happens to the scene between two consecutive renderings. In particular, the `eventLoop.loop` function runs the game logic: it moves the characters, managing collisions and state transitions. The `animator` is a Canvace class for animations which is described in more details in the pathfinding chapter.
 
 At line 16, the `run()` method starts the rendering, and the stage is finally displayed.
 

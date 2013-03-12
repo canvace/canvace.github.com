@@ -15,7 +15,7 @@ After creating an entity in the development environment, we can retrieve it from
 ## Entities vs. instances
 Entities are just an abstract description of the component. You may see that the `Canvace.Stage.Entity` class only stores a quite generic set of properties: for example, you may get the coordinates and span of the bounding box assigned to the entity. Bounding boxes are used by Canvace to easily detect collisions among entities with a great variety of different shapes and sizes.
 
-In order to actually work on the entity inside the game (e.g moving it around) you need to create tangible instances of that entity. A first instance always exists by default: it can be obtained from the `Canvace.Stage` object, calling the `getInstance()` method. Other instances can be created and placed on the map with the `createInstance()` method of `Stage.Entity`.
+In order to actually work on the entity inside the game (e.g moving it around) you need to create tangible instances of that entity. A first instance always exists by default: it can be obtained from the `Canvace.Stage` object, calling the `getInstance()` method. Other instances of a same entity can be created and placed on the map with the `createInstance()` method of `Stage.Entity`.
 
 Note that entities are filtered in the stage by their custom properties: for this reason, in the development environment we added a custom property "name" to all the entities, with a unique value assigned to it.
 
@@ -27,7 +27,7 @@ implemented by Canvace. More specifically, each entity stores the following phys
 - acceleration
 
 These properties are vectors in a 3-dimensional space. By modifying these vectors it is possible to move the instance around the map: at each rendering loop, the
-entity's physics state is changed according to the vectors, and then the actual position of the instance is updated. You don't need to control this process manually: the pathfinding chapter of this tutorial explains how you can use interpolated animations to let Canvace do the job for you.
+entity's physics state is changed according to the vectors, and then the actual position of the instance is updated. You don't need to control this whole process manually: the pathfinding chapter of this tutorial explains how you can use animations to let Canvace do the job for you.
 
 ## Collisions
 Canvace is equipped with features for testing and reacting to collisions. An entity may collide with other entities or with tiles.
@@ -44,7 +44,7 @@ Collisions with tiles work in a similar way: `collidesWithTiles()` needs the `Ca
 ## Replacing and removing entities
 Once an entity instance has been instantiated, it is possible to change its external appearance by replacing it with an instance of another entity who had a different frame associated to it. This second entity, of course, must have been created and exported from the editor as usual.
 
-In the game, for example, we replace the instance of the main character when it collides with a donut (represented by another instance). First, we retrieve the second entity from the stage using the custom property "name" as filter:
+In the game, for example, we replace the instance of the main character when it collides with a donut (another instance). First, we retrieve the second entity from the stage using the custom property "name" as filter:
 
 {% highlight javascript %}
     var immortalMan = stage.getEntity({ name: "Stealth" });

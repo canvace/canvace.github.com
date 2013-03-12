@@ -14,7 +14,7 @@ All audio resources you use in the game must be first loaded from the "media" di
 
 {% highlight javascript %}
     var loader = new Canvace.Loader(...);
-    loader.loadAssets(data, soundResources);
+    loader.loadStage("#tutorial", "stage/Stage1.json", soundResources);
 {% endhighlight %}
 
 The `soundResources` variable is a map from sound names to one or more source descriptors. This is an optional parameter: if you don't need any sound in your game, simply ignore it.

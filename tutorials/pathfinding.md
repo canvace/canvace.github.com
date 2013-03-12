@@ -27,10 +27,10 @@ Let's first explain how the path computation is implemented:
     this.pathTiles = map.findPath(astarNode);
 {% endhighlight %}
 
-Line 1 gets the default instance of the interested entity: read the chapter about entities to see why this is necessary.
+Line 1 gets the default instance of the entity we need to move: read the chapter about entities to see why this is necessary.
 
 In order for the A\* algorithm to find a path, we need a representation of the stage map as a graph where each tile is a node, and an edge exists between two tiles
-when they are adjacent in the map. The `findPath()` method of `Canvace.Astar` requires a `Canvace.Astar.Node` object which contains all the needed graph information. The `getGraphNode()` method takes the current position and the desired destination, and returns such object. The layer needs to be passed only once, as the graph stored inside Canvace allows no connections between tiles on different layers.
+when they are adjacent in the map. The `findPath()` method of `Canvace.TileMap` requires a `Canvace.Astar.Node` object which contains the needed graph information. The `getGraphNode()` method takes the current position and the desired destination, and returns such object. The layer needs to be passed only once, as the graph stored inside Canvace allows no connections between tiles on different layers.
 
 When no path exists, `findPath()` returns NULL. Otherwise, it returns an array of (i, j) pairs, each containing the map coordinates of a non-solid tile. Concatenating all these tiles together in the same order as they appear in the array, we get the computed path (starting tile excluded).
 
@@ -56,7 +56,7 @@ When no path exists, `findPath()` returns NULL. Otherwise, it returns an array o
 The actual movement from one tile to the next is performed as an interpolated animation. Such animations may influence the entity's position, velocity and acceleration vectors. After changing the vectors, the entity position must be updated: this is done automatically by Canvace only if the entity's physics is enabled. Otherwise, you must manually call the `update()` method for the affected instance.
 
 In the above snippet, each invokation to `interpolationStep()` starts an animation which moves the entity instance from the current position to the next tile of the path. You can specify the duration in milliseconds of the animation with the third parameter, controlling the speed of your entity.
-The motion performed by `interpolatePosition()` to the specified destination takes place, by default, at constant speed. It is however possible to specify a more complex pattern of movement: this is done by setting the `easing` property of the last parameter. The `Canvace.Animator.Easing` class provides a set of pre-defined easing methods; alternatively, you can define and pass your own function.
+The motion performed by `interpolatePosition()` to the specified destination takes place, by default, at constant speed. It is however possible to specify complex pattern of movements: this is done by setting the `easing` property of the last parameter. The `Canvace.Animator.Easing` class provides a set of pre-defined easing methods; alternatively, you can define and pass your own function.
 
 Although this code snippet doesn't show it, additional code prevents an interpolation step from being started before the previous one has finished: overlapping more
 animations on the same entity instance easily causes errors, and the resulting path may be different from the one computed by A\*.
