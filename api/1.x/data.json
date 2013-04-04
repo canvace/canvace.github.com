@@ -3113,7 +3113,7 @@
         },
         {
             "file": "src\\Polyfill.js",
-            "line": 39,
+            "line": 49,
             "description": "Returns a reference to a possibly browser-prefixed property of a\ngiven object.",
             "example": [
                 "\n\t// Get a prefixed property from the `window` object.\n\tvar requestAnimationFrame = Canvace.Polyfill.getPrefixedProperty('requestAnimationFrame');\n\n\t// Get a prefixed property from a DOM element.\n\tvar canvas = document.getElementById('canvas');\n\tvar requestFullscreen = Canvace.Polyfill.getPrefixedProperty(canvas, ['requestFullscreen', 'requestFullScreen']);"
