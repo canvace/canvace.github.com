@@ -1,5 +1,6 @@
 ---
 layout: default
+jquery: true
 no_disqus: true
 ---
 
@@ -8,6 +9,8 @@ Canvace
 
 The ultimate HTML5 game development platform
 --------------------------------------------
+
+<a id="speedrun" href="#">Design your first stage in minutes!</a>
 
 Current Canvace features:
 
@@ -30,3 +33,39 @@ Current Canvace features:
 *	Free and Open Source
 
 Don't settle for less than this. [Get started now](tutorials/index.html).
+
+<div class="overlay container">
+	<div class="overlay content">
+		<iframe width="560" height="315" src="http://www.youtube.com/embed/Q-haBMqdnQ4" frameborder="0" allowfullscreen="allowfullscreen">&nbsp;</iframe>
+		<a class="close-button" href="#">Close</a>
+	</div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+	var overlay = $(".overlay.container").detach();
+
+	$("#speedrun").click(function toggleOverlay(event) {
+		event.preventDefault();
+
+		if (overlay) {
+			overlay.appendTo("body");
+			overlay = null;
+
+			$(".close-button").on("click", toggleOverlay);
+			$(".overlay.container").on("keyup", function (event) {
+				if (27 == event.keyCode) {
+					toggleOverlay(event);
+				}
+			});
+
+			$(".close-button").focus();
+		} else {
+			$(".close-button").off("click");
+			$(".overlay.container").off("keyup");
+
+			overlay = $(".overlay.container").detach();
+		}
+	});
+});
+</script>
