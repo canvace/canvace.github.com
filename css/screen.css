@@ -179,6 +179,7 @@ body,
 .overlay.content > :first-child {
 	display: block;
 	margin: auto;
+	box-shadow: 0 0 1em #3f3f3f;
 }
 
 .overlay.content > .close-button {
