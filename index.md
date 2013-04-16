@@ -52,9 +52,17 @@ Don't settle for less than this. [Get started now](tutorials/index.html).
 	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 }());
 
-function onYouTubeIframeAPIReady() {
-	var player = new YT.Player("ladybug-speedrun");
+var player;
 
+function onYouTubeIframeAPIReady() {
+	player = new YT.Player("ladybug-speedrun", {
+		events: {
+			onReady: onYouTubePlayerReady
+		}
+	});
+}
+
+function onYouTubePlayerReady() {
 	(function (showOverlay) {
 		$("#speedrun").click(showOverlay);
 	}(function (event) {
