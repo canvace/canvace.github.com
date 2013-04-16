@@ -34,38 +34,53 @@ Current Canvace features:
 
 Don't settle for less than this. [Get started now](tutorials/index.html).
 
-<div class="overlay container">
+<div class="overlay container hidden">
 	<div class="overlay content">
-		<iframe width="560" height="315" src="http://www.youtube.com/embed/Q-haBMqdnQ4" frameborder="0" allowfullscreen="allowfullscreen">&nbsp;</iframe>
+		<iframe id="ladybug-speedrun" type="text/html" width="640" height="390"
+  src="http://www.youtube.com/embed/Q-haBMqdnQ4?enablejsapi=1"
+  frameborder="0">&nbsp;</iframe>
 		<a class="close-button" href="#">Close</a>
 	</div>
 </div>
 
 <script type="text/javascript">
-$(function () {
-	var overlay = $(".overlay.container").detach();
+(function () {
+	var tag = document.createElement("script");
+	tag.src = "https://www.youtube.com/iframe_api";
 
-	$("#speedrun").click(function toggleOverlay(event) {
+	var firstScriptTag = document.getElementsByTagName("script")[0];
+	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+}());
+
+function onYouTubeIframeAPIReady() {
+	var player = new YT.Player("ladybug-speedrun");
+
+	(function (showOverlay) {
+		$("#speedrun").click(showOverlay);
+	}(function (event) {
 		event.preventDefault();
 
-		if (overlay) {
-			overlay.appendTo("body");
-			overlay = null;
+		$(".overlay.container").toggleClass("hidden");
+		$(".close-button").focus();
 
-			$(".close-button").on("click", toggleOverlay);
-			$(".overlay.container").on("keyup", function (event) {
-				if (27 == event.keyCode) {
-					toggleOverlay(event);
-				}
-			});
+		player.seekTo(0, true);
+		player.playVideo();
+	}));
 
-			$(".close-button").focus();
-		} else {
-			$(".close-button").off("click");
-			$(".overlay.container").off("keyup");
+	(function (hideOverlay) {
+		$(".close-button").click(hideOverlay);
+		$(".overlay.container").on("keyup", function (event) {
+			if (27 == event.keyCode) {
+				hideOverlay(event);
+			}
+		});
+	}(function (event) {
+		event.preventDefault();
 
-			overlay = $(".overlay.container").detach();
-		}
-	});
-});
+		player.stopVideo();
+
+		$(".overlay.container").toggleClass("hidden");
+		$(".close-button").blur();
+	}));
+}
 </script>

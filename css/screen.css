@@ -164,6 +164,13 @@ body,
 	background-color: rgba(0, 0, 0, .95);
 }
 
+.overlay.container.hidden {
+	left: -100%;
+	top: -100%;
+	right: 100%;
+	bottom: 100%;
+}
+
 .overlay.content {
 	display: table-cell;
 	vertical-align: middle;
