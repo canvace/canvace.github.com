@@ -6,8 +6,8 @@
         "url": "http://www.canvace.com/"
     },
     "files": {
-        "src\\Ajax.js": {
-            "name": "src\\Ajax.js",
+        "src/Ajax.js": {
+            "name": "src/Ajax.js",
             "modules": {},
             "classes": {
                 "Canvace.Ajax": 1,
@@ -18,8 +18,8 @@
             },
             "namespaces": {}
         },
-        "src\\Animator.js": {
-            "name": "src\\Animator.js",
+        "src/Animator.js": {
+            "name": "src/Animator.js",
             "modules": {},
             "classes": {
                 "Canvace.Animator": 1,
@@ -28,8 +28,8 @@
             "fors": {},
             "namespaces": {}
         },
-        "src\\Astar.js": {
-            "name": "src\\Astar.js",
+        "src/Astar.js": {
+            "name": "src/Astar.js",
             "modules": {},
             "classes": {
                 "Canvace.Astar": 1,
@@ -40,8 +40,8 @@
             },
             "namespaces": {}
         },
-        "src\\Audio.js": {
-            "name": "src\\Audio.js",
+        "src/Audio.js": {
+            "name": "src/Audio.js",
             "modules": {},
             "classes": {
                 "Canvace.Audio": 1,
@@ -50,8 +50,8 @@
             "fors": {},
             "namespaces": {}
         },
-        "src\\Buckets.js": {
-            "name": "src\\Buckets.js",
+        "src/Buckets.js": {
+            "name": "src/Buckets.js",
             "modules": {},
             "classes": {
                 "Canvace.Buckets": 1,
@@ -62,8 +62,8 @@
             },
             "namespaces": {}
         },
-        "src\\DebugEffect.js": {
-            "name": "src\\DebugEffect.js",
+        "src/DebugEffect.js": {
+            "name": "src/DebugEffect.js",
             "modules": {},
             "classes": {
                 "Canvace.DebugEffect": 1
@@ -71,8 +71,8 @@
             "fors": {},
             "namespaces": {}
         },
-        "src\\Heap.js": {
-            "name": "src\\Heap.js",
+        "src/Heap.js": {
+            "name": "src/Heap.js",
             "modules": {},
             "classes": {
                 "Canvace.Heap": 1
@@ -80,8 +80,8 @@
             "fors": {},
             "namespaces": {}
         },
-        "src\\Keyboard.js": {
-            "name": "src\\Keyboard.js",
+        "src/Keyboard.js": {
+            "name": "src/Keyboard.js",
             "modules": {},
             "classes": {
                 "Canvace.Keyboard": 1
@@ -89,8 +89,8 @@
             "fors": {},
             "namespaces": {}
         },
-        "src\\List.js": {
-            "name": "src\\List.js",
+        "src/List.js": {
+            "name": "src/List.js",
             "modules": {},
             "classes": {
                 "Canvace.List": 1,
@@ -101,8 +101,8 @@
             },
             "namespaces": {}
         },
-        "src\\Loader.js": {
-            "name": "src\\Loader.js",
+        "src/Loader.js": {
+            "name": "src/Loader.js",
             "modules": {},
             "classes": {
                 "Canvace.Loader": 1
@@ -110,8 +110,8 @@
             "fors": {},
             "namespaces": {}
         },
-        "src\\Mobile.js": {
-            "name": "src\\Mobile.js",
+        "src/Mobile.js": {
+            "name": "src/Mobile.js",
             "modules": {},
             "classes": {},
             "fors": {
@@ -119,8 +119,8 @@
             },
             "namespaces": {}
         },
-        "src\\Module.js": {
-            "name": "src\\Module.js",
+        "src/Module.js": {
+            "name": "src/Module.js",
             "modules": {
                 "Canvace": 1
             },
@@ -128,8 +128,8 @@
             "fors": {},
             "namespaces": {}
         },
-        "src\\Mouse.js": {
-            "name": "src\\Mouse.js",
+        "src/Mouse.js": {
+            "name": "src/Mouse.js",
             "modules": {},
             "classes": {
                 "Canvace.Mouse": 1
@@ -137,8 +137,8 @@
             "fors": {},
             "namespaces": {}
         },
-        "src\\MultiSet.js": {
-            "name": "src\\MultiSet.js",
+        "src/MultiSet.js": {
+            "name": "src/MultiSet.js",
             "modules": {},
             "classes": {
                 "Canvace.MultiSet": 1
@@ -146,8 +146,8 @@
             "fors": {},
             "namespaces": {}
         },
-        "src\\ParametricStateMachine.js": {
-            "name": "src\\ParametricStateMachine.js",
+        "src/ParametricStateMachine.js": {
+            "name": "src/ParametricStateMachine.js",
             "modules": {},
             "classes": {
                 "Canvace.ParametricStateMachine": 1
@@ -155,8 +155,8 @@
             "fors": {},
             "namespaces": {}
         },
-        "src\\Polyfill.js": {
-            "name": "src\\Polyfill.js",
+        "src/Polyfill.js": {
+            "name": "src/Polyfill.js",
             "modules": {},
             "classes": {
                 "Canvace.Polyfill": 1
@@ -164,8 +164,8 @@
             "fors": {},
             "namespaces": {}
         },
-        "src\\RenderLoop.js": {
-            "name": "src\\RenderLoop.js",
+        "src/RenderLoop.js": {
+            "name": "src/RenderLoop.js",
             "modules": {},
             "classes": {
                 "Canvace.RenderLoop": 1
@@ -173,8 +173,8 @@
             "fors": {},
             "namespaces": {}
         },
-        "src\\Renderer.js": {
-            "name": "src\\Renderer.js",
+        "src/Renderer.js": {
+            "name": "src/Renderer.js",
             "modules": {},
             "classes": {
                 "Canvace.Renderer": 1
@@ -182,8 +182,8 @@
             "fors": {},
             "namespaces": {}
         },
-        "src\\RumbleEffect.js": {
-            "name": "src\\RumbleEffect.js",
+        "src/RumbleEffect.js": {
+            "name": "src/RumbleEffect.js",
             "modules": {},
             "classes": {
                 "Canvace.RumbleEffect": 1
@@ -191,8 +191,8 @@
             "fors": {},
             "namespaces": {}
         },
-        "src\\Stage.js": {
-            "name": "src\\Stage.js",
+        "src/Stage.js": {
+            "name": "src/Stage.js",
             "modules": {},
             "classes": {
                 "Canvace.Stage": 1,
@@ -205,8 +205,8 @@
             },
             "namespaces": {}
         },
-        "src\\StageRenderer.js": {
-            "name": "src\\StageRenderer.js",
+        "src/StageRenderer.js": {
+            "name": "src/StageRenderer.js",
             "modules": {},
             "classes": {
                 "Canvace.StageRenderer": 1
@@ -214,8 +214,8 @@
             "fors": {},
             "namespaces": {}
         },
-        "src\\StateMachine.js": {
-            "name": "src\\StateMachine.js",
+        "src/StateMachine.js": {
+            "name": "src/StateMachine.js",
             "modules": {},
             "classes": {
                 "Canvace.StateMachine": 1
@@ -223,8 +223,8 @@
             "fors": {},
             "namespaces": {}
         },
-        "src\\TileMap.js": {
-            "name": "src\\TileMap.js",
+        "src/TileMap.js": {
+            "name": "src/TileMap.js",
             "modules": {},
             "classes": {
                 "Canvace.TileMap": 1,
@@ -235,8 +235,8 @@
             },
             "namespaces": {}
         },
-        "src\\Timing.js": {
-            "name": "src\\Timing.js",
+        "src/Timing.js": {
+            "name": "src/Timing.js",
             "modules": {},
             "classes": {
                 "Canvace.Timing": 1
@@ -244,8 +244,8 @@
             "fors": {},
             "namespaces": {}
         },
-        "src\\View.js": {
-            "name": "src\\View.js",
+        "src/View.js": {
+            "name": "src/View.js",
             "modules": {},
             "classes": {
                 "Canvace.View": 1,
@@ -254,8 +254,8 @@
             "fors": {},
             "namespaces": {}
         },
-        "src\\Visibility.js": {
-            "name": "src\\Visibility.js",
+        "src/Visibility.js": {
+            "name": "src/Visibility.js",
             "modules": {},
             "classes": {},
             "fors": {
@@ -312,7 +312,7 @@
             },
             "namespaces": {},
             "tag": "module",
-            "file": "src\\View.js",
+            "file": "src/View.js",
             "line": 276,
             "description": "The main namespace object of Canvace's Javascript client library is named\n`Canvace`. Every Canvace class must be accessed from that object."
         }
@@ -327,7 +327,7 @@
             "plugin_for": [],
             "extension_for": [],
             "module": "Canvace",
-            "file": "src\\Ajax.js",
+            "file": "src/Ajax.js",
             "line": 1,
             "description": "This class provides a simple interface to perform AJAX requests.",
             "static": 1
@@ -341,7 +341,7 @@
             "plugin_for": [],
             "extension_for": [],
             "module": "Canvace",
-            "file": "src\\Ajax.js",
+            "file": "src/Ajax.js",
             "line": 8,
             "description": "Represents an open AJAX request.\n\nYou cannot instantiate this class directly: you can obtain a new\ninstance by using the `get`, `post` and `getJSON` methods of\n{{#crossLink \"Canvace.Ajax\"}}{{/crossLink}}.",
             "is_constructor": 1,
@@ -414,7 +414,7 @@
             "plugin_for": [],
             "extension_for": [],
             "module": "Canvace",
-            "file": "src\\Animator.js",
+            "file": "src/Animator.js",
             "line": 1,
             "description": "Computes interpolated animations for entity instances.\n\nAn `Animator` object is actually a `tick`-like function that may be used in a\n`RenderLoop`; furthermore the `Animator` provides methods that can start\ninterpolated animations on specific entity instances.\n\nAn interpolated animation is performed by updating an instance's position,\nvelocity, uniform velocity or acceleration at every tick; all of these\nobjects have `i`, `j` and `k` fields and you can choose what fields must be\ninterpolated. You also have to define the target values for each and the\noverall duration (in milliseconds) of the animation.\n\nWhen using an `Animator` as the `tick` callback of a `RenderLoop` you can\nstill specify your own additional `tick` callback by passing it to the\n`Animator` constructor; such function has the same prototype as the `tick`\nfunction you would pass to the `RenderLoop` and is executed at each tick\n_after_ the update procedures for the current animations.\n\nNote that the `Animator` does not invoke the `update` method of the animated\ninstances, so, for animations to have effect, either physics must be enabled\nfor animated entities or you must invoke `update` manually (you can do that\nin your `tick` callback function).",
             "extends": "Function",
@@ -440,7 +440,7 @@
             "plugin_for": [],
             "extension_for": [],
             "module": "Canvace",
-            "file": "src\\Animator.js",
+            "file": "src/Animator.js",
             "line": 301,
             "description": "Static object holding various predefined easing functions ready to use with\nthe `interpolateXxx` methods of\n{{#crossLink \"Canvace.Animator\"}}{{/crossLink}}.",
             "static": 1
@@ -454,7 +454,7 @@
             "plugin_for": [],
             "extension_for": [],
             "module": "Canvace",
-            "file": "src\\Astar.js",
+            "file": "src/Astar.js",
             "line": 1,
             "description": "Provides a generic epsilon-admissible implementation of the A* pathfinding\nalgorithm.\n\n`Astar` objects provide a `findPath` method that finds an admissible path\nbetween two nodes of a graph.\n\nGiven that any path between two nodes has a cost greater than zero, the\nalgorithm tries to find either an optimal one (one of those with the least\ncost) or an admissible one (one whose cost is at most `1 + epsilon` times the\noptimal cost).\n\nThe `epsilon` parameter must be greater than zero and is optional: it is\nassumed to be zero when not specified. Specifying a non-zero epsilon value\nwill construct an object that can perform significantly faster and still\nyield almost optimal paths.\n\nRefer to the documentation of the `findPath` method for more information\nabout specifying the graph.",
             "is_constructor": 1,
@@ -476,7 +476,7 @@
             "plugin_for": [],
             "extension_for": [],
             "module": "Canvace",
-            "file": "src\\Astar.js",
+            "file": "src/Astar.js",
             "line": 32,
             "description": "This is not an actual inner class, it just documents what graph nodes\nmust implement in order to be suitable for the `Astar.findPath` method.\n\nObjects providing these properties and methods are usable as graph nodes\nand may be passed as arguments to `Astar.findPath`.",
             "static": 1
@@ -490,7 +490,7 @@
             "plugin_for": [],
             "extension_for": [],
             "module": "Canvace",
-            "file": "src\\Audio.js",
+            "file": "src/Audio.js",
             "line": 1,
             "description": "This class provides the needed functionalities to load audio resources and\ncontrol them. It uses WebAudio where available, and will default to\n`HTMLAudioElement` otherwise.",
             "is_constructor": 1
@@ -504,7 +504,7 @@
             "plugin_for": [],
             "extension_for": [],
             "module": "Canvace",
-            "file": "src\\Audio.js",
+            "file": "src/Audio.js",
             "line": 72,
             "description": "This class represents a sound resource that the browser is capable\nof playing. If the browser supports WebAudio, this class wraps around\nan `AudioSourceNode`; if it doesn't, this class wraps around an\n`HTMLAudioElement`.\n\nYou cannot instantiate this class directly: you can obtain a new\ninstance by using the `load` method of\n{{#crossLink \"Canvace.Audio\"}}{{/crossLink}}, or with the methods\n`getSound` and `playSound` made available by\n{{#crossLink \"Canvace.Loader\"}}{{/crossLink}}."
         },
@@ -517,7 +517,7 @@
             "plugin_for": [],
             "extension_for": [],
             "module": "Canvace",
-            "file": "src\\Buckets.js",
+            "file": "src/Buckets.js",
             "line": 1,
             "description": "The `Buckets` class allows for efficient rendering of graphic elements by\nimplementing an algorithm that automatically discards the elements located\nout of the viewport.\n\nYou can add any tiles or entities to the buckets using the provided `addXxx`\nmethods, the `forEachElement` method will then enumerate only the elements in\nthe current view.\n\nThe `Buckets` class also supports animated elements by enumerating the\ncorrect frame for each element depending on the current timestamp as per\n`Canvace.Timing.now`.\n\nBefore adding tiles and entities with the `addXxx` methods, tile and entity\ndescriptors must be registered using the provided `registerXxx` methods. This\nis required in order to support animations.\n\nYou do not usually need to use this class directly, as it is automatically\nused by the `Stage` and `StageRenderer` classes.",
             "is_constructor": 1,
@@ -543,7 +543,7 @@
             "plugin_for": [],
             "extension_for": [],
             "module": "Canvace",
-            "file": "src\\Buckets.js",
+            "file": "src/Buckets.js",
             "line": 83,
             "description": "Represents an entity.\n\nThis class cannot be instantiated directly, instances are returned by\nthe `Buckets.addEntity` method."
         },
@@ -556,7 +556,7 @@
             "plugin_for": [],
             "extension_for": [],
             "module": "Canvace",
-            "file": "src\\DebugEffect.js",
+            "file": "src/DebugEffect.js",
             "line": 1,
             "description": "This effect draws some overlays useful for diagnostic purposes during the\npost-processing rendering stage.\n\nThe effect may be disabled and reenabled using the provided `disable`,\n`enable` or `toggle` methods, and is initially enabled.",
             "is_constructor": 1,
@@ -657,7 +657,7 @@
             "plugin_for": [],
             "extension_for": [],
             "module": "Canvace",
-            "file": "src\\Heap.js",
+            "file": "src/Heap.js",
             "line": 1,
             "description": "Implements a heap using standard algorithms.\n\nA heap is a data structure consisting in a complete binary tree where each\nelement is more \"extreme\" than both of its children, for a user-defined\ncomparison.\n\nA heap can be seen as a prioritized queue and can provide a significant\nperformance boost in several algorithms, particularly the A* pathfinding\nalgorithm.",
             "is_constructor": 1,
@@ -684,7 +684,7 @@
             "plugin_for": [],
             "extension_for": [],
             "module": "Canvace",
-            "file": "src\\Keyboard.js",
+            "file": "src/Keyboard.js",
             "line": 166,
             "description": "Helper class that eases cross-browser keyboard input management.",
             "is_constructor": 1,
@@ -711,7 +711,7 @@
             "plugin_for": [],
             "extension_for": [],
             "module": "Canvace",
-            "file": "src\\List.js",
+            "file": "src/List.js",
             "line": 1,
             "description": "Implements a doubly linked list.\n\nThis can sometimes be preferrable to Javascript arrays since insertion and\nremoval operations have constant time complexity rather than linear.",
             "is_constructor": 1
@@ -725,7 +725,7 @@
             "plugin_for": [],
             "extension_for": [],
             "module": "Canvace",
-            "file": "src\\List.js",
+            "file": "src/List.js",
             "line": 15,
             "description": "Provides access to list elements.\n\nThis class cannot be instantiated directly, instances are returned by\nmethods of the outer class.",
             "example": [
@@ -741,7 +741,7 @@
             "plugin_for": [],
             "extension_for": [],
             "module": "Canvace",
-            "file": "src\\Loader.js",
+            "file": "src/Loader.js",
             "line": 1,
             "description": "Helper class that eases the asynchronous loading of the stage data exported\nby the Canvace Development Environment.",
             "is_constructor": 1,
@@ -797,7 +797,7 @@
             "extension_for": [],
             "module": "Canvace",
             "namespace": "",
-            "file": "src\\Mouse.js",
+            "file": "src/Mouse.js",
             "line": 1,
             "description": "Helper class that eases cross-browser mouse input management.",
             "is_constructor": 1,
@@ -819,7 +819,7 @@
             "extension_for": [],
             "module": "Canvace",
             "namespace": "",
-            "file": "src\\MultiSet.js",
+            "file": "src/MultiSet.js",
             "line": 1,
             "description": "Implements a multi-set, a set with possibly repeated elements.\n\nThis container allows insertion and removal of elements in constant time\nassuming the implementation of the underlying JavaScript engine manages in\namortizing insertion and removal of properties in objects to constant time.\n\nThe arguments you specify to the MultiSet constructor are immediately\ninserted into the container. For example:\n\n\tvar ms = new Canvace.MultiSet(1, 2, 3); // ms contains 1, 2 and 3\n\nThe previous snippet is equivalent to:\n\n\tvar ms = new Canvace.MultiSet();\n\tms.add(1);\n\tms.add(2);\n\tms.add(3);",
             "is_constructor": 1,
@@ -843,7 +843,7 @@
             "extension_for": [],
             "module": "Canvace",
             "namespace": "",
-            "file": "src\\ParametricStateMachine.js",
+            "file": "src/ParametricStateMachine.js",
             "line": 1,
             "description": "Similarly to the `StateMachine` class, the `ParametricStateMachine` class\nallows to implement state machines with states and transitions; the main\ndifference is that the states can be parameterized.\n\nObjects of this class have one method for each specified transition. A\n`ParametricStateMachine` object is initially in the specified initial state;\ncalling one of its transition methods makes it change its state depending on\nhow transitions and states are defined.\n\nTODO\n\nNote that this class defines a `getCurrentState` method, thus the\n\"getCurrentState\" name is reserved and cannot be used as a transition name\nsince it would override the method provided by the class.\n\nFor more information about defining state machines, refer to the constructor\ndocumentation.",
             "is_constructor": 1,
@@ -875,7 +875,7 @@
             "extension_for": [],
             "module": "Canvace",
             "namespace": "",
-            "file": "src\\Polyfill.js",
+            "file": "src/Polyfill.js",
             "line": 15,
             "description": "Static class which provides utility methods to eliminate the differences\nacross browsers.",
             "static": 1
@@ -890,7 +890,7 @@
             "extension_for": [],
             "module": "Canvace",
             "namespace": "",
-            "file": "src\\RenderLoop.js",
+            "file": "src/RenderLoop.js",
             "line": 1,
             "description": "Provides a main loop implementation for the specified `Stage`.\n\nThe loop runs at the specified rate (expressed in iterations per second).\n\nAt each iteration, first all the entities that have physics enabled are\nticked and then a rendering is performed.\n\nThe loop is not initially running: it starts when the `start` method is\ncalled. It can be later suspended, resumed and eventually stopped.",
             "is_constructor": 1,
@@ -934,7 +934,7 @@
             "extension_for": [],
             "module": "Canvace",
             "namespace": "",
-            "file": "src\\Renderer.js",
+            "file": "src/Renderer.js",
             "line": 1,
             "description": "Manages the rendering process.",
             "is_constructor": 1,
@@ -983,7 +983,7 @@
             "extension_for": [],
             "module": "Canvace",
             "namespace": "",
-            "file": "src\\RumbleEffect.js",
+            "file": "src/RumbleEffect.js",
             "line": 1,
             "description": "An effect that simulates rumbling by \"shaking\" the viewport. This effect\nprovides a `preProcess` method and no `postProcess` method; it works by\nmodifying the canvas's projection matrix in the pre-process stage.",
             "is_constructor": 1,
@@ -1041,7 +1041,7 @@
             "extension_for": [],
             "module": "Canvace",
             "namespace": "",
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 1,
             "description": "Wraps a Canvace stage.",
             "is_constructor": 1,
@@ -1068,7 +1068,7 @@
             "extension_for": [],
             "module": "Canvace",
             "namespace": "",
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 56,
             "description": "Represents an entity (not an instance).\n\nThis class cannot be instantiated directly, instances are returned by\nvarious methods of the `Stage` class and subclasses."
         },
@@ -1082,7 +1082,7 @@
             "extension_for": [],
             "module": "Canvace",
             "namespace": "",
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 240,
             "description": "Represents an entity instance in the stage.\n\nThis class cannot be instantiated directly, instances can be obtained\nusing other methods such as `Canvace.Stage.forEachInstance`,\n`Canvace.Stage.getInstance` or their `Canvace.Stage.Entity` equivalents.\n\nIn every moment, an entity instance is characterized by the following\nstate:\n\t<ul>\n\t<li>a position vector,</li>\n\t<li>a velocity vector,</li>\n\t<li>a uniform velocity vector,</li>\n\t<li>an acceleration vector.</li>\n\t</ul>\n\nEach one of these vectors is a vector in a three-dimensional space and is\nthus characterized by three real components `i`, `j` and `k`.\n\nAn instance can be \"ticked\". Ticking an instance means updating its state\nbased on the following physics rules:\n\t<ul>\n\t<li>the acceleration vector is not changed,</li>\n\t<li>the uniform velocity vector is not changed,</li>\n\t<li>the velocity vector is updated by adding the acceleration\n\t\tvector,</li>\n\t<li>the position vector is updated by adding the velocity and uniform\n\t\tvelocity vectors.</li>\n\t</ul>\n\nTo tick an instance use the `Canvace.Stage.Instance.tick` method.\n\nTicking an instance, and thus updating its physics state, is not enough\nin order to update the actual position of its frames in the graphical\nrendering. Another separate operation, called \"update\", is necessary.\n\nAn instance can be updated by invoking its `update` method.\n\nYou do not usually need to invoke neither the `tick` nor the `update`\nmethod directly, as they are automatically invoked by the global\n`Canvace.Stage.tick` and `Canvace.Stage.update` methods which, in turn,\nare automatically invoked by the `RenderLoop`.\n\nBoth the `Canvace.Stage.Instance.tick` and the\n`Canvace.Stage.Instance.update` methods are invoked _only_ for the\ninstances that have physics enabled (physics can be toggled per-entity in\nthe Canvace Development Environment).\n\nThe point in having two separate operations, \"tick\" and \"update\", to do\none thing, which is moving an entity instance in the game, is that other\noperations can be accomplished between the two. These operations\ntypically consist in further physics processing, e.g. collision testing."
         },
@@ -1096,7 +1096,7 @@
             "extension_for": [],
             "module": "Canvace",
             "namespace": "",
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 1423,
             "description": "TODO",
             "is_constructor": 1,
@@ -1123,7 +1123,7 @@
             "extension_for": [],
             "module": "Canvace",
             "namespace": "",
-            "file": "src\\StageRenderer.js",
+            "file": "src/StageRenderer.js",
             "line": 1,
             "description": "Automates the rendering process of a Canvace stage and its initialization and\nmanages rendering effects.\n\nThis class extends `Renderer` and constructs it using the `View` and\n`Buckets` objects provided by the `Stage`.",
             "extends": "Canvace.Renderer",
@@ -1151,7 +1151,7 @@
             "extension_for": [],
             "module": "Canvace",
             "namespace": "",
-            "file": "src\\StateMachine.js",
+            "file": "src/StateMachine.js",
             "line": 1,
             "description": "The `StateMachine` class allows to implement generic state machines with a\nfinite set of states and transitions, also called Deterministic Finite\nAutomata, or DFAs.\n\nObjects of this class have one method for each specified transition. A\n`StateMachine` object is initially in the specified initial state; calling\none of its transition methods makes it change its state depending on how\ntransitions and states are defined.\n\nThe following example defines a state machine with three states and two\npossible transitions, and indicates the target state for each starting state\nand for each transition:\n\n\tvar sm = new Canvace.StateMachine({\n\t\tstate0: {\n\t\t\ttransition1: 'state1',\n\t\t\ttransition2: 'state2'\n\t\t},\n\t\tstate1: {\n\t\t\ttransition1: 'state0',\n\t\t\ttransition2: 'state2'\n\t\t},\n\t\tstate2: {\n\t\t\ttransition1: 'state0',\n\t\t\ttransition2: 'state1'\n\t\t}\n\t}, 'state0');\n\n\tsm.transition1(); // goes into state1\n\tsm.transition2(); // goes into state2\n\tsm.transition2(); // goes into state1\n\nNote that this class defines a `getCurrentState` method, thus the\n\"getCurrentState\" name is reserved and cannot be used as a transition name\nsince it would override the method provided by the class.\n\nFor more information about defining state machines, refer to the constructor\ndocumentation.",
             "is_constructor": 1,
@@ -1181,7 +1181,7 @@
             "extension_for": [],
             "module": "Canvace",
             "namespace": "",
-            "file": "src\\TileMap.js",
+            "file": "src/TileMap.js",
             "line": 1,
             "description": "Provides functionalities to manage a stage's tile map. You do not usually\nneed to instantiate this object directly, you can get an instance using the\n`Stage.getTileMap` method.",
             "is_constructor": 1,
@@ -1208,7 +1208,7 @@
             "extension_for": [],
             "module": "Canvace",
             "namespace": "",
-            "file": "src\\TileMap.js",
+            "file": "src/TileMap.js",
             "line": 20,
             "description": "This class wraps a tile descriptor."
         },
@@ -1222,7 +1222,7 @@
             "extension_for": [],
             "module": "Canvace",
             "namespace": "",
-            "file": "src\\Timing.js",
+            "file": "src/Timing.js",
             "line": 1,
             "description": "Static class which wraps around the timing APIs offered by the browser.\nWhenever possible, the methods provided by this class make use of a high\nresolution, monotonic clock.",
             "static": 1
@@ -1237,7 +1237,7 @@
             "extension_for": [],
             "module": "Canvace",
             "namespace": "",
-            "file": "src\\View.js",
+            "file": "src/View.js",
             "line": 1,
             "description": "This class provides useful methods for managing the rendering viewport and\nthe projection or picking of graphic elements in it.\n\nNote that the `width` and `height` attributes of the canvas may not change\nafter the `View` object is constructed, or inconsistent rendering may result.\n\nYou do not usually need to construct a `View` object manually, as one is\nautomatically created by the `Stage` class.",
             "is_constructor": 1,
@@ -1264,7 +1264,7 @@
             "extension_for": [],
             "module": "Canvace",
             "namespace": "",
-            "file": "src\\View.js",
+            "file": "src/View.js",
             "line": 276,
             "description": "A `Synchronizer` object is responsible for synchronizing the view so\nthat it is always pointed to a specified entity.\n\nA synchronizer is defined by a \"target area\" and a delay parameter. The\ntarget area is a rectangular area centered in the viewport where the\nsynchronizer constantly tries to fit the target entity by moving the\nview.\n\nThe target entity may sometimes reside out of the target area because of\nthe delay parameter, which indicates a delay in the movement of the view\ntoward a fitting position. The delay parameter is a floating point number\nin the range `[0, 1)` where 0 indicates no delay (the target entity\nalways resides withint the target area) and 1 indicates maximum delay\n(the view never moves and never reaches a fitting position).",
             "is_constructor": 1,
@@ -1289,7 +1289,7 @@
     },
     "classitems": [
         {
-            "file": "src\\Ajax.js",
+            "file": "src/Ajax.js",
             "line": 89,
             "description": "Registers a callback function to be invoked when the loading is\ncomplete. This function gets passed the response\nobject, as interpreted according to the response type specified in\nthe constructor.",
             "itemtype": "method",
@@ -1306,7 +1306,7 @@
             "class": "Canvace.Ajax.Request"
         },
         {
-            "file": "src\\Ajax.js",
+            "file": "src/Ajax.js",
             "line": 105,
             "description": "Registers a callback function to be invoked in case of load errors.\nThis function gets passed the HTTP status code and the HTTP status\ntext.",
             "itemtype": "method",
@@ -1323,7 +1323,7 @@
             "class": "Canvace.Ajax.Request"
         },
         {
-            "file": "src\\Ajax.js",
+            "file": "src/Ajax.js",
             "line": 141,
             "description": "Retrieves a resource by using a `GET` HTTP request.",
             "itemtype": "method",
@@ -1348,7 +1348,7 @@
             "class": "Canvace.Ajax"
         },
         {
-            "file": "src\\Ajax.js",
+            "file": "src/Ajax.js",
             "line": 160,
             "description": "Retrieves a resource by using a `POST` HTTP request.",
             "itemtype": "method",
@@ -1373,7 +1373,7 @@
             "class": "Canvace.Ajax"
         },
         {
-            "file": "src\\Ajax.js",
+            "file": "src/Ajax.js",
             "line": 178,
             "description": "Retrieves a resource by using a `GET` HTTP request and interprets its\ncontents as JSON.",
             "itemtype": "method",
@@ -1407,7 +1407,7 @@
             "class": "Canvace.Ajax"
         },
         {
-            "file": "src\\Animator.js",
+            "file": "src/Animator.js",
             "line": 97,
             "description": "Sets the `tick` callback.\n\nThis method allows to define a callback later than construction time.\n\nIf you do not specify a callback function, the previously set callback\nfunction is unset and the `Animator` will not invoke any.",
             "itemtype": "method",
@@ -1424,7 +1424,7 @@
             "class": "Canvace.Animator"
         },
         {
-            "file": "src\\Animator.js",
+            "file": "src/Animator.js",
             "line": 114,
             "description": "Animates the specified entity instance by interpolating values for its\nposition.",
             "itemtype": "method",
@@ -1489,7 +1489,7 @@
             "class": "Canvace.Animator"
         },
         {
-            "file": "src\\Animator.js",
+            "file": "src/Animator.js",
             "line": 160,
             "description": "Animates the specified entity instance by interpolating values for its\nvelocity.",
             "itemtype": "method",
@@ -1554,7 +1554,7 @@
             "class": "Canvace.Animator"
         },
         {
-            "file": "src\\Animator.js",
+            "file": "src/Animator.js",
             "line": 206,
             "description": "Animates the specified entity instance by interpolating values for its\nuniform velocity.",
             "itemtype": "method",
@@ -1619,7 +1619,7 @@
             "class": "Canvace.Animator"
         },
         {
-            "file": "src\\Animator.js",
+            "file": "src/Animator.js",
             "line": 252,
             "description": "Animates the specified entity instance by interpolating values for its\nacceleration.",
             "itemtype": "method",
@@ -1684,7 +1684,7 @@
             "class": "Canvace.Animator"
         },
         {
-            "file": "src\\Animator.js",
+            "file": "src/Animator.js",
             "line": 310,
             "description": "Identity function.\nSee <a href=\"http://www.wolframalpha.com/share/clip?f=d41d8cd98f00b204e9800998ecf8427ehqs1nv9907\" target=\"_blank\">here</a>\nfor a plot of the function graph.",
             "itemtype": "property",
@@ -1694,7 +1694,7 @@
             "class": "Canvace.Animator.Easing"
         },
         {
-            "file": "src\\Animator.js",
+            "file": "src/Animator.js",
             "line": 323,
             "description": "Acceleration function.\nSee <a href=\"http://www.wolframalpha.com/share/clip?f=d41d8cd98f00b204e9800998ecf8427e7stk11iilk\" target=\"_blank\">here</a>\nfor a plot of the function graph.",
             "itemtype": "property",
@@ -1704,7 +1704,7 @@
             "class": "Canvace.Animator.Easing"
         },
         {
-            "file": "src\\Animator.js",
+            "file": "src/Animator.js",
             "line": 336,
             "description": "Deceleration function.\nSee <a href=\"http://www.wolframalpha.com/share/clip?f=d41d8cd98f00b204e9800998ecf8427eb0umq33b2k\" target=\"_blank\">here</a>\nfor a plot of the function graph.",
             "itemtype": "property",
@@ -1714,7 +1714,7 @@
             "class": "Canvace.Animator.Easing"
         },
         {
-            "file": "src\\Animator.js",
+            "file": "src/Animator.js",
             "line": 349,
             "description": "Function that goes back and forth between bigger and smaller values.\nSee <a href=\"http://www.wolframalpha.com/share/clip?f=d41d8cd98f00b204e9800998ecf8427esfu8sff4au\" target=\"_blank\">here</a>\nfor a plot of the function graph.",
             "itemtype": "property",
@@ -1724,7 +1724,7 @@
             "class": "Canvace.Animator.Easing"
         },
         {
-            "file": "src\\Animator.js",
+            "file": "src/Animator.js",
             "line": 362,
             "description": "Function that oscillates harmonically.\nSee <a href=\"http://www.wolframalpha.com/share/clip?f=d41d8cd98f00b204e9800998ecf8427ef17c2o8td0\" target=\"_blank\">here</a>\nfor a plot of the function graph.",
             "itemtype": "property",
@@ -1734,7 +1734,7 @@
             "class": "Canvace.Animator.Easing"
         },
         {
-            "file": "src\\Astar.js",
+            "file": "src/Astar.js",
             "line": 43,
             "description": "A unique ID assigned to the node. Different nodes in the graph must have\ndifferent IDs.",
             "itemtype": "property",
@@ -1743,7 +1743,7 @@
             "class": "Canvace.Astar.Node"
         },
         {
-            "file": "src\\Astar.js",
+            "file": "src/Astar.js",
             "line": 51,
             "description": "The heuristically estimated cost to walk up to the target node.",
             "itemtype": "property",
@@ -1752,7 +1752,7 @@
             "class": "Canvace.Astar.Node"
         },
         {
-            "file": "src\\Astar.js",
+            "file": "src/Astar.js",
             "line": 58,
             "description": "A map object whose keys are edge labels and whose values are functions.\nEach function returns the neighbor graph `Node` connected to this node\nthrough the edge.",
             "itemtype": "property",
@@ -1761,7 +1761,7 @@
             "class": "Canvace.Astar.Node"
         },
         {
-            "file": "src\\Astar.js",
+            "file": "src/Astar.js",
             "line": 67,
             "description": "A function that receives one `String` argument, an edge label, and\nreturns its cost.",
             "itemtype": "property",
@@ -1770,7 +1770,7 @@
             "class": "Canvace.Astar.Node"
         },
         {
-            "file": "src\\Astar.js",
+            "file": "src/Astar.js",
             "line": 75,
             "description": "Finds a path between two nodes of a graph. A path is always found if one\nexists, otherwise `null` is returned.\n\nThe found path is always _admissible_, which means its cost is either\noptimal (the least possible one) or is at most `1 + epsilon` times the\noptimal one, where `epsilon` is the parameter specified to the `Astar`\nconstructor.\n\n`startNode` is an `Astar.Node`-like object representing the first node of\nthe path to find; `Astar.Node`-like means it has to provide the same\nproperties and methods described by the documentation of the `Astar.Node`\npseudo-class.\n\nThe target node is identified when the estimated distance from it,\nprovided by each node, is zero; the algorithm stops when this happens.\n\n`Astar.Node` objects allow to specify a directed graph with weighted and\nlabeled edges. Edge weights are real numbers and are used to compute the\ncost of a path. Edge labels are strings and are used when describing the\ncomputed path as an array of edges to walk.\n\nThe computed path, if one exists, is returned as an array of strings.\n`null` is returned if the target node is unreachable from the start node.",
             "itemtype": "method",
@@ -1789,7 +1789,7 @@
             "class": "Canvace.Astar"
         },
         {
-            "file": "src\\Audio.js",
+            "file": "src/Audio.js",
             "line": 23,
             "description": "Tries to load the requested audio resource.\nYou are not required to use this method to manually load the audio\nresources: you can rely on the functionalities exposed by\n{{#crossLink \"Canvace.Loader\"}}{{/crossLink}} to load multiple resources\nin one call and get notified of the loading progress.",
             "itemtype": "method",
@@ -1820,7 +1820,7 @@
             "class": "Canvace.Audio"
         },
         {
-            "file": "src\\Audio.js",
+            "file": "src/Audio.js",
             "line": 43,
             "description": "Determines if the browser supports playing the requested MIME type.",
             "example": [
@@ -1842,7 +1842,7 @@
             "class": "Canvace.Audio"
         },
         {
-            "file": "src\\Audio.js",
+            "file": "src/Audio.js",
             "line": 95,
             "description": "Plays the associated sound resource, resuming from the last\nposition.",
             "itemtype": "method",
@@ -1851,7 +1851,7 @@
             "class": "Canvace.Audio.SourceNode"
         },
         {
-            "file": "src\\Audio.js",
+            "file": "src/Audio.js",
             "line": 117,
             "description": "Pauses the playback of the associated sound resource.",
             "itemtype": "method",
@@ -1860,7 +1860,7 @@
             "class": "Canvace.Audio.SourceNode"
         },
         {
-            "file": "src\\Audio.js",
+            "file": "src/Audio.js",
             "line": 133,
             "description": "Returns a clone of this `Canvace.Audio.SourceNode` instance.\nThe new instance will have the same sound resource associated\nand the same flags applied (e.g., if this instance is set to be\nlooping, the cloned one will be as well).",
             "itemtype": "method",
@@ -1872,7 +1872,7 @@
             "class": "Canvace.Audio.SourceNode"
         },
         {
-            "file": "src\\Audio.js",
+            "file": "src/Audio.js",
             "line": 148,
             "description": "Tells if the associated sound resource has completed loading.",
             "itemtype": "method",
@@ -1884,7 +1884,7 @@
             "class": "Canvace.Audio.SourceNode"
         },
         {
-            "file": "src\\Audio.js",
+            "file": "src/Audio.js",
             "line": 159,
             "description": "Marks the sound resource as looping (i.e., it will start playing\nagain as soon as it ends its playback).",
             "itemtype": "method",
@@ -1900,7 +1900,7 @@
             "class": "Canvace.Audio.SourceNode"
         },
         {
-            "file": "src\\Buckets.js",
+            "file": "src/Buckets.js",
             "line": 145,
             "description": "Returns the entity's projected position, which is its `(i, j, k)`\nposition left-multiplied by the projection matrix.\n\nThe position is returned as an object containing three fields,\n`x`, `y` and `z`, containing the `i`, `j` and `k` projected\ncoordinates, respectively.",
             "itemtype": "method",
@@ -1912,7 +1912,7 @@
             "class": "Canvace.Buckets.Entity"
         },
         {
-            "file": "src\\Buckets.js",
+            "file": "src/Buckets.js",
             "line": 165,
             "description": "Returns the 2D rectangular area corresponding to the entity's\nbounds.\n\nThe rectangle is returned as an object containing four fields:\nthe `x` and `y` coordinates of the origin and the `width` and\n`height`.\n\nThe coordinates of the origin are calculated by left-multiplying\nthe `(i, j, k)` position vector of the entity by the projection\nmatrix and adding the entity's offset. The width and height are\nsimply copied from the entity descriptor.",
             "itemtype": "method",
@@ -1924,7 +1924,7 @@
             "class": "Canvace.Buckets.Entity"
         },
         {
-            "file": "src\\Buckets.js",
+            "file": "src/Buckets.js",
             "line": 192,
             "description": "Updates the entity's position and possibly some internal data\nstructures so that the entity is enumerated correctly by the\n`forEachElement` method after it is repositioned.\n\nThe specified `i`, `j` and `k` values may be real numbers.",
             "itemtype": "method",
@@ -1949,7 +1949,7 @@
             "class": "Canvace.Buckets.Entity"
         },
         {
-            "file": "src\\Buckets.js",
+            "file": "src/Buckets.js",
             "line": 226,
             "description": "Removes the entity so that it is not enumerated by the\n`Buckets.forEachElement` method any more.\n\nThis method is idempotent: it does not have any effects when it is\ncalled again after the first time.",
             "itemtype": "method",
@@ -1961,7 +1961,7 @@
             "class": "Canvace.Buckets.Entity"
         },
         {
-            "file": "src\\Buckets.js",
+            "file": "src/Buckets.js",
             "line": 238,
             "description": "Indicates whether this entity has been removed from the buckets.",
             "itemtype": "method",
@@ -1973,7 +1973,7 @@
             "class": "Canvace.Buckets.Entity"
         },
         {
-            "file": "src\\Buckets.js",
+            "file": "src/Buckets.js",
             "line": 249,
             "description": "Replaces the entity with another one identified by the specified\nID. This entity is removed as if the `remove` method was called,\nand this `Entity` object becomes useless and should be discarded.",
             "itemtype": "method",
@@ -1992,7 +1992,7 @@
             "class": "Canvace.Buckets.Entity"
         },
         {
-            "file": "src\\Buckets.js",
+            "file": "src/Buckets.js",
             "line": 317,
             "description": "Adds a tile to the buckets and returns a function that removes it.\n\nIf the tile was configured as mutable in the Canvace Development\nEnvironment it can also be removed using the `removeTile` method or\nreplaced using the `replaceTile` method.\n\nThe returned function does not receive any arguments and always\nreturns `true`, and can remove the tile even if it was not configured\nas mutable.",
             "itemtype": "method",
@@ -2026,7 +2026,7 @@
             "class": "Canvace.Buckets"
         },
         {
-            "file": "src\\Buckets.js",
+            "file": "src/Buckets.js",
             "line": 341,
             "description": "Adds an entity to the buckets. The specified I, J and K coordinates\ncan be real values.",
             "itemtype": "method",
@@ -2060,7 +2060,7 @@
             "class": "Canvace.Buckets"
         },
         {
-            "file": "src\\Buckets.js",
+            "file": "src/Buckets.js",
             "line": 368,
             "description": "Removes the mutable tile located at the (integer) coordinates\n`(i, j, k)`.\n\nNote that a tile is not removed by this method if it is not mutable, even\nthough it is located at the specified coordinates.",
             "itemtype": "method",
@@ -2089,7 +2089,7 @@
             "class": "Canvace.Buckets"
         },
         {
-            "file": "src\\Buckets.js",
+            "file": "src/Buckets.js",
             "line": 385,
             "description": "Replaces the mutable tile located at the specified `i`, `j` and `k`\ninteger coordinates with another tile.\n\nThis method has no effect if no mutable tile is found at the\nspecified coordinates; this includes both the following cases: no\nmutable tile found and no tile at all.\n\nWhen a mutable tile is found and successfully removed, the specified\ntile is inserted at its location and a function to remove it is\nreturned (similarly to the `addTile` method).",
             "itemtype": "method",
@@ -2123,7 +2123,7 @@
             "class": "Canvace.Buckets"
         },
         {
-            "file": "src\\Buckets.js",
+            "file": "src/Buckets.js",
             "line": 419,
             "description": "TODO",
             "itemtype": "method",
@@ -2138,7 +2138,7 @@
             "class": "Canvace.Buckets"
         },
         {
-            "file": "src\\Buckets.js",
+            "file": "src/Buckets.js",
             "line": 427,
             "description": "Invokes the given callback function for each element within the viewport.\n\nThe specified `action` callback function receives three arguments, `x`,\n`y` and `id`, indicating the element's projected X coordinate, projected\nY coordinate and image ID, respectively.",
             "itemtype": "method",
@@ -2153,7 +2153,7 @@
             "class": "Canvace.Buckets"
         },
         {
-            "file": "src\\Buckets.js",
+            "file": "src/Buckets.js",
             "line": 458,
             "description": "Tweaking the size factor parameters allows to trade between speed and\nmemory occupation of the game.\n\nThe default and minimum value for both parameters is 1. Specifying higher\nvalues causes a lower memory fingerprint and higher execution times of\nthe `forEachElement` method.",
             "itemtype": "method",
@@ -2174,7 +2174,7 @@
             "class": "Canvace.Buckets"
         },
         {
-            "file": "src\\DebugEffect.js",
+            "file": "src/DebugEffect.js",
             "line": 47,
             "description": "Enables the effect.",
             "itemtype": "method",
@@ -2182,7 +2182,7 @@
             "class": "Canvace.DebugEffect"
         },
         {
-            "file": "src\\DebugEffect.js",
+            "file": "src/DebugEffect.js",
             "line": 56,
             "description": "Disables the effect.\n\nThe effect can then be reenabled using the `enable` method.",
             "itemtype": "method",
@@ -2190,7 +2190,7 @@
             "class": "Canvace.DebugEffect"
         },
         {
-            "file": "src\\DebugEffect.js",
+            "file": "src/DebugEffect.js",
             "line": 67,
             "description": "Toggles the effect and returns a boolean value indicating whether the\neffect was enabled or disabled.",
             "itemtype": "method",
@@ -2210,7 +2210,7 @@
             "class": "Canvace.DebugEffect"
         },
         {
-            "file": "src\\DebugEffect.js",
+            "file": "src/DebugEffect.js",
             "line": 88,
             "description": "Indicates whether the effect is currently enabled.",
             "itemtype": "method",
@@ -2222,7 +2222,7 @@
             "class": "Canvace.DebugEffect"
         },
         {
-            "file": "src\\DebugEffect.js",
+            "file": "src/DebugEffect.js",
             "line": 98,
             "description": "Returns the current value for the specified option.\n\nSee the constructor reference for more details about the available\noptions.",
             "itemtype": "method",
@@ -2241,7 +2241,7 @@
             "class": "Canvace.DebugEffect"
         },
         {
-            "file": "src\\DebugEffect.js",
+            "file": "src/DebugEffect.js",
             "line": 112,
             "description": "Sets the specified option.\n\nSee the constructor reference for more details about the available\noptions.",
             "itemtype": "method",
@@ -2261,7 +2261,7 @@
             "class": "Canvace.DebugEffect"
         },
         {
-            "file": "src\\DebugEffect.js",
+            "file": "src/DebugEffect.js",
             "line": 126,
             "description": "Returns `false`.",
             "itemtype": "method",
@@ -2273,7 +2273,7 @@
             "class": "Canvace.DebugEffect"
         },
         {
-            "file": "src\\DebugEffect.js",
+            "file": "src/DebugEffect.js",
             "line": 158,
             "description": "Draws the enabled overlay elements.",
             "itemtype": "method",
@@ -2288,7 +2288,7 @@
             "class": "Canvace.DebugEffect"
         },
         {
-            "file": "src\\Heap.js",
+            "file": "src/Heap.js",
             "line": 101,
             "description": "Inserts the specified element into the heap and resorts the heap using\nstandard algorithms until its properties hold again.\n\nThis method operates in logarithmic time.",
             "itemtype": "method",
@@ -2303,7 +2303,7 @@
             "class": "Canvace.Heap"
         },
         {
-            "file": "src\\Heap.js",
+            "file": "src/Heap.js",
             "line": 121,
             "description": "Extracts the lowest priority element from the heap in logarithmic time\nusing standard algorithms.\n\nThe element's priority is determined by comparison with other elements\nusing the `compare` function specified during construction.",
             "itemtype": "method",
@@ -2315,7 +2315,7 @@
             "class": "Canvace.Heap"
         },
         {
-            "file": "src\\Heap.js",
+            "file": "src/Heap.js",
             "line": 141,
             "description": "Returns the lowest priority element without extracting it from the heap.\n\nThe element's priority is determined by comparison with other elements\nusing the `compare` function specified during construction.\n\nThe return value is undefined if the heap does not contain any elements.\n\nThis method operates in constant time.",
             "itemtype": "method",
@@ -2327,7 +2327,7 @@
             "class": "Canvace.Heap"
         },
         {
-            "file": "src\\Heap.js",
+            "file": "src/Heap.js",
             "line": 161,
             "description": "Searches the specified element in the heap and returns a boolean value\nindicating whether it was found.\n\nThe specified element does not have to be exactly the same physical\nobject as the one previously inserted in the heap, it only has to\nrepresent the same element; the actual comparison to determine whether\nthe two objects represent the same element is done by using the `same`\nfunction specified at construction time.\n\nThis method operates in linear time.",
             "itemtype": "method",
@@ -2346,7 +2346,7 @@
             "class": "Canvace.Heap"
         },
         {
-            "file": "src\\Heap.js",
+            "file": "src/Heap.js",
             "line": 182,
             "description": "Searches the specified element in the heap and returns it if it can be\nfound.\n\nThe return value is defined _only_ if the element is found, otherwise\nthis method does not return anything. You can test whether an element was\nfound or not using the `typeof` operator and checking against the string\n`'undefined'`, as in the following example:\n\n\tvar result = heap.find(...);\n\tif (typeof result !== 'undefined') {\n\t\t// the element has been found in the heap\n\t\t// and is contained in the `result` variable\n\t} else {\n\t\t// the element was NOT found in the heap\n\t}\n\nThe specified element does not have to be exactly the same physical\nobject as the one previously inserted in the heap, it only has to\nrepresent the same element; the actual comparison to determine whether\nthe two objects represent the same element is done by using the `same`\nfunction specified at construction time.\n\nThis method operates in linear time.",
             "itemtype": "method",
@@ -2365,7 +2365,7 @@
             "class": "Canvace.Heap"
         },
         {
-            "file": "src\\Heap.js",
+            "file": "src/Heap.js",
             "line": 221,
             "description": "Decreases the specified element's priority and resorts the heap using\nstandard algorithms; as a consequence, the specified element will\ntypically move higher within the heap (which means gaining a lower\npriority and being extracted earlier).\n\nThis method has no effect if the heap does not contain the specified\nelement.",
             "itemtype": "method",
@@ -2385,7 +2385,7 @@
             "class": "Canvace.Heap"
         },
         {
-            "file": "src\\Heap.js",
+            "file": "src/Heap.js",
             "line": 264,
             "description": "Returns the number of elements inserted in the heap so far.",
             "itemtype": "method",
@@ -2397,7 +2397,7 @@
             "class": "Canvace.Heap"
         },
         {
-            "file": "src\\Heap.js",
+            "file": "src/Heap.js",
             "line": 274,
             "description": "Indicates whether the heap is empty or not.",
             "itemtype": "method",
@@ -2409,7 +2409,7 @@
             "class": "Canvace.Heap"
         },
         {
-            "file": "src\\Heap.js",
+            "file": "src/Heap.js",
             "line": 284,
             "description": "Empties the heap. This method operates in constant time.",
             "itemtype": "method",
@@ -2417,7 +2417,7 @@
             "class": "Canvace.Heap"
         },
         {
-            "file": "src\\Keyboard.js",
+            "file": "src/Keyboard.js",
             "line": 266,
             "description": "Indicates whether the key identified by the specified virtual key code is\ncurrently pressed. You can safely use DOM\\_VK\\_XXX codes from the\n`KeyEvent` global object: Canvace normalizes it across browsers.",
             "itemtype": "method",
@@ -2436,7 +2436,7 @@
             "class": "Canvace.Keyboard"
         },
         {
-            "file": "src\\Keyboard.js",
+            "file": "src/Keyboard.js",
             "line": 280,
             "description": "Indicates whether the specified keys are currently pressed. This method\naccepts any number of arguments and each argument is a virtual key code.\nYou can safely use the DOM\\_VK\\_XXX codes from the `KeyEvent` global\nobject: Canvace normalizes it across browsers.",
             "itemtype": "method",
@@ -2457,7 +2457,7 @@
             "class": "Canvace.Keyboard"
         },
         {
-            "file": "src\\Keyboard.js",
+            "file": "src/Keyboard.js",
             "line": 300,
             "description": "Registers a key handler that gets called when the specified key or keys\nare pressed.\n\nThis method returns a function that unregister the registered handler.\nThe returned function does not receive any arguments, does not return\nanything and is idempotent: it does not have any effects when called\nagain after the first time.\n\nThe same event handler can be registered more than once, in which case it\nactually gets called more than once each time the event occurs.\n\nEvent handlers are NOT necessarily called in the same order they are\nregistered.",
             "itemtype": "method",
@@ -2482,7 +2482,7 @@
             "class": "Canvace.Keyboard"
         },
         {
-            "file": "src\\Keyboard.js",
+            "file": "src/Keyboard.js",
             "line": 335,
             "description": "Registers a key handler that gets called when the specified key is\ndepressed or all of the specified keys are depressed, depending on\nwhether you specify one or more key codes.\n\nThis method returns a function that unregisters the registered handler.\nThe returned function does not receive any arguments, does not return\nanything and is idempotent: it does not have any effects when called\nagain after the first time.\n\nThe same event handler can be registered more than once, in which case it\nactually gets called more than once each time the event occurs.\n\nEvent handlers are NOT necessarily called in the same order they are\nregistered.",
             "itemtype": "method",
@@ -2507,7 +2507,7 @@
             "class": "Canvace.Keyboard"
         },
         {
-            "file": "src\\Keyboard.js",
+            "file": "src/Keyboard.js",
             "line": 384,
             "description": "Registers a key handler that gets called after the specified key or keys\nare pressed.\n\nThe only difference between the \"keyDown\" and \"keyPress\" events of this\nclass is that, in case a key is held down, the latter is fired multiple\ntimes while the former is fired only once.\n\nThe only difference between the \"keyUp\" and \"keyPress\" events of this\nclass is that the handlers for the latter gets all called before the\nhandlers for the former.\n\nThis method returns a function that unregister the registered handler.\nThe returned function does not receive any arguments, does not\nreturn anything and is idempotent: it does not have any effects when\ncalled again after the first time.\n\nThe same event handler can be registered more than once, in which case it\nactually gets called more than once each time the event occurs.\n\nEvent handlers are NOT necessarily called in the same order they are\nregistered.",
             "itemtype": "method",
@@ -2532,7 +2532,7 @@
             "class": "Canvace.Keyboard"
         },
         {
-            "file": "src\\List.js",
+            "file": "src/List.js",
             "line": 36,
             "description": "Returns the accessed element.",
             "itemtype": "method",
@@ -2547,7 +2547,7 @@
             "class": "Canvace.List.Accessor"
         },
         {
-            "file": "src\\List.js",
+            "file": "src/List.js",
             "line": 50,
             "description": "Returns an `Accessor` for accessing the previous element of the list,\nor `null` if this `Accessor` represents the first element.\n\nAn exception is thrown if the element represented by this accessor\nhas been removed by this or any other accessor.",
             "itemtype": "method",
@@ -2562,7 +2562,7 @@
             "class": "Canvace.List.Accessor"
         },
         {
-            "file": "src\\List.js",
+            "file": "src/List.js",
             "line": 82,
             "description": "Returns an `Accessor` for accessing the next element of the list, or\n`null` if this `Accessor` represents the last element.\n\nAn exception is thrown if the element represented by this accessor\nhas been removed by this or any other accessor.",
             "itemtype": "method",
@@ -2577,7 +2577,7 @@
             "class": "Canvace.List.Accessor"
         },
         {
-            "file": "src\\List.js",
+            "file": "src/List.js",
             "line": 114,
             "description": "Removes the element from the list.",
             "itemtype": "method",
@@ -2592,7 +2592,7 @@
             "class": "Canvace.List.Accessor"
         },
         {
-            "file": "src\\List.js",
+            "file": "src/List.js",
             "line": 156,
             "description": "Adds the specified element to the list before the current head element.\n\nAn `Accessor` to the new element is returned.",
             "itemtype": "method",
@@ -2611,7 +2611,7 @@
             "class": "Canvace.List"
         },
         {
-            "file": "src\\List.js",
+            "file": "src/List.js",
             "line": 179,
             "description": "Returns an `Accessor` to the head element, or `null` if the list does not\ncontain any elements.",
             "itemtype": "method",
@@ -2623,7 +2623,7 @@
             "class": "Canvace.List"
         },
         {
-            "file": "src\\List.js",
+            "file": "src/List.js",
             "line": 191,
             "description": "Adds the specified element to the list after the current tail element.\n\nAn `Accessor` to the new element is returned.",
             "itemtype": "method",
@@ -2642,7 +2642,7 @@
             "class": "Canvace.List"
         },
         {
-            "file": "src\\List.js",
+            "file": "src/List.js",
             "line": 213,
             "description": "Returns an `Accessor` to the tail element, or `null` if the list does not\ncontain any elements.",
             "itemtype": "method",
@@ -2654,7 +2654,7 @@
             "class": "Canvace.List"
         },
         {
-            "file": "src\\List.js",
+            "file": "src/List.js",
             "line": 225,
             "description": "Returns the number of elements currently in the list.",
             "itemtype": "method",
@@ -2666,7 +2666,7 @@
             "class": "Canvace.List"
         },
         {
-            "file": "src\\List.js",
+            "file": "src/List.js",
             "line": 235,
             "description": "Returns a boolean value indicating whether the list is empty or not.",
             "itemtype": "method",
@@ -2678,7 +2678,7 @@
             "class": "Canvace.List"
         },
         {
-            "file": "src\\List.js",
+            "file": "src/List.js",
             "line": 245,
             "description": "Removes all the elements from the list.\n\nThis method operates in constant time.",
             "itemtype": "method",
@@ -2686,7 +2686,7 @@
             "class": "Canvace.List"
         },
         {
-            "file": "src\\List.js",
+            "file": "src/List.js",
             "line": 258,
             "description": "Iterates over the contained elements, from the first to the last.\n\nThis method is faster than manually iterating using `List.getHead` and\nsubsequent `Accessor.next` calls because it does not instantiate\naccessors: the elements are returned directly.\n\nFor each enumerated element the specified `action` callback function is\ncalled and is passed the element.\n\nThe iteration can be interrupted by returning `false` in the callback\nfunction.",
             "itemtype": "method",
@@ -2705,7 +2705,7 @@
             "class": "Canvace.List"
         },
         {
-            "file": "src\\List.js",
+            "file": "src/List.js",
             "line": 288,
             "description": "Iterates over the contained elements in reverse order, from the last to\nthe first.\n\nThis method is faster than manually iterating using `List.getTail` and\nsubsequent `Accessor.previous` calls because it does not instantiate\naccessors: the elements are returned directly.\n\nFor each enumerated element the specified `action` callback function is\ncalled and is passed the element.\n\nThe iteration can be interrupted by returning `false` in the callback\nfunction.",
             "itemtype": "method",
@@ -2724,7 +2724,7 @@
             "class": "Canvace.List"
         },
         {
-            "file": "src\\Loader.js",
+            "file": "src/Loader.js",
             "line": 151,
             "description": "Loads an image from the exported image set.",
             "itemtype": "method",
@@ -2749,7 +2749,7 @@
             "class": "Canvace.Loader"
         },
         {
-            "file": "src\\Loader.js",
+            "file": "src/Loader.js",
             "line": 236,
             "description": "Returns a `Canvace.Audio.SourceNode` representing the audio asset\nidentified by the specified name. This name corresponds to one of the\nnames specified to the `loadAssets` method. This method must be called\nafter the sounds have been loaded by the `loadAssets` method.",
             "itemtype": "method",
@@ -2768,7 +2768,7 @@
             "class": "Canvace.Loader"
         },
         {
-            "file": "src\\Loader.js",
+            "file": "src/Loader.js",
             "line": 254,
             "description": "Asynchronously loads all the images associated with the given Canvace\nstage and all the given sounds.",
             "itemtype": "method",
@@ -2793,7 +2793,7 @@
             "class": "Canvace.Loader"
         },
         {
-            "file": "src\\Loader.js",
+            "file": "src/Loader.js",
             "line": 330,
             "description": "Asynchronously loads all the images associated with the given Canvace\nstage and all the given sounds. This function takes care of loading the\nJSON data from the server with an HTTP `GET` request and instantiating\na {{#crossLink \"Canvace.Stage\"}}{{/crossLink}} for the specified canvas.\n\nWhen using this method, the registered completion handler will receive\ntwo parameters: this loader instance, and a\n{{#crossLink \"Canvace.Stage\"}}{{/crossLink}} object.",
             "itemtype": "method",
@@ -2821,7 +2821,7 @@
             "class": "Canvace.Loader"
         },
         {
-            "file": "src\\Loader.js",
+            "file": "src/Loader.js",
             "line": 378,
             "description": "TODO",
             "itemtype": "method",
@@ -2844,7 +2844,7 @@
             "class": "Canvace.Loader"
         },
         {
-            "file": "src\\Loader.js",
+            "file": "src/Loader.js",
             "line": 411,
             "description": "TODO",
             "itemtype": "method",
@@ -2867,7 +2867,7 @@
             "class": "Canvace.Loader"
         },
         {
-            "file": "src\\Loader.js",
+            "file": "src/Loader.js",
             "line": 436,
             "description": "Plays a sound represented by an audio asset previously loaded by the\nloader. The audio asset is identified by the `name` argument, that must\ncorrespond to a name passed to the `loadAssets` method.\n\nThis method only _starts_ playing the sound, and immediately returns. It\nworks by simply calling the `play` method of the `Canvace.Audio.SourceNode`\ninterface.\n\nThis method has no effect if the sound is already playing.\n\nThe sound can optionally be looped: when `true` is specified to the\noptional `loop` argument, the sound will play continuously.",
             "itemtype": "method",
@@ -2893,7 +2893,7 @@
             "class": "Canvace.Loader"
         },
         {
-            "file": "src\\Mobile.js",
+            "file": "src/Mobile.js",
             "line": 1,
             "description": "Indicates whether the site is currently being viewed on a mobile browser.",
             "itemtype": "property",
@@ -2902,7 +2902,7 @@
             "class": "Canvace"
         },
         {
-            "file": "src\\Mouse.js",
+            "file": "src/Mouse.js",
             "line": 74,
             "description": "Registers the specified user-defined event handler that is invoked every\ntime the mouse is moved over the HTML element.\n\nThe specified function receives two arguments, `x` and `y`, indicating\nthe coordinates of the mouse pointer relative to the element's left top\ncorner. The return value is ignored.\n\nThis method returns a function that unregisters the registered handler.\n\nMultiple handlers may be registered. The same handler may also be\nregistered more than once, in which case it gets called as many times as\nit was registered every time the mouse is moved.\n\nIf a handler is registered more than once, the function returned by this\nmethod only removes its own registration.",
             "itemtype": "method",
@@ -2922,7 +2922,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Mouse.js",
+            "file": "src/Mouse.js",
             "line": 103,
             "description": "Registers the specified user-defined event handler that is invoked every\ntime a mouse button is pressed over the HTML element.\n\nThe specified function receives three arguments, `x` and `y`, indicating\nthe coordinates of the mouse pointer relative to the element's left top\ncorner, and `button`, indicating which mouse button has been pressed\n(`0` for left button, `1` for middle button, `2` for right button).\nThe return value is ignored.\n\nThis method returns a function that unregisters the registered handler.\n\nMultiple handlers may be registered. The same handler may also be\nregistered more than once, in which case it gets called as many times as\nit was registered every time a mouse button is pressed.\n\nIf a handler is registered more than once, the function returned by this\nmethod only removes its own registration.",
             "itemtype": "method",
@@ -2942,7 +2942,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Mouse.js",
+            "file": "src/Mouse.js",
             "line": 134,
             "description": "Registers the specified user-defined event handler that is invoked every\ntime a mouse button is depressed over the HTML element.\n\nThe specified function receives three arguments, `x` and `y`, indicating\nthe coordinates of the mouse pointer relative to the element's left top\ncorner, and `button`, indicating which mouse button has been pressed\n(`0` for left button, `1` for middle button, `2` for right button).\nThe return value is ignored.\n\nThis method returns a function that unregisters the registered handler.\n\nMultiple handlers may be registered. The same handler may also be\nregistered more than once, in which case it gets called as many times as\nit was registered every time a mouse button is depressed.\n\nIf a handler is registered more than once, the function returned by this\nmethod only removes its own registration.",
             "itemtype": "method",
@@ -2962,7 +2962,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Mouse.js",
+            "file": "src/Mouse.js",
             "line": 165,
             "description": "Registers the specified user-defined event handler that is invoked every\ntime the mouse is dragged over the HTML element.\n\nThe specified function receives five arguments, `x0` and `y0`, indicating\nthe last recorded coordinates of the mouse pointer before the drag event\nrelative to the element's left top corner, `x` and `y`, indicating the\ncurrent coordinates of the mouse pointer relative to the element's left\ntop corner, and `button`, indicating which mouse button has initiated the\ndrag event (`0` for left button, `1` for middle button, `2` for right\nbutton). The return value is ignored.\n\nThis method returns a function that unregisters the registered handler.\nMultiple handlers may be registered.\n\nThe same handler may also be registered more than once, in which case it\ngets called as many times as it was registered every time the mouse is\ndragged.\n\nIf a handler is registered more than once, the function returned by this\nmethod only removes its own registration.",
             "itemtype": "method",
@@ -2982,7 +2982,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Mouse.js",
+            "file": "src/Mouse.js",
             "line": 199,
             "description": "Registers the specified user-defined event handler that is invoked every\ntime the mouse wheel is used to scroll over the HTML element.\n\nThe specified function receives four arguments, `x`, `y`, `dX` and `dY`,\nindicating the coordinates of the mouse pointer relative to the element's\nleft top corner and the relative wheel movement in the X and Y\ndirections. The return value is ignored.\n\nThis method returns a function that unregisters the registered handler.\n\nMultiple handlers may be registered. The same handler may also be\nregistered more than once, in which case it gets called as many times as\nit was registered every time the mouse is moved.\n\nIf a handler is registered more than once, the function returned by this\nmethod only removes its own registration.",
             "itemtype": "method",
@@ -3002,7 +3002,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\MultiSet.js",
+            "file": "src/MultiSet.js",
             "line": 50,
             "description": "Inserts an element into the container in amortized constant time. The\nelement can be of any type (numbers, strings, objects, etc.) and can be\ninserted many times.\n\nThe `add` function returns a function that removes the element. The\nreturned function is idempotent: it does not have any effect when called\nagain after the first time.\n\nExample:\n\n\tvar ms = new Canvace.MultiSet(1, 2);\n\tvar remove = ms.add(3); // ms now contains three elements: 1, 2 and 3\n\tremove(); // ms now contains two elements: 1 and 2\n\tremove(); // no effect, ms still contains 1 and 2\n\nThe returned function returns a boolean value indicating whether the\nelement was present and could be removed or not. `false` indicates the\nelement was not present because it had already been removed by a previous\ncall.\n\nExample:\n\n\tvar ms = new Canvace.MultiSet();\n\tvar remove = ms.add(3);\n\tif (remove()) {\n\t\talert('removed!');\n\t}\n\tif (remove()) {\n\t\talert('this is never alerted');\n\t}",
             "itemtype": "method",
@@ -3022,7 +3022,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\MultiSet.js",
+            "file": "src/MultiSet.js",
             "line": 88,
             "description": "Iterates over the container and calls the specified function `action` for\neach iterated element.\n\nThe `action` function receives two arguments: the element and a function\nthat removes it if called. The removing function stays valid forever,\neven after the whole `forEach` call is over, and is idempotent: it does\nnot have any effects after it is called once.\n\nThe following example inserts some numbers into the container and then\nremoves only the numbers equal to 3:\n\n\tvar ms = new Canvace.MultiSet(1, 3, 7, 6, 3, 4, 3, 3, 5);\n\tms.forEach(function (element, remove) {\n\t\tif (element === 3) {\n\t\t\tremove();\n\t\t}\n\t});\n\t// ms now contains 1, 7, 6, 4, 5\n\nElements with repetitions are iterated as many times as they are\nrepeated. For example, in the previous snippet the number 3 is iterated\n(and removed) four times.\n\nNote that the order of iteration is undefined as it depends on the order\nof iteration over object properties implemented by the underlying\nJavaScript engine. This is typically the insertion order, which means\n`MultiSet.forEach` enumerates the elements in the same order they are\ninserted by `MultiSet.add`, but you must not depend on that assumption.\n\nThe iteration is interrupted if the `action` function returns `false`.\nThe following example adds some numbers to the container, then iterates\nover it and interrupts when it encounters the number 3:\n\n\tvar ms = new Canvace.MultiSet(1, 2, 3, 4);\n\tms.forEach(function (element) {\n\t\tif (element === 3) {\n\t\t\treturn false;\n\t\t}\n\t});\n\nThe number 4 is not enumerated.\n\n`MultiSet.forEach` returns `false` if the iteration completed and `true`\nif it was interrupted, which is suitable for implementing finding\nalgorithms.",
             "itemtype": "method",
@@ -3042,7 +3042,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\MultiSet.js",
+            "file": "src/MultiSet.js",
             "line": 165,
             "description": "Iterates over the container and calls the specified function `action` for\neach iterated element.\n\nThe `action` function receives one argument, the current element. Any\nreturn value is ignored.\n\nThis method is similar to the `forEach` method except it can be faster on\nsome browsers because it does not generate a closure (the element's\nremoval function) at each iterated element and does not analyze the\nreturn value of the callback function. Infact, the iterated elements\ncannot be removed and the iteration cannot be interrupted.\n\nYou usually use the `forEach` method, but you may also use `fastForEach`\nif your callback function does not use its second argument (the removal\nfunction) and never returns `false`.\n\nNote that the order of iteration is undefined as it depends on the order\nof iteration over object properties implemented by the underlying\nJavaScript engine. This is typically the insertion order, which means\n`MultiSet.fastForEach` enumerates the elements in the same order they are\ninserted by `MultiSet.add`, but you must not depend on that assumption.",
             "itemtype": "method",
@@ -3058,7 +3058,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\MultiSet.js",
+            "file": "src/MultiSet.js",
             "line": 201,
             "description": "Returns the number of elements currently contained.\n\nIf an element is inserted more than once, it counts as many times as it\nis inserted.\n\nThis method operates in constant time.",
             "itemtype": "method",
@@ -3074,7 +3074,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\MultiSet.js",
+            "file": "src/MultiSet.js",
             "line": 219,
             "description": "Indicates whether the container is empty or not.",
             "itemtype": "method",
@@ -3087,7 +3087,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\MultiSet.js",
+            "file": "src/MultiSet.js",
             "line": 229,
             "description": "Empties the container: every element is removed and the count is reset to\nzero.\n\nThis method operates in constant time.",
             "itemtype": "method",
@@ -3099,7 +3099,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\ParametricStateMachine.js",
+            "file": "src/ParametricStateMachine.js",
             "line": 84,
             "description": "Indicates the current state.",
             "itemtype": "method",
@@ -3112,11 +3112,11 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Polyfill.js",
-            "line": 49,
-            "description": "Returns a reference to a possibly browser-prefixed property of a\ngiven object.",
+            "file": "src/Polyfill.js",
+            "line": 74,
+            "description": "Returns a reference to a possibly browser-prefixed property of a\ngiven object.\n\nIn case the property is a function, this function will return a\nproxy function which transparently invokes such function with the\ngiven object as the `this` reference.",
             "example": [
-                "\n\t// Get a prefixed property from the `window` object.\n\tvar requestAnimationFrame = Canvace.Polyfill.getPrefixedProperty('requestAnimationFrame');\n\n\t// Get a prefixed property from a DOM element.\n\tvar canvas = document.getElementById('canvas');\n\tvar requestFullscreen = Canvace.Polyfill.getPrefixedProperty(canvas, ['requestFullscreen', 'requestFullScreen']);"
+                "\n\t// Get a prefixed property from the `window` object.\n\tvar requestAnimationFrame = Canvace.Polyfill.getPrefixedProperty('requestAnimationFrame');\n\n\t// Get a prefixed function from a DOM element.\n\tvar canvas = document.getElementById('canvas');\n\tvar requestFullscreen = Canvace.Polyfill.getPrefixedProperty(canvas, ['requestFullscreen', 'requestFullScreen']);"
             ],
             "itemtype": "method",
             "name": "getPrefixedProperty",
@@ -3140,7 +3140,35 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\RenderLoop.js",
+            "file": "src/Polyfill.js",
+            "line": 100,
+            "description": "Returns a reference to a possibly browser-prefixed constructor of a\ngiven object.\n\nIn case the property is a function, this function will not be wrapped\nby a proxy function - contrarily to what happens with the\n`getPrefixedProperty` function - so that it can be used with the\n`new` operator.",
+            "example": [
+                "\n\t// Get and use a prefixed constructor from the `window` object.\n\tvar context = new Canvace.Polyfill.getPrefixedProperty('AudioContext');"
+            ],
+            "itemtype": "method",
+            "name": "getPrefixedConstructor",
+            "params": [
+                {
+                    "name": "object",
+                    "description": "An optional reference to the object holding\nthe requested property. Defaults to the `window` object.",
+                    "type": "Object",
+                    "optional": true
+                },
+                {
+                    "name": "property",
+                    "description": "The constructor name to retrieve. This can be\na `String` (the property name) or an `Array` of `String`s (variants\nof the same property name to try in order).",
+                    "type": "Mixed"
+                }
+            ],
+            "return": {
+                "description": "A reference to the requested constructor, or `undefined`."
+            },
+            "class": "Canvace.Polyfill",
+            "module": "Canvace"
+        },
+        {
+            "file": "src/RenderLoop.js",
             "line": 56,
             "description": "Returns the desired frame rate, that corresponds to the `rate`\nargument that was specified to the constructor.\n\nSee also `getActualRate`.",
             "itemtype": "method",
@@ -3153,7 +3181,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\RenderLoop.js",
+            "file": "src/RenderLoop.js",
             "line": 77,
             "description": "Returns the actual frame rate, which is the number of frames per\nseconds that the machine is actually managing to render.\n\nThis value is always lower than or at most equal to the desired frame\nrate specified to the constructor.\n\nThis method returns `null` if the render loop is not currently\nrunning.",
             "itemtype": "method",
@@ -3166,7 +3194,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\RenderLoop.js",
+            "file": "src/RenderLoop.js",
             "line": 106,
             "description": "Returns the \"period\", which is the inverse of the specified rate.\n\nThe period is measured in milliseconds and is an integer number, so\nit is calculated as\n\n\tMath.floor(1000 / rate)\n\nwhere \"rate\" is the _desired_ rate that was specified to the\nconstructor (the same value returned by `RenderLoop.getRate`).",
             "itemtype": "method",
@@ -3179,7 +3207,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\RenderLoop.js",
+            "file": "src/RenderLoop.js",
             "line": 124,
             "description": "TODO",
             "itemtype": "method",
@@ -3192,7 +3220,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\RenderLoop.js",
+            "file": "src/RenderLoop.js",
             "line": 134,
             "description": "TODO",
             "itemtype": "method",
@@ -3208,7 +3236,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\RenderLoop.js",
+            "file": "src/RenderLoop.js",
             "line": 144,
             "description": "Returns the `Stage` rendererd by this render loop. This is the same\nobject specified to the constructor.",
             "itemtype": "method",
@@ -3221,7 +3249,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\RenderLoop.js",
+            "file": "src/RenderLoop.js",
             "line": 155,
             "description": "Returns the `StageRenderer` instance used to render the stage.",
             "itemtype": "method",
@@ -3234,7 +3262,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\RenderLoop.js",
+            "file": "src/RenderLoop.js",
             "line": 237,
             "description": "Runs the render loop.\n\nIf the loop has just been constructed and not yet started, it is\nstarted.\n\nIf the loop is suspended, it is resumed.\n\nIf it is running or it has been stopped by the `stop` method, this\nmethod does not have any effects.",
             "itemtype": "method",
@@ -3243,7 +3271,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\RenderLoop.js",
+            "file": "src/RenderLoop.js",
             "line": 260,
             "description": "Suspends the loop if it is currently running. Otherwise this method\ndoes not have any effects.",
             "itemtype": "method",
@@ -3252,7 +3280,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\RenderLoop.js",
+            "file": "src/RenderLoop.js",
             "line": 273,
             "description": "Indicates whether the loop was running and has been suspended and not\nyet resumed or stopped.",
             "itemtype": "method",
@@ -3265,7 +3293,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\RenderLoop.js",
+            "file": "src/RenderLoop.js",
             "line": 285,
             "description": "Definitely stops the loop. This means the loop will not be running\nany more, not even if the `start` method is called again.\n\nIf you just want to suspend the loop and resume it later, use the\n`suspend` method.",
             "itemtype": "method",
@@ -3274,7 +3302,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\RenderLoop.js",
+            "file": "src/RenderLoop.js",
             "line": 302,
             "description": "Indicates whether the loop has been stopped by the `stop` method.",
             "itemtype": "method",
@@ -3287,7 +3315,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\RenderLoop.js",
+            "file": "src/RenderLoop.js",
             "line": 314,
             "description": "Configures loop settings. The settings are changed globally and affect\nonly `RenderLoop` objects created since the last `setLoop` call.",
             "itemtype": "method",
@@ -3310,7 +3338,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Renderer.js",
+            "file": "src/Renderer.js",
             "line": 37,
             "description": "Returns the `View` object used by this renderer. It is the same `view`\nparameter passed to the constructor.",
             "itemtype": "method",
@@ -3323,7 +3351,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Renderer.js",
+            "file": "src/Renderer.js",
             "line": 48,
             "description": "Returns the `Buckets` object used by this renderer. It is the same\n`buckets` parameter passed to the constructor.",
             "itemtype": "method",
@@ -3336,7 +3364,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Renderer.js",
+            "file": "src/Renderer.js",
             "line": 59,
             "description": "Synchronizes the underlying `Buckets` object on the specified period. The\ncall is simply forwarded to its `synchronize` method.",
             "itemtype": "method",
@@ -3352,7 +3380,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Renderer.js",
+            "file": "src/Renderer.js",
             "line": 69,
             "description": "Returns the context object of the specified HTML5 canvas. This is the\nsame context used by the renderer.",
             "itemtype": "method",
@@ -3365,7 +3393,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Renderer.js",
+            "file": "src/Renderer.js",
             "line": 80,
             "description": "Renders the stage to the canvas.",
             "itemtype": "method",
@@ -3374,7 +3402,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\RumbleEffect.js",
+            "file": "src/RumbleEffect.js",
             "line": 33,
             "description": "Modifies the canvas's projection matrix so as to simulate a rumble\neffect.",
             "itemtype": "method",
@@ -3390,7 +3418,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\RumbleEffect.js",
+            "file": "src/RumbleEffect.js",
             "line": 50,
             "description": "Indicates whether the effect is over depending on the duration that was\nspecified to the constructor.",
             "itemtype": "method",
@@ -3403,7 +3431,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\RumbleEffect.js",
+            "file": "src/RumbleEffect.js",
             "line": 62,
             "description": "The default period setting, initially `3`.\n\nSee the documentation of the class constructor for details.",
             "itemtype": "property",
@@ -3415,7 +3443,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\RumbleEffect.js",
+            "file": "src/RumbleEffect.js",
             "line": 74,
             "description": "The default extent setting, initially `2`.\n\nSee the documentation of the class constructor for details.",
             "itemtype": "property",
@@ -3427,7 +3455,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 70,
             "description": "Returns the numeric ID of the entity.",
             "itemtype": "method",
@@ -3440,7 +3468,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 80,
             "description": "Returns the entity's custom properties as set in the Canvace\nDevelopment Environment.\n\nThe original `properties` object is returned, so that modifications\nactually affect the entity's properties.",
             "itemtype": "method",
@@ -3453,7 +3481,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 96,
             "description": "Indicates whether physics is enabled for this entity.\n\nInstances of entities that have physics enabled are automatically\n\"ticked\" when the whole stage is ticked. \"Ticking\" an entity instance\nmeans calling its `tick` method (see `Canvace.Stage.Instance.tick`),\nwhile \"ticking\" the whole stage means calling the `Stage.tick`\nmethod.\n\nPhysics in entities can be enabled or disabled in the Canvace\nDevelopment Environment.",
             "itemtype": "method",
@@ -3466,7 +3494,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 116,
             "description": "Returns a reference to an object describing the bounding box of this\nentity. Any modification made to the returned object will affect the\nway instances of this entity interact with the surrounding\nenvironment.\n\nThe returned object contains four real number fields: `i0`, `j0`,\n`iSpan` and `jSpan`. The `i0` and `j0` fields are the offsets of the\norigin of the bounding box from the position of the entity along the\nI and J axis, respectively. The `iSpan` and `jSpan` fields are the\nspan of the bounding box along the I and J axis, respectively.",
             "itemtype": "method",
@@ -3479,7 +3507,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 136,
             "description": "Enumerates all the instances of this entity currently present in the\nstage, filtering them based on their custom properties.\n\nThe `properties` argument contains the filtering properties: an\ninstance is enumerated only if all of its filtered properties' values\ncorrespond to those declared in the `properties` argument. All other\nproperties in the instance are not taken into account. This means\nthat if you specify an empty `properties` object, all the instances\nare enumerated.\n\nSome custom properties may actually be objects containing other\nproperties. This method performs a recursive deep comparison: the\n`properties` object may have nested objects containing other\nfiltering properties.\n\nThe entity instance is filtered based on its custom *instance*\nproperties, but its custom *entity* properties are used as a\nfallback: if an instance does not contain a required property it is\nstill enumerated if its entity does.\n\nEach enumerated instance is passed to the callback function as a\n`Canvace.Stage.Instance` object.\n\nThe enumeration can be interrupted by returning `false` in the\n`action` callback function.",
             "itemtype": "method",
@@ -3505,7 +3533,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 186,
             "description": "Creates a new instance of this entity and places it in the stage at\nthe specified `(i, j, k)` position.\n\nThe new instance has the initial velocity, uniform velocity and\nacceleration vectors all set to `(0, 0, 0)`.\n\nThe new instance is returned as a `Canvace.Stage.Instance` object.",
             "itemtype": "method",
@@ -3535,7 +3563,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 315,
             "description": "Returns the numeric ID of the instance, or `null` if this instance\nwas not initially present in the JSON data exported from the Canvace\nDevelopment Environment and was later added to the stage.",
             "itemtype": "method",
@@ -3548,7 +3576,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 328,
             "description": "Returns the entity instance's custom properties as set in the Canvace\nDevelopment Environment.\n\nThe original `properties` object is returned, so that modifications\nactually affect the instance's properties.",
             "itemtype": "method",
@@ -3561,7 +3589,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 344,
             "description": "Returns the numeric ID of the entity of this instance.",
             "itemtype": "method",
@@ -3574,7 +3602,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 354,
             "description": "Returns a `Canvace.Stage.Entity` object representing the entity whose\ninstance is represented by this object.",
             "itemtype": "method",
@@ -3587,7 +3615,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 366,
             "description": "Indicates whether physics is enabled for this instance's entity.",
             "itemtype": "method",
@@ -3600,7 +3628,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 376,
             "description": "Returns the instance's `(i, j, k)` position vector as an object\ncontaining three fields, `i`, `j` and `k`.\n\nNote that the original position vector object associated to the\ninstance is returned: changes made to the returned object affect the\nposition of the instance. You may use the returned object to manually\ncontrol the position of the instance.\n\nAlso note that changing the position of an instance by modifying the\nreturned object does not affect its _rendered_ position until the\n`update` method is called.",
             "itemtype": "method",
@@ -3613,7 +3641,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 397,
             "description": "Returns the instance's projected position, which is its `(i, j, k)`\nposition left-multiplied by the projection matrix.\n\nNote that this method returns the last calculated projected position,\nwhich means it does not reflect changes made by the `tick` method or\nby changing the position, velocity or uniform velocity objects\nreturned by the `getPosition`, `getVelocity`, and\n`getUniformVelocity` methods. For changes to be reflected, the\ninstance must be first updated using the `update` method.\n\nThe position is returned as an object containing three fields, `x`,\n`y` and `z`, containing the `i`, `j` and `k` projected coordinates,\nrespectively.",
             "itemtype": "method",
@@ -3626,7 +3654,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 418,
             "description": "Returns the 2D rectangular area corresponding to the instances's\nbounds.\n\nNote that this method returns the last calculated projected\nrectangle, which means it does not reflect changes made by such\nmethods as `tick`, `moveBy`, `setPosition` and so on. For changes to\nbe reflected, the instance must be first updated using the `update`\nmethod.\n\nThe rectangle is returned as an object containing four fields: the\n`x` and `y` coordinates of the origin and the `width` and `height`.\n\nThe coordinates of the origin are calculated by left-multiplying the\n`(i, j, k)` position vector of the instance by the projection matrix\nand adding the entity's offset. The width and height are simply\ncopied from the entity descriptor.",
             "itemtype": "method",
@@ -3639,7 +3667,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 442,
             "description": "Indicates whether the instance is in or out of range.\n\nAn entity instance is in range when its projected position (as\nreturned by the `getProjectedPosition` method) falls within the\n\"range\" area, which is a rectangular area centered in the center of\nthe viewport. The range area is usually much larger than the viewport\narea.\n\nThis method is useful, for example, for discarding too far entity\ninstances when stepping/ticking the physics of the game in order to\nimprove performance, and is used by the `Stage.Range` inner class.",
             "itemtype": "method",
@@ -3664,7 +3692,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 476,
             "description": "Returns the velocity vector of this instance as an object containing\nthree fields, `i`, `j` and `k`, indicating the respective components\nof the vector. The velocity vector is initially `(0, 0, 0)`.\n\nThis velocity vector is influenced by the acceleration vector of the\ninstance: the components of the acceleration vector are added to the\nrespective components of the velocity vector each time the instance\nis ticked using the `tick` method.\n\nNote that the original velocity vector object associated to the\ninstance is returned: changes made to the returned object affect the\nvelocity of the instance. You may use the returned object to manually\ncontrol the velocity of the instance.",
             "itemtype": "method",
@@ -3677,7 +3705,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 500,
             "description": "Returns the uniform velocity vector of this instance.\n\nThe vector is returned as an object containing three fields, `i`, `j`\nand `k`, indicating the respective components of the vector.\n\nNote that the original uniform velocity vector object associated to\nthe instance is returned: changes made to the returned object affect\nthe uniform velocity of the instance. You may use the returned object\nto manually control the uniform velocity of the instance.",
             "itemtype": "method",
@@ -3690,7 +3718,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 520,
             "description": "Returns the full velocity vector of the instance.\n\nThe full velocity vector is the velocity vector plus the uniform\nvelocity vector.\n\nThe vector is returned as an object containing three fields, `i`, `j`\nand `k`, indicating the respective components of the vector.\n\nA new object is created, filled and returned every time this method\nis called; modifying its content does not have any effects on the\nstate of the instance. The velocity and uniform velocity of the\ninstance must be controlled independently.",
             "itemtype": "method",
@@ -3703,7 +3731,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 553,
             "description": "Returns the instance's own acceleration vector as an object\ncontaining three fields, `i`, `j` and `k`, indicating the respective\ncomponents of the vector.\n\nThe acceleration vector is initially `(0, 0, 0)`.\n\nNote that the original acceleration vector object associated to the\ninstance is returned: changes made to the returned object affect the\nacceleration of the instance. You may use the returned object to\nmanually control the acceleration of the instance.",
             "itemtype": "method",
@@ -3716,7 +3744,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 574,
             "description": "Tests for collisions between this entity instance and the tiles of\nthe specified `Canvace.TileMap`.\n\nThis method invokes the `Canvace.TileMap.rectangleCollision` using\nthe position of the instance, its current full velocity vector and\nthe bounding box of its entity, as set in the Canvace Development\nEnvironment.\n\nThis method does not change the state of the instance in any way; it\nonly forwards the return value of the\n`Canvace.TileMap.rectangleCollision` method to the caller.",
             "itemtype": "method",
@@ -3743,7 +3771,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 620,
             "description": "Reacts to possible collisions between this entity instance and the\ntiles of the specified\n{{#crossLink \"Canvace.TileMap\"}}{{/crossLink}}.\n\nThis method invokes the `Canvace.TileMap.rectangleCollision` method\nusing the position of the instance, its current full velocity vector\nand the bounding box of its entity, as set in the Canvace Development\nEnvironment.\n\nIt then reacts to the collision by updating the state of the instance\ntrying to resume a regular configuration where there is no collision.\n\nSpecifically, the position of the instance is updated by adding the I\nand J components of the vector returned by\n`Canvace.TileMap.rectangleCollision` and each one of the I and J\ncomponents of the velocity vector is set to zero only if its sign is\nthe opposite of the corresponding component in the vector returned by\n`Canvace.TileMap.rectangleCollision`.\n\nNote that only the velocity vector is changed, the uniform velocity\nvector is not.\n\nThe vector returned by `Canvace.TileMap.rectangleCollision` is also\nforwarded to the caller.",
             "itemtype": "method",
@@ -3770,7 +3798,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 680,
             "description": "TODO",
             "itemtype": "method",
@@ -3797,7 +3825,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 714,
             "description": "Detects collisions between a rectangular area and the bounding box of\nthis entity instance.\n\nA vector is returned indicating two I and J values that must be added\nto the coordinates of the rectangular area in order to resume a\nregular configuration where the area does not collide with the\ninstance.\n\nIn case there is not any collision, the returned vector is `(0, 0)`.\n\nThe rectangular area is specified by the `i`, `j`, `di` and `dj`\narguments.\n\nThe implementation of this method assumes the rectangular area\nrepresents a moving entity (though not necessarily a Canvace entity)\nwhich is characterized by its own velocity vector; this vector is\nused in the collision algorithm in that it assumes the moving entity\ncannot have compenetrated the bounding box of this instance along the\nI or J axis more than the velocity vector component for that axis.\nThis is necessary in order to obtain a functional physics algorithm.\n\nIf the rectangular area actually is the bounding box of a Canvace\nentity, you can specify the I and J components of its actual velocity\nvector for the `vi` and `vj` arguments; such vector can be retrieved\nby adding the two vectors returned by the `getVelocity` and\n`getUniformVelocity` methods.\n\nIf specifying a velocity vector is not suitable, you can specify\narbitrary constant values; a good choice is usually 1 for both `vi`\nand `vj`. However, do not specify 0, as this would _always_ result in\nno collision.\n\nThis method can be used to implement in-layer, bounding box based,\nentity vs. entity collisions. If the rectangular area represents an\nentity's bounding box, the `i` and `j` coordinates of its origin can\nbe obtained using the `Canvace.Stage.Instance.getPosition` method,\nwhile the `di` and `dj` span values are usually constant and must be\narbitrarily determined by the developer.",
             "itemtype": "method",
@@ -3842,7 +3870,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 819,
             "description": "Tests for collisions between this entity instance and the specified\none.\n\nThis method invokes the `rectangleCollision` method of the specified\n_other_ instance using the position of _this_ instance, its current\nfull velocity vector and the bounding box of its entity as set in the\nCanvace Development Environment.\n\nThis method does not change the state of the instances in any way; it\nonly forwards the return value of the `rectangleCollision` method to\nthe caller.",
             "itemtype": "method",
@@ -3862,7 +3890,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 853,
             "description": "Reacts to possible collisions between this entity instance and the\nspecified one.\n\nThis method invokes the `Canvace.Stage.Instance.rectangleCollision`\nmethod of the specified _other_ instance passing the position of\n_this_ instance, its current full velocity vector and the bounding\nbox of its entity as set in the Canvace Development Environment.\n\nIt then reacts to the collision by updating the state of _this_\ninstance trying to resume a regular configuration where there is no\ncollision.\n\nSpecifically, the position of the instance is updated by adding the I\nand J components of the vector returned by `rectangleCollision` and\neach one of the I and J components of the velocity vector is set to\nzero only if its sign is the opposite of the corresponding component\nin the vector returned by `rectangleCollision`.\n\nNote that only the velocity vector is changed, the uniform velocity\nvector is not.\n\nThe vector returned by `Canvace.Stage.Instance.rectangleCollision`\nis also forwarded to the caller.",
             "itemtype": "method",
@@ -3882,7 +3910,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 908,
             "description": "TODO",
             "itemtype": "method",
@@ -3902,7 +3930,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 939,
             "description": "\"Ticks\" the instance, updating its position based on its velocity and\nits velocity based on its acceleration.\n\nThis method is automatically called by the `Canvace.Stage.tick`\nmethod if the entity has physics enabled.",
             "itemtype": "method",
@@ -3918,7 +3946,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 962,
             "description": "Updates the instance so that its graphical representation in\nsubsequent renderings reflect its actual position.\n\nSince this method is potentially costly, it should be called only\nonce per instance at each iteration of the render loop. This is what\nthe `RenderLoop` class does.\n\nThis method is automatically called by the `Canvace.Stage.update`\nmethod if the entity has physics enabled.",
             "itemtype": "method",
@@ -3927,7 +3955,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 979,
             "description": "Removes the entity instance from the stage. The instance will not be\nrendered any more by subsequent `Renderer.render` calls and will not\nbe enumerated any more by the `Buckets.forEachElement` method.\n\nThis method does not do anything if the instance has already been\nremoved or replaced with another entity using the `replaceWith`\nmethod.",
             "itemtype": "method",
@@ -3936,7 +3964,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 995,
             "description": "Indicates whether this instance has been removed from the stage.",
             "itemtype": "method",
@@ -3949,7 +3977,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 1004,
             "description": "Replaces this entity instance with a new instance of another entity.\n\nAfter being replaced, this instance becomes invalid and this object\nshould be discarded. The method returns a new `Stage.Instance` object\nthat can be used to control the new instance.\n\nThe new instance inherits this instance's position, velocity and\nacceleration vectors.\n\nThis method throws an exception if it is invoked after the instance\nhas been removed or already replaced by a previous call.",
             "itemtype": "method",
@@ -3969,7 +3997,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 1031,
             "description": "Duplicates the instance, also replicating its velocity, uniform\nvelocity and acceleration vectors.\n\nAn entity may be optionally specified as a `Canvace.Stage.Entity`\nobject to the `entity` argument so that the new instance refers to\nanother entity.\n\nThe new instance is returned as a `Canvace.Stage.Instance` object.",
             "itemtype": "method",
@@ -3990,7 +4018,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 1127,
             "description": "Returns the stage's name.",
             "itemtype": "method",
@@ -4003,7 +4031,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 1138,
             "description": "Returns the stage's custom properties as set in the Canvace Development\nEnvironment.\n\nThe original `properties` object is returned, so that modifications\nactually affect the stage's properties.",
             "itemtype": "method",
@@ -4016,7 +4044,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 1153,
             "description": "Returns the HTML5 canvas where the stage is rendered. This is the same\ncanvas object specified to the constructor.",
             "itemtype": "method",
@@ -4029,7 +4057,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 1164,
             "description": "Returns a `View` object that can be used by a `Renderer` to render the\nstage. It is internally built and initialized by `Stage`'s constructor.",
             "itemtype": "method",
@@ -4042,7 +4070,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 1175,
             "description": "Returns a {{#crossLink \"Canvace.Buckets\"}}{{/crossLink}} object that can\nbe used by a {{#crossLink \"Renderer\"}}{{/crossLink}} to render the\nstage. It is internally built and initialized by `Canvace.Stage`'s\nconstructor.",
             "itemtype": "method",
@@ -4055,7 +4083,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 1188,
             "description": "Provides a {{#crossLink \"Canvace.TileMap\"}}{{/crossLink}} object that\nallows to manage this stage's tile map.\n\nThe `Canvace.TileMap` object is created lazily only once, the first time\nthis method is called; subsequent calls return the same object.",
             "itemtype": "method",
@@ -4068,7 +4096,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 1203,
             "description": "Enumerates all the entities of this stage, filtering them based on their\ncustom properties.\n\nThe `properties` argument contains the filtering properties: an entity is\nenumerated only if all of its filtered properties' values correspond to\nthose declared in the `properties` argument. All other properties in the\nentity are not taken into account. This means that if you specify an\nempty `properties` object, all the entities are enumerated.\n\nSome custom properties may actually be objects containing other\nproperties. This method performs a recursive deep comparison: the\n`properties` object may have nested objects containing other filtering\nproperties.\n\nEach enumerated entity is passed to the callback function as a\n`Canvace.Stage.Entity` object.\n\nThe enumeration can be interrupted by returning `false` in the\n`action` callback function.",
             "itemtype": "method",
@@ -4094,7 +4122,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 1250,
             "description": "Returns an array of entities not filtered by the specified filtering\nproperties.\n\nEntities are filtered based on their custom properties. The `properties`\nargument contains the filtering properties: an entity is returned only if\nall of its filtered properties' values correspond to those declared in\nthe `properties` argument. All other properties in the entity are not\ntaken into account. This means that if you specify an empty `properties`\nobject, all the entities are returned.\n\nSome custom properties may actually be objects containing other\nproperties. This method performs a recursive deep comparison: the\n`properties` object may have nested objects containing other filtering\nproperties.\n\nThe chosen entities are returned as an array of `Stage.Entity` objects.",
             "itemtype": "method",
@@ -4115,7 +4143,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 1285,
             "description": "Returns an arbitrarily chosen entity among the ones not filtered by the\nspecified filtering properties.\n\nEntities are filtered based on their custom properties. The `properties`\nargument contains the filtering properties: an entity is eligible only if\nall of its filtered properties' values correspond to those declared in\nthe `properties` argument. All other properties in the entity are not\ntaken into account. This means that if you specify an empty `properties`\nobject, all the entities are eligible.\n\nSome custom properties may actually be objects containing other\nproperties. This method performs a recursive deep comparison: the\n`properties` object may have nested objects containing other filtering\nproperties.\n\nThe chosen entity is returned as a `Stage.Entity` object.",
             "itemtype": "method",
@@ -4136,7 +4164,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 1319,
             "description": "Enumerates the entity instances currently present in the stage. Each\ninstance is returned as a `Canvace.Stage.Instance` object.\n\nThe enumeration can be interrupted by returning `false` in the `action`\ncallback function.",
             "itemtype": "method",
@@ -4162,7 +4190,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 1344,
             "description": "Returns an array of entity instances among the ones currently in the\nstage and not filtered by the specified filtering properties.\n\nEntity instances are filtered based on their custom properties. The\n`properties` argument contains the filtering properties: an instance is\nreturned only if all of its filtered properties' values correspond to\nthose declared in the `properties` argument. All other properties in the\ninstance are not taken into account. This means that if you specify an\nempty `properties` object, an array containing all the instances is\nreturned.\n\nSome custom properties may actually be objects containing other\nproperties. This method performs a recursive deep comparison: the\n`properties` object may have nested objects containing other filtering\nproperties.\n\nThe entity instances are filtered based on its custom *instance*\nproperties, but its custom *entity* properties are used as a fallback: if\nan instance does not contain a required property it is still returned if\nits entity does.\n\nThe chosen instances are returned as an array of `Canvace.Stage.Instance`\nobjects.",
             "itemtype": "method",
@@ -4183,7 +4211,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 1384,
             "description": "Returns an arbitrarily chosen entity instance among the ones currently in\nthe stage and not filtered by the specified filtering properties.\n\nEntity instances are filtered based on their custom properties. The\n`properties` argument contains the filtering properties: an instance is\neligible only if all of its filtered properties' values correspond to\nthose declared in the `properties` argument. All other properties in the\ninstance are not taken into account. This means that if you specify an\nempty `properties` object, all the instances are eligible.\n\nSome custom properties may actually be objects containing other\nproperties. This method performs a recursive deep comparison: the\n`properties` object may have nested objects containing other filtering\nproperties.\n\nThe entity instance is filtered based on its custom *instance*\nproperties, but its custom *entity* properties are used as a fallback: if\nan instance does not contain a required property it is still eligible if\nits entity does.\n\nThe chosen instance is returned as a `Canvace.Stage.Instance` object.",
             "itemtype": "method",
@@ -4204,7 +4232,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 1432,
             "description": "TODO",
             "itemtype": "method",
@@ -4230,7 +4258,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 1453,
             "description": "TODO",
             "itemtype": "method",
@@ -4246,7 +4274,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 1467,
             "description": "TODO",
             "itemtype": "method",
@@ -4255,7 +4283,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 1481,
             "description": "\"Ticks\" all the entities of the stage that have physics enabled. This\nmethod simply iterates over such entities and invokes their `tick`\nmethod.\n\nYou do not usually need to call this method as it is automatically called\nby Canvace's render loop implementation in the\n{{#crossLink \"Canvace.RenderLoop\"}}{{/crossLink}} class.",
             "itemtype": "method",
@@ -4271,7 +4299,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Stage.js",
+            "file": "src/Stage.js",
             "line": 1500,
             "description": "Updates all the entities of the stage that have physics enabled. This\nmethod simply iterates over such entities and invokes their `update`\nmethod.\n\nYou do not usually need to call this method as it is automatically called\nby Canvace's render loop implementation in the\n{{#crossLink \"Canvace.RenderLoop\"}}{{/crossLink}} class.",
             "itemtype": "method",
@@ -4280,7 +4308,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\StageRenderer.js",
+            "file": "src/StageRenderer.js",
             "line": 33,
             "description": "Adds an effect to the effect chain.\n\nAn effect is an object containing an optional `preProcess` method, an\noptional `postProcess` method and a mandatory `isOver` method.\n\nThe `preProcess` and `postProcess` methods are used by the underlying\n`Renderer` and thus receive a `context` argument, which is the \"2d\"\ncontext of the HTML5 canvas (see the constructor of the `Renderer`\nclass).\n\nThe `isOver` method does not receive any arguments and must return a\nboolean value indicating whether the effect must be disapplied, in which\ncase it is automatically removed by the `StageRenderer`.\n\nEffects can be chained: the `addEffect` method may be called any number\nof times to add any number of effects.\n\nDuring the rendering of a frame, the `preProcess` methods of each effect\nin the chain are called in effect insertion order while the `postProcess`\nmethods are called in reverse order.",
             "itemtype": "method",
@@ -4296,7 +4324,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\StateMachine.js",
+            "file": "src/StateMachine.js",
             "line": 188,
             "description": "Indicates the current state.",
             "itemtype": "method",
@@ -4309,7 +4337,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\TileMap.js",
+            "file": "src/TileMap.js",
             "line": 28,
             "description": "Indicates whether this descriptor describes a walkable tile or not.",
             "itemtype": "method",
@@ -4322,7 +4350,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\TileMap.js",
+            "file": "src/TileMap.js",
             "line": 38,
             "description": "Returns the tile's custom properties as set in the Canvace\nDevelopment Environment.\n\nThe original `properties` object is returned, so that modifications\nactually affect the tile's properties.",
             "itemtype": "method",
@@ -4335,7 +4363,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\TileMap.js",
+            "file": "src/TileMap.js",
             "line": 54,
             "description": "Enumerates the numbers of the layers currently in the tile map.\n\nFor each enumerated layer the `action` callback function is called and\nreceives a numeric argument, the layer number.\n\nThe enumeration is interrupted if the callback function returns `false`;\nany other return value is ignored.\n\nIn case the enumeration is interrupted, `true` is returned by the\n`forEachLayer` method, otherwise `false` is returned.",
             "itemtype": "method",
@@ -4355,7 +4383,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\TileMap.js",
+            "file": "src/TileMap.js",
             "line": 84,
             "description": "Enumerates the tiles currently in the map.\n\nFor each enumerated tile the `action` callback function is called and\nreceives three integer arguments, the `i`, `j` and `k` coordinates of the\ntile. The tile itself can then be retrieved as a `TileMap.Tile` object by\ncalling the `TileMap.getAt` method.\n\nThe enumeration is interrupted if the callback function returns `false`;\nany other return value is ignored.\n\nIn case the enumeration is interrupted, `true` is returned by the\n`forEachTile` method, otherwise `false` is returned.",
             "itemtype": "method",
@@ -4375,7 +4403,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\TileMap.js",
+            "file": "src/TileMap.js",
             "line": 123,
             "description": "Enumerates the tiles in the specified layer of the map.\n\nFor each enumerated tile the `action` callback function is called and\nreceives two integer arguments, the `i` and `j` coordinates of the tile.\nThe tile itself can then be retrieved as a `TileMap.Tile` object by\ncalling the `TileMap.getAt` method.\n\nAn exception is thrown if the `k` argument does not represent a valid\nlayer of the map. This includes empty layers: if a tile map contains\ntiles at layers `0` and `2` but none at layer `1` you cannot specify `1`\nfor the `k` argument because the map does not contain the layer `1`.\n\nThe enumeration is interrupted if the callback function returns `false`;\nany other return value is ignored.\n\nIn case the enumeration is interrupted, `true` is returned by the\n`forEachTileInLayer` method, otherwise `false` is returned.",
             "itemtype": "method",
@@ -4400,7 +4428,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\TileMap.js",
+            "file": "src/TileMap.js",
             "line": 201,
             "description": "TODO",
             "itemtype": "method",
@@ -4421,7 +4449,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\TileMap.js",
+            "file": "src/TileMap.js",
             "line": 218,
             "description": "TODO",
             "itemtype": "method",
@@ -4442,7 +4470,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\TileMap.js",
+            "file": "src/TileMap.js",
             "line": 227,
             "description": "Returns a `Tile` object that describes the requested tile.\n\nA tile can be identified either by ID or filtering properties; TODO\n\nThis method throws an exception if the ID is not valid, i.e. it is not\npresent in the JSON data output by the Canvace Development Environment.",
             "itemtype": "method",
@@ -4462,7 +4490,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\TileMap.js",
+            "file": "src/TileMap.js",
             "line": 255,
             "description": "TODO",
             "itemtype": "method",
@@ -4483,7 +4511,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\TileMap.js",
+            "file": "src/TileMap.js",
             "line": 271,
             "description": "Returns the ID of the tile located at the specified `(i, j, k)` position\nof the map, or `false` if no tile is located at that position.",
             "itemtype": "method",
@@ -4513,7 +4541,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\TileMap.js",
+            "file": "src/TileMap.js",
             "line": 285,
             "description": "Puts the specified tile in the specified position of the map. If a\nmutable tile is already present in that position, it is first removed. If\na non-mutable tile is present, the operation fails.\n\nA boolean value is returned indicating whether the operation succeeded or\nnot.",
             "itemtype": "method",
@@ -4548,7 +4576,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\TileMap.js",
+            "file": "src/TileMap.js",
             "line": 328,
             "description": "This method uses the `findPath` method of the\n{{#crossLink \"Canvace.Astar\"}}{{/crossLink}} class to compute a suitable\npath from the starting node to the destination node.\n\nThe only difference between this method and the `findPath` method of the\n{{#crossLink \"Canvace.Astar\"}}{{/crossLink}} class is the way the\ncomputed path is returned to the caller.",
             "itemtype": "method",
@@ -4588,7 +4616,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\TileMap.js",
+            "file": "src/TileMap.js",
             "line": 367,
             "description": "Constructs an object that satisfies the `Astar.Node` requirements and\nrepresents a tile of the map as a node of a graph. The returned object\nallows to traverse a graph where each node represents a walkable tile and\neach edge allows to walk from a tile to another adjacent tile.\n\nThe returned graph is characterized by a _target node_ and each node also\nprovides a heuristic estimate of the distance between the target node and\nitself. This makes the graph usable with the `Astar` class.\n\nThe target node is the tile identified by the coordinates `i1`, `j1` and\n`k`.",
             "itemtype": "method",
@@ -4628,7 +4656,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\TileMap.js",
+            "file": "src/TileMap.js",
             "line": 432,
             "description": "Detects collisions between a rectangular area and non-walkable tiles of\na specified map layer.\n\nA vector is returned indicating two I and J values that must be added to\nthe coordinates of the rectangular area in order to resume a regular\nconfiguration where the area does not collide with the tiles.\n\nIn case there is not any collision, the returned vector is `(0, 0)`.\n\nThe rectangular area is specified by the `i`, `j`, `di` and `dj`\narguments.\n\nThe implementation of this method assumes the rectangular area represents\na moving entity (though not necessarily a Canvace entity). The collision\nalgorithm assumes the moving entity cannot have compenetrated a tile\nalong the I or J axis more than specified amounts `Di` and `Dj`,\nrespectively; this is necessary in order to obtain a functional physics\nalgorithm.\n\nThis method can be used to implement in-layer, bounding box based, entity\nvs. tiles collisions. If the rectangular area represents the bounding box\nof an entity, its origin's `i` and `j` coordinates can be obtained using\nthe `Stage.Instance.getPosition` method, while the `di` and `dj` span\nvalues are usually per-entity constant and must be arbitrarily determined\nby the developer.\n\nIf the rectangular area actually is the bounding box of a Canvace entity,\nyou can specify the distance the entity has gone along the I and J axes\nsince the last step as values for the `Di` and `Dj` arguments; you can do\nthat by caching the values of the `i` and `j` components of the entity's\nposition and subtracting them to their respective values of the current\nposition at each step. This is actually what the `testTileCollision`\nmethod of the `Stage.Instance` class does.",
             "itemtype": "method",
@@ -4684,7 +4712,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Timing.js",
+            "file": "src/Timing.js",
             "line": 10,
             "description": "This method returns a timestamp using `window.performance.now()`, if\navailable, or `Date.now()` otherwise.",
             "itemtype": "method",
@@ -4697,7 +4725,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\View.js",
+            "file": "src/View.js",
             "line": 45,
             "description": "Computes the projected `x`, `y` and `z` coordinates of an element by\nright-multiplying an `(i, j, k)` vector by the projection matrix.\n\nNote that the computed `x` and `y` coordinates do not correspond to the\nactual on-screen coordinates because they vary depending on the X and Y\noffsets of the specific element.\n\nThis method only calculates a \"generic\" projection, but the\n`projectElement` is more useful in that it calculates the actual\ncoordinates.\n\nThe computed coordinates are returned as an array containing three\nelements, respectively X, Y and Z.",
             "itemtype": "method",
@@ -4727,7 +4755,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\View.js",
+            "file": "src/View.js",
             "line": 75,
             "description": "Computes the projected `x`, `y` and `z` coordinates of the specified\nelement by right-multiplying an `(i, j, k)` vector by the projection\nmatrix and adding the X and Y offsets of the element.\n\nThis method does not take into account the viewport offset (`drag` calls\nwill not affect the result of `projectElement`).\n\nThe computed coordinates are returned as an array containing three\nelements, respectively X, Y and Z.",
             "itemtype": "method",
@@ -4762,7 +4790,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\View.js",
+            "file": "src/View.js",
             "line": 105,
             "description": "Inverts the specified `x` and `y` projected coordinates returning the\ncorresponding original `(i, j, k)` coordinates assuming that the\nprojected point is located at the specified `k` coordinate in the\noriginal 3D space. This means that the `k` value in the returned\n`(i, j, k)` vector corresponds to the specified `k` value.\n\nThis method is useful for implementing picking algorithms.\n\nThe computed `(i, j, k)` vector is returned as an array of three\nelements, the `i`, `j` and `k` values respectively.",
             "itemtype": "method",
@@ -4792,7 +4820,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\View.js",
+            "file": "src/View.js",
             "line": 132,
             "description": "Inverts the specified `x` and `y` projected coordinates returning the\ninteger `(i, j, k)` coordinates of the cell where the projected point is\nlocated, assuming they are located at layer `k`. The specified `k` value\nis simply returned as is in the resulting `(i, j, k)` vector.\n\nThe resulting vector is returned as an object containing three integer\nfields: `i`, `j` and `k`.\n\nThe only difference between this method and `unproject` is that the\nformer always returns integer values (resulting from rounding) while the\nlatter may return real values.",
             "itemtype": "method",
@@ -4822,7 +4850,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\View.js",
+            "file": "src/View.js",
             "line": 163,
             "description": "Returns the viewport's origin as an object containing two properties, `x`\nand `y`.",
             "itemtype": "method",
@@ -4835,7 +4863,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\View.js",
+            "file": "src/View.js",
             "line": 178,
             "description": "Returns the viewport width.",
             "itemtype": "method",
@@ -4848,7 +4876,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\View.js",
+            "file": "src/View.js",
             "line": 188,
             "description": "Returns the viewport height.",
             "itemtype": "method",
@@ -4861,7 +4889,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\View.js",
+            "file": "src/View.js",
             "line": 200,
             "description": "Drags the viewport by the specified `dx` and `dy` offsets.",
             "itemtype": "method",
@@ -4882,7 +4910,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\View.js",
+            "file": "src/View.js",
             "line": 215,
             "description": "Drags the viewport so that the origin be located at the specified `x` and\n`y` coordinates.",
             "itemtype": "method",
@@ -4903,7 +4931,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\View.js",
+            "file": "src/View.js",
             "line": 231,
             "description": "Register an event handler invoked every time the viewport's origin\nchanges. This happens because of `drag` and `dragTo` calls.\n\nMultiple handlers may be registered. A handler may be registered more\nthan once, in which case it gets called as many times as it was\nregistered.\n\nThis method returns a function that unregisters the registered handler.\nIf a handler was registered more than once, the returned function only\nremoves its own registration, while other instances of the handler stay\nregistered.",
             "itemtype": "method",
@@ -4923,7 +4951,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\View.js",
+            "file": "src/View.js",
             "line": 255,
             "description": "TODO",
             "itemtype": "method",
@@ -4958,7 +4986,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\View.js",
+            "file": "src/View.js",
             "line": 299,
             "description": "\"Ticks\" the synchronizer, which tries to move the view according to\nthe delay parameter so that the target entity fits into the target\narea.\n\nThis method is typically called from within the `tick` callback\nfunction of a `RenderLoop`.",
             "itemtype": "method",
@@ -4974,7 +5002,7 @@
             "module": "Canvace"
         },
         {
-            "file": "src\\Visibility.js",
+            "file": "src/Visibility.js",
             "line": 1,
             "description": "Adds an event listener for the \"visibility change\" event, if supported by the\nbrowser.",
             "itemtype": "method",
