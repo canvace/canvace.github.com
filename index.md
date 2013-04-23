@@ -14,7 +14,7 @@ The ultimate HTML5 game development platform
 
 Current Canvace features:
 
-*	Generic 3x3 projection matrix  
+*	Generic 3x3 projection matrix
 	&rarr;	That includes both orthogonal and isometric games
 *	2D and 2.5D support
 *	Visual development
@@ -23,7 +23,7 @@ Current Canvace features:
 *	Scene graph management
 *	Frame-by-frame animations
 *	Interpolated animations with configurable transition functions
-*	Fast, fully functional motion physics with simple AABB collisions  
+*	Fast, fully functional motion physics with simple AABB collisions
 	&rarr;	Otherwise it works fine with box2d.js
 *	Sound support
 *	Mobile detection
@@ -37,8 +37,8 @@ Don't settle for less than this. [Get started now](tutorials/index.html).
 <div class="overlay container hidden">
 	<div class="overlay content">
 		<iframe id="ladybug-speedrun" type="text/html" width="640" height="390"
-  src="http://www.youtube.com/embed/Q-haBMqdnQ4?enablejsapi=1"
-  frameborder="0">&nbsp;</iframe>
+			src="http://www.youtube.com/embed/Q-haBMqdnQ4?enablejsapi=1"
+			frameborder="0">&nbsp;</iframe>
 		<a class="close-button" href="#">Close</a>
 	</div>
 </div>
@@ -67,6 +67,7 @@ function onYouTubePlayerReady() {
 		$("#speedrun").click(showOverlay);
 	}(function (event) {
 		event.preventDefault();
+		event.stopPropagation();
 
 		$(".overlay.container").toggleClass("hidden");
 		$(".close-button").focus();
@@ -76,19 +77,22 @@ function onYouTubePlayerReady() {
 	}));
 
 	(function (hideOverlay) {
-		$(".close-button").click(hideOverlay);
-		$(".overlay.container").on("keyup", function (event) {
+		$(".close-button, .overlay.container").click(hideOverlay);
+		$(window).on("keyup", function (event) {
 			if (27 == event.keyCode) {
 				hideOverlay(event);
 			}
 		});
 	}(function (event) {
-		event.preventDefault();
+		if (!$(".overlay.container").hasClass("hidden")) {
+			event.preventDefault();
+			event.stopPropagation();
 
-		player.stopVideo();
+			player.stopVideo();
 
-		$(".overlay.container").toggleClass("hidden");
-		$(".close-button").blur();
+			$(".overlay.container").toggleClass("hidden");
+			$(".close-button").blur();
+		}
 	}));
 }
 </script>
