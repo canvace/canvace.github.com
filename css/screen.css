@@ -146,6 +146,10 @@ body,
 	margin-right: 1em;
 }
 
+#ladybug-speedrun {
+	border: 0;
+}
+
 .overlay.container {
 	display: table;
 
