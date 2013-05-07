@@ -36,9 +36,8 @@ Don't settle for less than this. [Get started now](tutorials/index.html).
 
 <div class="overlay container hidden">
 	<div class="overlay content">
-		<iframe id="ladybug-speedrun" type="text/html" width="640" height="390"
-			src="http://www.youtube.com/embed/Q-haBMqdnQ4?enablejsapi=1"
-			frameborder="0">&nbsp;</iframe>
+		<iframe id="ladybug-speedrun" width="640" height="390"
+			src="http://www.youtube.com/embed/Q-haBMqdnQ4?enablejsapi=1">&nbsp;</iframe>
 		<a class="close-button" href="#">Close</a>
 	</div>
 </div>
