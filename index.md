@@ -4,33 +4,59 @@ jquery: true
 no_disqus: true
 ---
 
-Canvace
-=======
+<div id="home-banner">
+	<img src="/media/home-banner.png" alt="" />
 
-The ultimate HTML5 game development platform
---------------------------------------------
+	<p>The HTML5 Game Platform</p>
 
-<a id="speedrun" href="#">Design your first stage in minutes!</a>
+	<div id="button-box">
+		<a id="view-on-github" href="https://github.com/canvace">
+			<img src="/media/icons/github-32.png" alt="">
+			<span>View on GitHub</span>
+		</a>
 
-Current Canvace features:
+		<a id="install-instructions" href="#">
+			<img src="/media/icons/install-32.png" alt="">
+			<span>Install Canvace</span>
+		</a>
+	</div>
+</div>
 
-*	Generic 3x3 projection matrix
-	&rarr;	That includes both orthogonal and isometric games
-*	2D and 2.5D support
-*	Visual development
-*	Team development
-*	Asynchronous asset loading with progress feedback
-*	Scene graph management
-*	Frame-by-frame animations
-*	Interpolated animations with configurable transition functions
-*	Fast, fully functional motion physics with simple AABB collisions
-	&rarr;	Otherwise it works fine with box2d.js
-*	Sound support
-*	Mobile detection
-*	Input APIs, including touch devices
-*	`requestAnimationFrame`-based render loop implementation
-*	Debug facilities
-*	Free and Open Source
+<div id="feature-highlights" class="table">
+	<div>
+		<div>
+			<h2>Save time</h2>
+
+			<p>Canvace's visual environment allows you to <a id="speedrun" href="#">design complex game levels in minutes</a>, while Canvace's JavaScript Game Engine features most of the things your HTML5 games will ever need, including: scene management, efficient rendering, motion physics, collision detection, asynchronous asset loading with progress feedback, frame-by-frame animations, interpolated animations with configurable transition functions, sound support, mobile device detection, input management including touch device support, debug facilities, and a lot more.</p>
+
+			<p>Just worry about the gameplay.</p>
+		</div>
+
+		<div>
+			<h2>Cross-platform</h2>
+
+			<p>Tired of all that porting stuff? Canvace-powered games are entirely based on HTML5, CSS and AJAX, meaning they are plugin-free and run smoothly on practically any browsers, including mobile ones. Focus on making stunning games and do not worry about rewriting them for each platform.</p>
+
+			<p>Do your team members use three different operating systems for development? Canvace's visual environment is based on Node.js and HTML5 and runs on Windows, Linux or Mac OS X seamlessly.</p>
+		</div>
+	</div>
+
+	<div>
+		<div>
+			<h2>Performances</h2>
+
+			<p>Do not worry to reach 60 FPS even on lesser platforms, Canvace will do the trick. Canvace's Game Engine is highly optimized to allow you to efficiently render vast multi-layered isometric or orthogonal environments.</p>
+
+			<p>Just design the game levels and pass them to the JavaScript library.</p>
+		</div>
+
+		<div>
+			<h2>2D and 2.5D</h2>
+
+			<p>You can make almost any kind of 2D and 2.5D game. Use generic projections to choose between isometric, orthogonal or anything you want. Create fluid, massive, multilayered levels and maps. Import single tiles, entire tile sheets, or make non tiled-based games. Animate your characters and objects.</p>
+		</div>
+	</div>
+</div>
 
 Don't settle for less than this. [Get started now](tutorials/index.html).
 
