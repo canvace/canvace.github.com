@@ -4,11 +4,21 @@ jquery: true
 no_disqus: true
 ---
 
-Canvace
-=======
+<div id="home-banner">
+	<img src="/media/home-banner.png" alt="" />
 
-The ultimate HTML5 game development platform
---------------------------------------------
+	<p>The HTML5 Game Platform</p>
+
+	<a id="view-on-github" href="https://github.com/canvace">
+		<img src="/media/icons/github-32.png" alt="">
+		View on GitHub
+	</a>
+
+	<a id="install-instructions" href="#">
+		<img src="/media/icons/install-32.png" alt="">
+		Install Canvace
+	</a>
+</div>
 
 <a id="speedrun" href="#">Design your first stage in minutes!</a>
 

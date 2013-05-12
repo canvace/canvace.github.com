@@ -146,6 +146,70 @@ body,
 	margin-right: 1em;
 }
 
+#home-banner {
+	margin: 1em;
+	padding: 1em;
+	text-align: center;
+	border-radius: 10px;
+	background-color: #3477b0;
+	background-color: rgba(52, 119, 176, .1);
+}
+
+#home-banner,
+#home-banner #view-on-github,
+#home-banner #install-instructions {
+	color: #5a5a5a;
+}
+
+#home-banner img {
+	display: block;
+	margin: auto;
+}
+
+#home-banner #view-on-github,
+#home-banner #install-instructions {
+	padding: 1em;
+	border: 1px solid #919191;
+	border-radius: 5px;
+	box-shadow: 0 3px 3px rgba(0, 0, 0, .45),
+	            inset 0 3px 3px rgba(255, 255, 255, .75);
+}
+
+#home-banner #view-on-github > *,
+#home-banner #install-instructions > * {
+	vertical-align: middle;
+}
+
+#home-banner #view-on-github,
+#home-banner #install-instructions {
+	background: #f3f3f3; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f3f3f3 0%, #d3d3d3 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f3f3f3), color-stop(100%,#d3d3d3)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f3f3f3 0%,#d3d3d3 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f3f3f3 0%,#d3d3d3 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f3f3f3 0%,#d3d3d3 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f3f3f3 0%,#d3d3d3 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f3f3', endColorstr='#d3d3d3',GradientType=0 ); /* IE6-9 */
+}
+
+#home-banner #view-on-github:hover,
+#home-banner #install-instructions:hover {
+	background: #f4f4f4; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f4f4f4 0%, #e1e1e1 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f4f4f4), color-stop(100%,#e1e1e1)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f4f4f4 0%,#e1e1e1 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f4f4f4 0%,#e1e1e1 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f4f4f4 0%,#e1e1e1 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f4f4f4 0%,#e1e1e1 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#e1e1e1',GradientType=0 ); /* IE6-9 */
+}
+
+#home-banner #view-on-github:active,
+#home-banner #install-instructions:active {
+	box-shadow: 0 3px 3px rgba(255, 255, 255, .45),
+	            inset 0 2px 4px rgba(0, 0, 0, .56);
+}
+
 #ladybug-speedrun {
 	border: 0;
 }
