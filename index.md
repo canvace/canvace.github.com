@@ -9,15 +9,17 @@ no_disqus: true
 
 	<p>The HTML5 Game Platform</p>
 
-	<a id="view-on-github" href="https://github.com/canvace">
-		<img src="/media/icons/github-32.png" alt="">
-		View on GitHub
-	</a>
+	<div id="button-box">
+		<a id="view-on-github" href="https://github.com/canvace">
+			<img src="/media/icons/github-32.png" alt="">
+			<span>View on GitHub</span>
+		</a>
 
-	<a id="install-instructions" href="#">
-		<img src="/media/icons/install-32.png" alt="">
-		Install Canvace
-	</a>
+		<a id="install-instructions" href="#">
+			<img src="/media/icons/install-32.png" alt="">
+			<span>Install Canvace</span>
+		</a>
+	</div>
 </div>
 
 <a id="speedrun" href="#">Design your first stage in minutes!</a>
