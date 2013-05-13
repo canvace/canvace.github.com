@@ -159,6 +159,8 @@ body,
 #home-banner #view-on-github,
 #home-banner #install-instructions {
 	color: #5a5a5a;
+	font-size: 14pt;
+	font-family: "FertigoPro-Regular", "Fertigo-Pro", "Titillium Web", sans-serif;
 }
 
 #home-banner > img:first-child {
