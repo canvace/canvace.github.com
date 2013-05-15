@@ -153,6 +153,7 @@ body,
 	border-radius: 10px;
 	background-color: #3477b0;
 	background-color: rgba(52, 119, 176, .1);
+	box-shadow: 0 0 1em #eaeaea;
 }
 
 #home-banner,
@@ -225,6 +226,18 @@ body,
 	            inset 0 2px 4px rgba(0, 0, 0, .56);
 }
 
+#feature-highlights {
+	width: 100%;
+	border-spacing: 1em;
+}
+
+#feature-highlights > div > div {
+	padding: 1em;
+	border-radius: 10px;
+	color: white;
+	background-color: #3477b0;
+}
+
 #ladybug-speedrun {
 	border: 0;
 }
@@ -280,4 +293,16 @@ body,
 
 .overlay.content a:hover {
 	text-shadow: 0 0 1px white;
+}
+
+div.table {
+	display: table;
+}
+
+div.table > div {
+	display: table-row;
+}
+
+div.table > div > div {
+	display: table-cell;
 }
