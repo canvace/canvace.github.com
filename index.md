@@ -25,11 +25,11 @@ no_disqus: true
 <div id="feature-highlights" class="table">
 	<div>
 		<div>
-			<h2>Time savings</h2>
+			<h2>Save time</h2>
 
-			<p>Vestibulum interdum purus eget tellus convallis scelerisque. Quisque euismod auctor nulla, vitae tempus metus facilisis id. Praesent pellentesque vulputate venenatis. Mauris eu dapibus lectus. Proin posuere accumsan lorem, luctus scelerisque sem pellentesque eget.</p>
+			<p>Canvace's visual environment allows you to <a id="speedrun" href="#">design complex game levels in minutes</a>, while Canvace's JavaScript Game Engine features most of the things your HTML5 games will ever need, including: scene management, efficient rendering, motion physics, collision detection, asynchronous asset loading with progress feedback, frame-by-frame animations, interpolated animations with configurable transition functions, sound support, mobile device detection, input management including touch device support, debug facilities, and a lot more.</p>
 
-			<p>Vivamus id sapien ac nulla pharetra sollicitudin. Cras bibendum cursus enim id auctor. Etiam orci nulla, fringilla eu sagittis et, sodales vel leo. Curabitur sed eros non felis convallis sollicitudin fermentum nec risus. Suspendisse potenti. Nunc congue rhoncus dui at condimentum.</p>
+			<p>Just worry about the gameplay.</p>
 		</div>
 
 		<div>
@@ -37,7 +37,7 @@ no_disqus: true
 
 			<p>Tired of all that porting stuff? Canvace-powered games are entirely based on HTML5, CSS and AJAX, meaning they are plugin-free and run smoothly on practically any browsers, including mobile ones. Focus on making stunning games and do not worry about rewriting them for each platform.</p>
 
-			<p>Darblast - Canvace's development environment - is a web application and can be used either as a stand-alone application or over a network. You can work with your teammates on the same project at the same time</p>
+			<p>Do your team members use three different operating systems for development? Canvace's visual environment is based on Node.js and HTML5 and runs on Windows, Linux or Mac OS X seamlessly.</p>
 		</div>
 	</div>
 
@@ -45,9 +45,9 @@ no_disqus: true
 		<div>
 			<h2>Performances</h2>
 
-			<p>Etiam tortor sem, porttitor non fermentum ac, sagittis sed odio. Proin ultricies ultrices volutpat. Cras facilisis cursus tortor, at sagittis sapien tempus a. Integer hendrerit, libero quis egestas porttitor, sem est hendrerit diam, sit amet eleifend eros nisl in magna.</p>
+			<p>Do not worry to reach 60 FPS even on lesser platforms, Canvace will do the trick. Canvace's Game Engine is highly optimized to allow you to efficiently render vast multi-layered isometric or orthogonal environments.</p>
 
-			<p>Suspendisse fringilla, tortor vel dignissim ultrices, massa est placerat arcu, sit amet accumsan libero libero non urna. Donec eros ligula, eleifend et vehicula et, dictum at diam. Suspendisse viverra nulla sem. Integer neque metus, pharetra sit amet tincidunt ac, vestibulum sed purus.</p>
+			<p>Just design the game levels and pass them to the JavaScript library.</p>
 		</div>
 
 		<div>
@@ -57,8 +57,6 @@ no_disqus: true
 		</div>
 	</div>
 </div>
-
-<a id="speedrun" href="#">Design your first stage in minutes!</a>
 
 Don't settle for less than this. [Get started now](tutorials/index.html).
 
