@@ -148,6 +148,7 @@ body,
 
 #home-banner {
 	margin: 1em;
+	margin-bottom: 0;
 	padding: 1.5em;
 	text-align: center;
 	border-radius: 10px;
@@ -158,7 +159,7 @@ body,
 
 #home-banner,
 #home-banner #view-on-github,
-#home-banner #install-instructions {
+#home-banner #install-canvace {
 	color: #5a5a5a;
 	font-size: 14pt;
 	font-family: "FertigoPro-Regular", "Fertigo-Pro", "Titillium Web", sans-serif;
@@ -182,7 +183,7 @@ body,
 }
 
 #home-banner #view-on-github,
-#home-banner #install-instructions {
+#home-banner #install-canvace {
 	margin: 1em .5em;
 	padding: 1em;
 	border: 1px solid #919191;
@@ -192,12 +193,12 @@ body,
 }
 
 #home-banner #view-on-github > *,
-#home-banner #install-instructions > * {
+#home-banner #install-canvace > * {
 	vertical-align: middle;
 }
 
 #home-banner #view-on-github,
-#home-banner #install-instructions {
+#home-banner #install-canvace {
 	background: #f3f3f3; /* Old browsers */
 	background: -moz-linear-gradient(top,  #f3f3f3 0%, #d3d3d3 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f3f3f3), color-stop(100%,#d3d3d3)); /* Chrome,Safari4+ */
@@ -209,7 +210,7 @@ body,
 }
 
 #home-banner #view-on-github:hover,
-#home-banner #install-instructions:hover {
+#home-banner #install-canvace:hover {
 	background: #f4f4f4; /* Old browsers */
 	background: -moz-linear-gradient(top,  #f4f4f4 0%, #e1e1e1 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f4f4f4), color-stop(100%,#e1e1e1)); /* Chrome,Safari4+ */
@@ -221,9 +222,29 @@ body,
 }
 
 #home-banner #view-on-github:active,
-#home-banner #install-instructions:active {
+#home-banner #install-canvace:active {
 	box-shadow: 0 3px 3px rgba(255, 255, 255, .45),
 	            inset 0 2px 4px rgba(0, 0, 0, .56);
+}
+
+#install-instructions {
+	display: none;
+	padding: 0 1em;
+}
+
+#install-instructions > pre {
+	font-family: "Consolas", "Monaco", monospace;
+	font-size: large;
+
+	padding: 1em;
+	border-radius: .5em;
+
+	color: white;
+	background: black;
+}
+
+#install-instructions .shell-comment {
+	color: #20cf20;
 }
 
 #feature-highlights {

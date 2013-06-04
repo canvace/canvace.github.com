@@ -15,12 +15,31 @@ no_disqus: true
 			<span>View on GitHub</span>
 		</a>
 
-		<a id="install-instructions" href="#">
+		<a id="install-canvace" href="#">
 			<img src="/media/icons/install-32.png" alt="">
 			<span>Install Canvace</span>
 		</a>
 	</div>
 </div>
+
+<div id="install-instructions">
+	<pre><code><span class="shell-comment"># Windows systems</span>
+$ npm install -g canvace
+
+<span class="shell-comment"># Mac OS X and other Unix systems</span>
+$ sudo npm install -g canvace</code></pre>
+</div>
+
+<script type="text/javascript">
+$(function () {
+	$("#install-canvace").on("click", function (event) {
+		event.preventDefault();
+		event.stopPropagation();
+
+		$("#install-instructions").slideToggle("slow");
+	});
+});
+</script>
 
 <div id="feature-highlights" class="table">
 	<div>
