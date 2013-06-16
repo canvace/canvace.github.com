@@ -9,4 +9,15 @@
 	.header .menu li {
 		padding: 0;
 	}
+
+	#feature-highlights,
+	#feature-highlights > div,
+	#feature-highlights > div > div {
+		display: block;
+	}
+
+	#feature-highlights > div > div {
+		width: auto;
+		margin: 1em;
+	}
 }
