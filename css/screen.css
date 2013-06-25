@@ -266,6 +266,13 @@ body,
 	color: white;
 }
 
+#feature-highlights h2 img {
+	float: right;
+	height: 2em;
+	vertical-align: middle;
+	margin-right: .5em;
+}
+
 a:hover {
 	text-shadow: 0 0 1px white;
 }

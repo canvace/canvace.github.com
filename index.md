@@ -44,7 +44,7 @@ $(function () {
 <div id="feature-highlights" class="table">
 	<div>
 		<div>
-			<h2>Save time</h2>
+			<h2>Save time <img src="/media/highlights/hourglass.svg" alt="" /></h2>
 
 			<p>Canvace's visual environment allows you to <a id="speedrun" href="#">design complex game levels in minutes</a>, while Canvace's JavaScript Game Engine features most of the things your HTML5 games will ever need, including: scene management, efficient rendering, motion physics, collision detection, asynchronous asset loading with progress feedback, frame-by-frame animations, interpolated animations with configurable transition functions, sound support, mobile device detection, input management including touch device support, debug facilities, and a lot more.</p>
 
@@ -52,7 +52,7 @@ $(function () {
 		</div>
 
 		<div>
-			<h2>Cross-platform</h2>
+			<h2>Cross-platform <img src="/media/highlights/cross-platform.svg" alt="" /></h2>
 
 			<p>Tired of all that porting stuff? Canvace-powered games are entirely based on HTML5, CSS and AJAX, meaning they are plugin-free and run smoothly on practically any browsers, including mobile ones. Focus on making stunning games and do not worry about rewriting them for each platform.</p>
 
@@ -62,7 +62,7 @@ $(function () {
 
 	<div>
 		<div>
-			<h2>Performances</h2>
+			<h2>Performances <img src="/media/highlights/performances.svg" alt="" /></h2>
 
 			<p>Do not worry to reach 60 FPS even on lesser platforms, Canvace will do the trick. Canvace's Game Engine is highly optimized to allow you to efficiently render vast multi-layered isometric or orthogonal environments.</p>
 
@@ -70,7 +70,7 @@ $(function () {
 		</div>
 
 		<div>
-			<h2>2D and 2.5D</h2>
+			<h2>2D and 2.5D <img src="/media/highlights/tile.svg" alt="" /></h2>
 
 			<p>You can make almost any kind of 2D and 2.5D game. Use generic projections to choose between isometric, orthogonal or anything you want. Create fluid, massive, multilayered levels and maps. Import single tiles, entire tile sheets, or make non tiled-based games. Animate your characters and objects.</p>
 		</div>
